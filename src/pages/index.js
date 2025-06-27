@@ -1,5 +1,6 @@
 import DarkTheme from '../layouts/Dark'
 import dynamic from 'next/dynamic'
+import Homepage4 from './/home.jsx'
 
 const Demos = dynamic(
   () => import('../components/Demos.jsx'),
@@ -9,7 +10,7 @@ const Demos = dynamic(
 export default function Home() {
   return (
     <DarkTheme>
-      <Demos />
+      <Homepage4 />
     </DarkTheme>
   )
 }
