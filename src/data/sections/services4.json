@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Digital Marketing",
+    "icon": "pe-7s-gleam",
+    "content": "Paid ads (Meta, Google, YouTube), funnels, retargeting — all built to convert."
+  },
+  {
+    "id": 2,
+    "title": "Social Media Management",
+    "icon": "pe-7s-phone",
+    "content": "From reels to campaigns, we craft content that connects and keeps audiences engaged."
+  },
+  {
+    "id": 3,
+    "title": "SEO & Content Marketing",
+    "icon": "pe-7s-magic-wand",
+    "content": "Dominate search with optimized blogs, landing pages, and growth-driven SEO."
+  },
+  {
+    "id": 4,
+    "title": "Brand Strategy & Design",
+    "icon": "pe-7s-paint",
+    "content": "Logos, brand voice, and visuals that align your look with your mission."
+  },
+  {
+    "id": 5,
+    "title": "Influencer & Affiliate Marketing",
+    "icon": "pe-7s-users",
+    "content": "Find voices your audience trusts and build partnerships that scale."
+  },
+  {
+    "id": 6,
+    "title": "Email Marketing & Automation",
+    "icon": "pe-7s-mail",
+    "content": "Automate engagement and increase retention with powerful flows and sequences."
+  }
+]

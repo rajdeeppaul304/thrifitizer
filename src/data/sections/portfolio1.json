@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Discover & Align",
+    "description": "We dive deep into your brand, target audience, and market position.",
+    "image": "/company/apaaag.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Strategize",
+    "description": "Using insights and goals, we design a custom marketing plan focused on ROI.",
+    "image": "/company/Monborr.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Execute & Launch",
+    "description": "Our team brings the plan to life — from creatives to campaigns, we handle it all.",
+    "image": "/company/curious.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Track & Optimize",
+    "description": "With data as our compass, we constantly analyze, test, and improve to ensure results.",
+    "image": "/company/colonial.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Report & Communicate",
+    "description": "We provide transparent reporting and clear communication to keep you informed every step of the way.",
+    "image": "/scroller/IMG-20250621-WA0001.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Scale & Innovate",
+    "description": "Building on proven success, we scale campaigns and introduce innovative strategies for continued growth.",
+    "image": "/scroller/IMG-20250620-WA0045.jpg"
+  }
+]

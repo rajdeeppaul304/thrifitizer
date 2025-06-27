@@ -1,0 +1,29 @@
+{
+  "id": 1,
+  "image1": "/Mockup/img1.jpg",
+  "image2": "/Mockup/img2.jpg",
+  "image3": "/Mockup/img3.jpg",
+  "smallTitle": "About Us",
+  "title": { "first": "Marketing That", "second": "Moves the Needle" },
+  "content": "We are a passionate collective of strategists, creatives, analysts, and storytellers. At the heart of what we do lies one goal — to make your brand impossible to ignore. Whether you're a startup ready to make noise or an established business looking for fresh momentum, we’re here to power your next phase of growth.",
+  "features": [
+    {
+      "id": 1,
+      "icon": "gleam",
+      "name": { "first": "Pixel", "second": "Perfect" },
+      "wowDelay": ".3s"
+    },
+    {
+      "id": 2,
+      "icon": "paint-bucket",
+      "name": { "first": "Creative", "second": "Marketing" },
+      "wowDelay": ".5s"
+    },
+    {
+      "id": 3,
+      "icon": "medal",
+      "name": { "first": "Heigh", "second": "Perfomance" },
+      "wowDelay": ".8s"
+    }
+  ]
+}

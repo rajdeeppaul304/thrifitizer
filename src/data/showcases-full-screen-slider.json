@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "/company/Watch.jpg",
+    "sub": "Watch",
+    "url": "/fireboltt/"
+  },
+  {
+    "id": 2,
+    "image": "./scroller/IMG-20250620-WA0037.jpg",
+    "sub": "Epoke",
+    "url": "/epoke/"
+  },
+  {
+    "id": 3,
+    "image": "./company/sleepcompany.jpg",
+    "sub": "Sleep Company",
+    "url": "/sleepcompany/"
+  },
+  {
+    "id": 4,
+    "image": "./company/glam.jpg",
+    "sub": "Glam",
+    "url": "/glam/"
+  },
+  {
+    "id": 5,
+    "image": "./company/htrz.jpg",
+    "sub": "HTRZ",
+    "url": "/htrz/"
+  },
+  {
+    "id": 6,
+    "image": "./company/indianethnic.jpg",
+    "sub": "Indian Ethnic Wear",
+    "url": "/indianethnicwear/"
+  },
+  {
+    "id": 7,
+    "image": "./company/instore.jpg",
+    "sub": "Instore",
+    "url": "/instore/"
+  },
+  {
+    "id": 8,
+    "image": "./company/momstore.jpg",
+    "sub": "Momstore",
+    "url": "/momstore/"
+  },
+  {
+    "id": 9,
+    "image": "./company/pongkart.jpg",
+    "sub": "Pongkart",
+    "url": "/pongkart/"
+  },
+  {
+    "id": 10,
+    "image": "./company/hy.png",
+    "sub": "Hey Clothing",
+    "url": "/heyclothing/"
+  },
+  {
+    "id": 11,
+    "image": "./scroller/IMG-20250621-WA0006.jpg",
+    "sub": "safar Furniture",
+    "url": "/safar-furniture/"
+  },
+  {
+    "id" : 12,
+    "image": "./scroller/IMG-20250621-WA0005.jpg",
+    "sub": "design house",
+    "url": "/design-house/"
+  }
+]
