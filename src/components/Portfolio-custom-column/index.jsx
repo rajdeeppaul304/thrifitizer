@@ -63,7 +63,8 @@ const PortfolioCustomColumn = ({
             }`}
             data-wow-delay=".4s"
           >
-            <div className="item-img">
+            {/* added border radius */}
+            <div className="item-img" style={{ borderRadius: "20px" }}>
               <Link href="/project-details2/">
                 <a className="imago wow">
                   <img src={item.image} alt="image" />
