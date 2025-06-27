@@ -76,6 +76,11 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/moodboard/" legacyBehavior>
+                <a className="nav-link">Moodboard</a>
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link href="/contact/" legacyBehavior>
                 <a className="nav-link">Contact</a>
               </Link>

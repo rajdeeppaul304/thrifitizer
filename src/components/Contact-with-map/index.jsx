@@ -2,9 +2,12 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import axios from 'axios';
 import Split from '../Split';
+import CalendlyWidget from '../CalendlyWidget';
 
 const ContactWithMap = ({ theme = "dark" }) => {
   const messageRef = React.useRef(null);
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+
   function validateEmail(value) {
     let error;
     if (!value) {
@@ -14,7 +17,53 @@ const ContactWithMap = ({ theme = "dark" }) => {
     }
     return error;
   }
+
   const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  // Close modal when clicking outside
+  const handleModalClick = (e) => {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
+  };
+
+  // Handle escape key
+  React.useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape' && isModalOpen) {
+        closeModal();
+      }
+    };
+    
+    if (isModalOpen) {
+      document.addEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'hidden'; // Prevent background scroll
+    }
+    
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isModalOpen]);
+
+
+React.useEffect(() => {
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    navbar.style.zIndex = isModalOpen ? '0' : '999';
+  }
+
+  return () => {
+    if (navbar) {
+      navbar.style.zIndex = '999'; // Reset just in case
+    }
+  };
+}, [isModalOpen]);
+
+
   return (
     <>
       <section className="contact section-padding">
@@ -134,7 +183,10 @@ const ContactWithMap = ({ theme = "dark" }) => {
                   </h6>
                 </div>
                 <div className="button">
-                  <button className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} mr-3 custom-hover-btn`}>
+                  <button 
+                    onClick={openModal}
+                    className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} mr-3 custom-hover-btn`}
+                  >
                     <span>Book a Call</span>
                   </button>
                   <button className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} custom-hover-btn`}>
@@ -146,6 +198,28 @@ const ContactWithMap = ({ theme = "dark" }) => {
           </div>
         </div>
       </section>
+
+      {/* Calendly Modal */}
+      {isModalOpen && (
+        <div className="calendly-modal-overlay" onClick={handleModalClick}>
+          <div className="calendly-modal">
+            <div className="calendly-modal-header">
+              <h3>Book a Call</h3>
+              <button 
+                className="calendly-modal-close" 
+                onClick={closeModal}
+                aria-label="Close modal"
+              >
+                ×
+              </button>
+            </div>
+            <div className="calendly-modal-content">
+              <CalendlyWidget />
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="map" id="ieatmaps">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.2730928974597!2d77.63670107473297!3d12.890153187417695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1545d1a215b3%3A0x7bd6e22703ec81cb!2sThriftizer%20Solutions%20LLP!5e0!3m2!1sen!2sin!4v1750625342625!5m2!1sen!2sin"
@@ -165,12 +239,138 @@ const ContactWithMap = ({ theme = "dark" }) => {
           </div>
         </div>
       </footer>
+
       <style>{`
         .custom-hover-btn span {
           transition: color 0.2s;
         }
         .custom-hover-btn:hover span {
           color: #000 !important;
+        }
+
+        /* Modal Styles */
+        .calendly-modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 9999;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+
+        .calendly-modal {
+          background: white;
+          border-radius: 12px;
+          width: 100%;
+          max-width: 800px;
+          max-height: 90vh;
+          overflow: hidden;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          animation: modalSlideIn 0.3s ease-out;
+        }
+
+        .calendly-modal-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 24px;
+          border-bottom: 1px solid #e5e7eb;
+          background: #f9fafb;
+        }
+
+        .calendly-modal-header h3 {
+          margin: 0;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: #111827;
+        }
+
+        .calendly-modal-close {
+          background: none;
+          border: none;
+          font-size: 24px;
+          font-weight: bold;
+          color: #6b7280;
+          cursor: pointer;
+          padding: 4px 8px;
+          border-radius: 4px;
+          transition: all 0.2s ease;
+          line-height: 1;
+        }
+
+        .calendly-modal-close:hover {
+          background-color: #f3f4f6;
+          color: #374151;
+        }
+
+        .calendly-modal-content {
+          height: 600px;
+          overflow: hidden;
+        }
+
+        @keyframes modalSlideIn {
+          from {
+            opacity: 0;
+            transform: scale(0.95) translateY(-20px);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .calendly-modal {
+            margin: 10px;
+            max-height: 85vh;
+          }
+          
+          .calendly-modal-content {
+            height: 500px;
+          }
+          
+          .calendly-modal-header {
+            padding: 16px 20px;
+          }
+          
+          .calendly-modal-header h3 {
+            font-size: 1.25rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .calendly-modal-overlay {
+            padding: 10px;
+          }
+          
+          .calendly-modal {
+            margin: 0;
+            border-radius: 8px;
+          }
+          
+          .calendly-modal-content {
+            height: 450px;
+          }
+          
+          .calendly-modal-header {
+            padding: 12px 16px;
+          }
+          
+          .calendly-modal-header h3 {
+            font-size: 1.125rem;
+          }
+        }
+
+        /* Ensure Calendly widget is responsive within modal */
+        .calendly-modal-content > div {
+          height: 100% !important;
         }
       `}</style>
     </>

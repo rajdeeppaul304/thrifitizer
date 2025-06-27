@@ -12,10 +12,17 @@ const MoodboardHeader = () => (
   >
     <div className="container">
       <div className="row">
-        <div className="col-lg-12">
+        <div className="col-12">
           <div className="cont text-center">
-            <h1>Moodboard Generator</h1>
-            <div className="path">
+<h1
+  className="mb-3"
+  style={{
+    fontSize: "clamp(1.8rem, 5vw, 3.5rem)",
+    lineHeight: "1.2",
+  }}
+>
+  Moodboard Generator
+</h1>            <div className="path d-flex justify-content-center flex-wrap gap-1">
               <a href="#0">Home</a>
               <span>/</span>
               <a href="#0" className="active">
@@ -33,12 +40,14 @@ const MoodboardIntro = () => (
   <section className="intro-section section-padding pb-0">
     <div className="container">
       <div className="row">
-        <div className="col-lg-3 col-md-4">
-          <div className="htit sm-mb30">
+        {/* Title on small screens full width, margin bottom */}
+        <div className="col-lg-3 col-md-4 col-12 mb-4 mb-md-0">
+          <div className="htit">
             <h4>Generate your inspiration board</h4>
           </div>
         </div>
-        <div className="col-lg-8 offset-lg-1 col-md-8">
+        {/* Text full width on small, aligned on medium and large */}
+        <div className="col-lg-8 offset-lg-1 col-md-8 col-12">
           <div className="text">
             <p>
               Enter keywords that describe the mood or style you want, and get
@@ -51,6 +60,21 @@ const MoodboardIntro = () => (
     </div>
   </section>
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const Moodboard = ({ theme = "dark" }) => {
   const navbarRef = useRef(null);
@@ -174,6 +198,27 @@ const Moodboard = ({ theme = "dark" }) => {
 
 .moodboard-input:focus {
   border-bottom: 2px solid #fff;
+}
+.h1-responsive {
+  font-size: 2rem; /* Mobile base */
+}
+
+@media (min-width: 576px) {
+  .h1-responsive {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .h1-responsive {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .h1-responsive {
+    font-size: 4rem;
+  }
 }
 
 
