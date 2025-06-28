@@ -3,6 +3,7 @@ import { Formik, Form, Field } from "formik";
 import axios from 'axios';
 import Split from '../Split';
 import CalendlyWidget from '../CalendlyWidget';
+import Link from 'next/link';
 
 const ContactWithMap = ({ theme = "dark" }) => {
   const messageRef = React.useRef(null);
@@ -182,13 +183,24 @@ React.useEffect(() => {
                     560068 Bangalore KA,India
                   </h6>
                 </div>
-                <div className="button">
-                  <button 
+                <div className="button" style={{display:'flex'}}>
+                  {/* <button 
                     onClick={openModal}
                     className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} mr-3 custom-hover-btn`}
                   >
                     <span>Book a Call</span>
-                  </button>
+                  </button> */}
+                  <a
+  href="https://api.whatsapp.com/send/?phone=918861324254&text=Hello&type=phone_number&app_absent=0"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`btn-curve ${theme === 'dark' ? 'btn-lit' : 'btn-color'} mr-3 custom-hover-btn`}
+>
+  <span>Book a Call</span>
+</a>
+
+
+
                   <button className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} custom-hover-btn`}>
                     <span>Start a Project</span>
                   </button>

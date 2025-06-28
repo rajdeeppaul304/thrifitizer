@@ -2,16 +2,25 @@
 import React from "react";
 import Split from "../Split";
 import AboutUs1Date from "../../data/sections/about-us1.json";
-
+  // "/Wearefeaturedin/file_000000000d3461f79b65c32d7e2658d3.png",
+  // "/Wearefeaturedin/file_00000000c84061f89fbb6cbbadcb1de6.png",
+  // "/Wearefeaturedin/file_000000006c6061fd8485ddd06b2b21ee.png",
+  // "/Wearefeaturedin/file_00000000529061fd85852d0085711cd0.png",
+  // "/Wearefeaturedin/Screenshot_2025_0625_115042.png",
+  // "/Wearefeaturedin/Screenshot_2025_0625_115143.png",
+  // "/Wearefeaturedin/Screenshot_2025_0625_115220.png",
+  // "/Wearefeaturedin/Screenshot_2025_0625_123032.png"
 const featuredLogos = [
+
+
+  "/Wearefeaturedin/ians.png",
   "/Wearefeaturedin/file_000000000d3461f79b65c32d7e2658d3.png",
-  "/Wearefeaturedin/file_00000000c84061f89fbb6cbbadcb1de6.png",
-  "/Wearefeaturedin/file_000000006c6061fd8485ddd06b2b21ee.png",
-  "/Wearefeaturedin/file_00000000529061fd85852d0085711cd0.png",
-  "/Wearefeaturedin/Screenshot_2025_0625_115042.png",
-  "/Wearefeaturedin/Screenshot_2025_0625_115143.png",
-  "/Wearefeaturedin/Screenshot_2025_0625_115220.png",
-  "/Wearefeaturedin/Screenshot_2025_0625_123032.png"
+  "/Wearefeaturedin/theprint.png",
+  "/Wearefeaturedin/latestly_2.jpg",
+  "/Wearefeaturedin/lokmat.png",
+  "/Wearefeaturedin/hindustan_2.png",
+  "/Wearefeaturedin/The_Business_Standard_logo.svg.png",
+  "/Wearefeaturedin/the_week_logo.png"
 ];
 
 const AboutUs1 = () => {
@@ -20,8 +29,8 @@ const AboutUs1 = () => {
       {/* Featured In Section */}
       <div className="featured-in-section" style={{marginTop: '-60px'}}>
         <h1 className="featured-title">We are featured in</h1>
-        <div className="logos-slider">
-          <div className="logos-track">
+        <div className="logos-slider" style={{  height: '120px' }}>
+          <div className="logos-track" >
             {featuredLogos.concat(featuredLogos).map((logo, idx) => (
               <div className="logo-item" key={idx}>
                 <img src={logo} alt={`logo${idx + 1}`} />
@@ -79,9 +88,9 @@ const AboutUs1 = () => {
                       className={`wow fadeIn ${feature.id === 2 ? "space" : ""}`}
                       data-wow-delay={feature.wowDelay}
                     >
-                      <span className={`icon color-font pe-7s-${feature.icon}`}></span>
+                      <span className={`icon color-font ${feature.icon}`}></span>
                       <h6 className="custom-font">
-                        {feature.name.first} <br /> {feature.name.second}
+                        {feature.name.first} <br /> {feature.name.second} 
                       </h6>
                       <div className="dots">
                         <span></span><span></span><span></span>
@@ -150,20 +159,24 @@ const AboutUs1 = () => {
           width: calc(200% + 40px);
           animation: scroll-logos 18s linear infinite;
         }
-        .logo-item {
-          flex: 0 0 120px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 20px;
-        }
-        .logo-item img {
-          max-height: 50px;
-          max-width: 100px;
-          filter: grayscale(100%);
-          opacity: 0.8;
-          transition: filter 0.3s, opacity 0.3s;
-        }
+.logo-item {
+  flex: 0 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.logo-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* keeps aspect ratio without distortion */
+  display: block;
+  opacity: 0.8;
+  transition: filter 0.3s, opacity 0.3s;
+  margin: 0 auto;
+}
+
         .logo-item img:hover {
           filter: grayscale(0%);
           opacity: 1;

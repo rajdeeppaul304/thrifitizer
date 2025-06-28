@@ -1109,15 +1109,15 @@ body {
   margin: 0 auto 80px; }
   .sec-head h6 {
     color: #75dab4;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 17px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 14px;
     margin-bottom: 5px; }
   .sec-head h3 {
     font-size: 80px;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 4px;
     text-shadow: 0 8px rgba(255, 255, 255, 0.05); }
   .sec-head .tbg {
@@ -1143,9 +1143,9 @@ body {
   margin-bottom: 20px; }
   .sub-title h6 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 16px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 4px; }
   .sub-title span {
     width: 4px;
@@ -3143,7 +3143,7 @@ header.simpl {
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
-    max-width: 75px;
+    max-width: 125px;
     margin: auto; }
   .clients .brands .img .link {
     font-size: 13px;

@@ -9,19 +9,19 @@
   "features": [
     {
       "id": 1,
-      "icon": "gleam",
+      "icon": "fas fa-magic",
       "name": { "first": "Pixel", "second": "Perfect" },
       "wowDelay": ".3s"
     },
     {
       "id": 2,
-      "icon": "paint-bucket",
+      "icon": "fas fa-paint-brush",
       "name": { "first": "Creative", "second": "Marketing" },
       "wowDelay": ".5s"
     },
     {
       "id": 3,
-      "icon": "medal",
+      "icon": "fas fa-tachometer-alt",
       "name": { "first": "Heigh", "second": "Perfomance" },
       "wowDelay": ".8s"
     }

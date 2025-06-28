@@ -6,6 +6,7 @@ import ScrollToTop from "../components/Scroll-to-top";
 import LoadingScreen from "../components/Loading-Screen";
 import "../styles/globals.css";
 import "../../node_modules/react-datepicker/dist/react-datepicker.css";
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 function MyApp({ Component, pageProps }) {
   return (

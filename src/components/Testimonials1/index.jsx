@@ -51,7 +51,7 @@ class Testimonials1 extends React.Component {
         <div className="container position-re">
           <div className="sec-head custom-font text-center">
             <h6 className="wow fadeIn" data-wow-delay=".5s">
-              What Peapole Says?
+              What People Says?
             </h6>
             <Split>
               <h3 className="wow words chars splitting" data-splitting>

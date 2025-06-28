@@ -87,7 +87,7 @@ const Clients1 = ({ theme, subBG }) => {
                           : ""
                       }s`}
                     >
-                      <div className="img">
+                      <div className="img" >
                         {theme === "light" ? (
                           <img src={item.lightImage} alt="" />
                         ) : (
