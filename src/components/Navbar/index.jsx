@@ -81,6 +81,11 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/build_your_own_package/" legacyBehavior>
+                <a className="nav-link">Package Builder</a>
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link href="/contact/" legacyBehavior>
                 <a className="nav-link">Contact</a>
               </Link>
