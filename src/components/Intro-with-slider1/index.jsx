@@ -82,40 +82,75 @@ const IntroWithSlider1 = ({ sliderRef }) => {
             slidesPerView={1}
           >
             {introData.map((slide) => (
-              <SwiperSlide key={slide.id} className="swiper-slide">
-                <div
-                  className="bg-img valign"
-                  style={{ backgroundImage: `url(${slide.image})` }}
-                  data-overlay-dark="6"
-                >
-                  <div className="container">
-                    <div className="row justify-content-center">
-                      <div className="col-lg-7 col-md-9">
-                        <div className="caption center">
-                          <Split>
-                            <h1 className="words chars splitting">
-                              {typeof slide.title === "object" ? (
-                                <>
-                                  {slide.title.first} <br />
-                                  {slide.title.second}
-                                </>
-                              ) : (
-                                slide.title
-                              )}
-                            </h1>
-                          </Split>
-                          {slide?.content && <p>{slide.content}</p>}
-                          <Link href="/contact">
-                            <a className="btn-curve btn-lit mt-30">
-                              <span>Look More</span>
-                            </a>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
+<SwiperSlide key={slide.id} className="swiper-slide">
+  <div className="valign" data-overlay-dark="6" style={{height:'100vh'}}>
+    {slide.video ? (
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="bg-video"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: -1,
+        }}
+      >
+        <source src={slide.video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    ) : (
+      <div
+        className="bg-img"
+        style={{
+          backgroundImage: `url(${slide.image})`,
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          zIndex: -1,
+        }}
+      ></div>
+    )}
+
+    {/* Your existing slide content */}
+    <div className="container">
+      <div className="row justify-content-center">
+        <div className="col-lg-7 col-md-9">
+          <div className="caption center">
+            <Split>
+              <h1 className="words chars splitting">
+                {typeof slide.title === "object" ? (
+                  <>
+                    {slide.title.first} <br />
+                    {slide.title.second}
+                  </>
+                ) : (
+                  slide.title
+                )}
+              </h1>
+            </Split>
+            {slide?.content && <p>{slide.content}</p>}
+            <Link href="/contact">
+              <a className="btn-curve btn-lit mt-30">
+                <span>Look More</span>
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</SwiperSlide>
+
             ))}
           </Swiper>
         ) : null}
