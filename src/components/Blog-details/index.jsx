@@ -16,6 +16,19 @@ const BlogDetails = () => {
   const sendComment = (ms) => new Promise((r) => setTimeout(r, ms));
   return (
     <section className="blog-pg single section-padding pt-0">
+            <section className="page-header blg">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-7 col-md-9">
+              <div className="cont text-center">
+                <h2>Blog name</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-11">
@@ -79,27 +92,7 @@ const BlogDetails = () => {
                         </li>
                       </ul>
 
-                      <div className="quotes text-center">
-                        <p>
-                          Never ever think of giving up. Winners never quit and
-                          quitters never win. Take all negative words out of
-                          your mental dictionary and focus on the solutions with
-                          utmost conviction and patience. The battle is never
-                          lost until you’ve abandon your vision.
-                        </p>
-                      </div>
-                      <div className="row">
-                        <div className="col-md-6">
-                          <div className="mb-10">
-                            <img src="/img/blog/single.jpg" alt="" />
-                          </div>
-                        </div>
-                        <div className="col-md-6">
-                          <div className="mb-10">
-                            <img src="/img/blog/single.jpg" alt="" />
-                          </div>
-                        </div>
-                      </div>
+
                       <p>
                         We all intend to plan ahead, but too often let the
                         day-to-day minutia get in the way of making a calendar
@@ -111,53 +104,25 @@ const BlogDetails = () => {
                       </p>
                       <div className="share-info">
                         <div className="social">
-                          <a href="#0">
-                            <i className="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-twitter"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-behance"></i>
-                          </a>
+                          <a href="https://www.facebook.com/thriftizer/" className="icon">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/thriftizer/" className="icon">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/thriftizersolutionsllp" className="icon">
+                  <i className="fab fa-instagram"></i>
+                </a>
                         </div>
-                        <div className="tags">
-                          <a href="#0">Web</a>,<a href="#0">Themeforest</a>,
-                          <a href="#0">ThemesCamp</a>
-                        </div>
+
                       </div>
                     </div>
-                    <div className="author">
-                      <div className="author-img">
-                        <img src="/img/blog/01.jpg" alt="" />
-                      </div>
-                      <div className="info">
-                        <h6>
-                          <span>author :</span> Jorden Griffin
-                        </h6>
-                        <p>
-                          the main component of a healthy environment for self
-                          esteem is that it needs be nurturing. The main compont
-                          of a healthy environment.
-                        </p>
-                        <div className="social">
-                          <a href="#0">
-                            <i className="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-twitter"></i>
-                          </a>
-                          <a href="#0">
-                            <i className="fab fa-behance"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
 
-              <div className="pagination">
+              {/* <div className="pagination">
                 <span>
                   <a href="#0">Prev Post</a>
                 </span>
@@ -171,9 +136,9 @@ const BlogDetails = () => {
                 <span className="text-right">
                   <a href="#0">Next Post</a>
                 </span>
-              </div>
+              </div> */}
 
-              <div className="comments-area">
+              {/* <div className="comments-area">
                 <h5>Comments :</h5>
                 <div className="item">
                   <div className="comment-img">
@@ -235,9 +200,9 @@ const BlogDetails = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="comment-form">
+              {/* <div className="comment-form">
                 <h5>Add Comment :</h5>
                 <div className="form">
                   <Formik
@@ -302,7 +267,7 @@ const BlogDetails = () => {
                     )}
                   </Formik>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
