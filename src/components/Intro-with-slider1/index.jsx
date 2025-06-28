@@ -139,7 +139,7 @@ const IntroWithSlider1 = ({ sliderRef }) => {
               </h1>
             </Split>
             {slide?.content && <p>{slide.content}</p>}
-            <Link href="/contact">
+            <Link href="/project-details">
               <a className="btn-curve btn-lit mt-30">
                 <span>Look More</span>
               </a>
@@ -174,17 +174,15 @@ const IntroWithSlider1 = ({ sliderRef }) => {
         ></div>
 
         <div className="social-icon">
-          <a href="#0">
+          <a href="https://www.facebook.com/thriftizer/">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a href="#0">
-            <i className="fab fa-twitter"></i>
+          <a href="https://www.linkedin.com/company/thriftizer/">
+            <i className="fab fa-linkedin"></i>
           </a>
-          <a href="#0">
-            <i className="fab fa-behance"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-pinterest-p"></i>
+
+          <a href="https://www.instagram.com/thriftizersolutionsllp">
+            <i className="fab fa-instagram"></i>
           </a>
         </div>
       </div>

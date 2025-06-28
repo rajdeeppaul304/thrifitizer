@@ -77,18 +77,16 @@ const Footer = ({ noSubBG }) => {
               <div className="social-icon" style={{ marginTop: "2rem" }}>
                 <h3 className="custom-font stit simple-btn" style={subHeadingStyle}>Follow us</h3>
                 <div className="social" style={{ fontSize: "1.3rem" }}>
-                  <a href="#0" className="icon" style={{ marginRight: "1rem" }}>
+                  <a href="https://www.facebook.com/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#0" className="icon" style={{ marginRight: "1rem" }}>
-                    <i className="fab fa-twitter"></i>
+                  <a href="https://www.linkedin.com/company/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
+                    <i className="fab fa-linkedin"></i>
                   </a>
-                  <a href="#0" className="icon" style={{ marginRight: "1rem" }}>
-                    <i className="fab fa-pinterest"></i>
+                  <a href="https://www.instagram.com/thriftizersolutionsllp" className="icon" style={{ marginRight: "1rem" }}>
+                    <i className="fab fa-instagram"></i>
                   </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-behance"></i>
-                  </a>
+
                 </div>
               </div>
             </div>

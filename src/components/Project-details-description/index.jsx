@@ -5,7 +5,7 @@ const galleryItems = [
   {
     id: 1,
     image: "/company/Watch.jpg",
-    title: "Watch",
+    title: "fireboltt",
     url: "/fireboltt/",
     services: [],
     industries: [],
@@ -14,7 +14,7 @@ const galleryItems = [
   {
     id: 2,
     image: "/scroller/IMG-20250620-WA0037.jpg",
-    title: "Epoke",
+    title: "EpokeArt ",
     url: "/epoke/",
     services: [],
     industries: [],
@@ -32,7 +32,7 @@ const galleryItems = [
   {
     id: 4,
     image: "/company/glam.jpg",
-    title: "Glam",
+    title: "GlamPlus",
     url: "/glam/",
     services: [],
     industries: [],
@@ -50,7 +50,7 @@ const galleryItems = [
   {
     id: 6,
     image: "/company/indianethnic.jpg",
-    title: "Indian Ethnic Wear",
+    title: "The Indian Ethnic Co.",
     url: "/indian-ethnic-wear/",
     services: [],
     industries: [],
@@ -86,7 +86,7 @@ const galleryItems = [
   {
     id: 10,
     image: "/company/pulchi.jpg",
-    title: "put-chic",
+    title: "HAY Clothing",
     url: "/put-chic/",
     services: [],
     industries: [],
@@ -244,7 +244,7 @@ const ProjectDetailsDescription = () => {
           <div className="col-lg-3 col-md-4">
             <div className="htit">
               <h4>
-                <span style={{ color: "#217953" }}>02 </span> Explore Our Work
+                Explore Our Work
               </h4>
             </div>
           </div>
@@ -260,6 +260,7 @@ const ProjectDetailsDescription = () => {
           )}
           {galleryItems.map(item => (
             <div key={item.id} className="col-md-4 col-sm-6 mb-4">
+              <a href={item.url}>
               <div
                 className={`card h-100 shadow-sm custom-card${
                   hoveredCard === item.id ? " custom-card-hovered" : ""
@@ -309,6 +310,7 @@ const ProjectDetailsDescription = () => {
                   </div>
                 </div>
               </div>
+              </a>
             </div>
           ))}
         </div>

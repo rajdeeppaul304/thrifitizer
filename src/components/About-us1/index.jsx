@@ -27,7 +27,7 @@ const AboutUs1 = () => {
   return (
     <div className="about section-padding">
       {/* Featured In Section */}
-      <div className="featured-in-section" style={{marginTop: '-60px'}}>
+      <div className="featured-in-section" style={{marginTop: '-20px'}}>
         <h1 className="featured-title">We are featured in</h1>
         <div className="logos-slider" style={{  height: '120px' }}>
           <div className="logos-track" >

@@ -13,8 +13,9 @@ const NextProject = () => {
                 Whether you’re launching, scaling, or rebranding — we’d love to help.
               </p>
               <div className="d-flex justify-content-center gap-3">
-                <Link href="/book-call" passHref legacyBehavior>
+                <Link href="https://api.whatsapp.com/send/?phone=918861324254&text=Hello&type=phone_number&app_absent=0" passHref legacyBehavior>
                   <a
+                  target="_blank"
                     className="btn btn-primary"
                     style={{
                       marginLeft: "1rem",
@@ -27,7 +28,7 @@ const NextProject = () => {
                     Book a Call
                   </a>
                 </Link>
-                <Link href="/start-project" passHref legacyBehavior>
+                <Link href="/build_your_own_package" passHref legacyBehavior>
                   <a
                     className="btn btn-outline-primary start-project-btn"
                     style={{

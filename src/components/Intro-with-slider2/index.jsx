@@ -134,17 +134,15 @@ const IntroWithSlider2 = () => {
         ></div>
 
         <div className="social-icon">
-          <a href="#0">
+          <a href="https://www.facebook.com/thriftizer/">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a href="#0">
-            <i className="fab fa-twitter"></i>
+          <a href="https://www.linkedin.com/company/thriftizer/">
+            <i className="fab fa-linkedin"></i>
           </a>
-          <a href="#0">
-            <i className="fab fa-behance"></i>
-          </a>
-          <a href="#0">
-            <i className="fab fa-pinterest-p"></i>
+
+          <a href="https://www.instagram.com/thriftizersolutionsllp">
+            <i className="fab fa-instagram"></i>
           </a>
         </div>
       </div>

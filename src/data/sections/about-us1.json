@@ -10,19 +10,19 @@
     {
       "id": 1,
       "icon": "fas fa-magic",
-      "name": { "first": "Pixel", "second": "Perfect" },
+      "name": { "first": "Design ", "second": "with Purpose" },
       "wowDelay": ".3s"
     },
     {
       "id": 2,
       "icon": "fas fa-paint-brush",
-      "name": { "first": "Creative", "second": "Marketing" },
+      "name": { "first": "Strategic ", "second": "branding" },
       "wowDelay": ".5s"
     },
     {
       "id": 3,
       "icon": "fas fa-tachometer-alt",
-      "name": { "first": "Heigh", "second": "Perfomance" },
+      "name": { "first": "Results", "second": "That Scale" },
       "wowDelay": ".8s"
     }
   ]

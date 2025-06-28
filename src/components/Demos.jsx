@@ -224,7 +224,7 @@ const Preloader = ({ onFinish }) => {
         <div className="mil-pos-abs mil-animation-2">
           <div className="mil-reveal-frame">
             <p className="mil-reveal-box"></p>
-            <p className="mil-head1 mil-m1">Thriftizer Solution</p>
+            <p className="mil-head1 mil-m1">THRIFTIZER SOLUTIONS LLP</p>
           </div>
         </div>
       </div>

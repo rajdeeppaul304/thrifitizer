@@ -133,10 +133,10 @@ const Services4 = ({ withBG, withPadding, halfBG, withOutTitle }) => {
                   {/* Back Side */}
                   <div className="flip-card-back">
                     <p>{item.content}</p>
-                    <a href="/contact/"
+                    <a href="/about/"
                       className="btn btn-primary"
                     >
-                      Contact Us
+                      VIEW MORE
                     </a>
                   </div>
                 </div>

@@ -45,7 +45,7 @@ const Clients1 = ({ theme, subBG }) => {
                         )}
                         <Split>
                           <a
-                            href="#0"
+                            // href="#0"
                             className="link words chars splitting"
                             data-splitting
                           >
@@ -95,7 +95,7 @@ const Clients1 = ({ theme, subBG }) => {
                         )}
                         <Split>
                           <a
-                            href="#0"
+                            // href="#0"
                             className="link words chars splitting"
                             data-splitting
                           >

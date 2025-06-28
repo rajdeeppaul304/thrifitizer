@@ -21,7 +21,7 @@ const PortfolioCustomColumn = ({
   }, [pageLoaded]);
 
   return (
-    <section className="portfolio section-padding pb-70">
+    <section className="portfolio section-padding ">
       {!hideSectionTitle && (
         <div className="container">
           <div className="sec-head">
@@ -65,7 +65,7 @@ const PortfolioCustomColumn = ({
           >
             {/* added border radius */}
             <div className="item-img" style={{ borderRadius: "20px" }}>
-              <Link href="/project-details2/">
+              <Link href={item.link}>
                 <a className="imago wow">
                   <img src={item.image} alt="image" />
                   <div className="item-img-overlay"></div>

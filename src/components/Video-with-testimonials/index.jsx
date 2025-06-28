@@ -1,18 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Split from '../Split';
+import React, { useState, useEffect } from "react";
+import Split from "../Split";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ModalVideo from "react-modal-video";
-import "react-modal-video/css/modal-video.css";
 
 const VideoWithTestimonials = () => {
-  const [isOpen, setOpen] = React.useState(false);
-  React.useEffect(() => {
+  const [isOpen, setOpen] = useState(false);
+
+  useEffect(() => {
     console.clear();
   }, []);
-  const settings = {
+
+  const sliderSettings = {
     dots: true,
     infinite: true,
     arrows: false,
@@ -20,8 +20,9 @@ const VideoWithTestimonials = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
-    <section className="block-sec">
+    <section className="block-sec" style={{ marginBottom: '6rem' }}>
       <div
         className="background bg-img section-padding pb-0"
         style={{ backgroundImage: `url(/img/slid/1.jpg)` }}
@@ -29,25 +30,17 @@ const VideoWithTestimonials = () => {
       >
         <div className="container">
           <div className="row">
+            {/* Video Area */}
             <div className="col-lg-6">
               <div className="vid-area">
                 <div className="vid-icon">
-                  {typeof window !== "undefined" && (
-                    <ModalVideo
-                      channel="vimeo"
-                      autoplay
-                      isOpen={isOpen}
-                      videoId="127203262"
-                      onClose={() => setOpen(false)}
-                    />
-                  )}
                   <a
                     className="vid"
                     onClick={(e) => {
                       e.preventDefault();
                       setOpen(true);
                     }}
-                    href="https://vimeo.com/127203262"
+                    href="/Video/video_main.mp4"
                   >
                     <div className="vid-butn">
                       <span className="icon">
@@ -60,12 +53,15 @@ const VideoWithTestimonials = () => {
                 <div className="cont">
                   <Split>
                     <h3 className="wow" data-splitting>
-                      So that&apos;s us. There&apos;s no other way to put it.
+                      Driven by Strategy, <br />Powered by Results
+
                     </h3>
                   </Split>
                 </div>
               </div>
             </div>
+
+            {/* Testimonials */}
             <div className="col-lg-5 offset-lg-1">
               <div className="testim-box">
                 <div className="head-box">
@@ -76,79 +72,86 @@ const VideoWithTestimonials = () => {
                     What Client&apos;s Say?
                   </h4>
                 </div>
+
                 <Slider
-                  {...settings}
+                  {...sliderSettings}
                   className="slic-item wow fadeInUp"
                   data-wow-delay=".5s"
                 >
                   <div className="item">
                     <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
+                      Thank you for the amazing work. The website turned out perfectly exactly how I imagined. Appreciate the clean design, professional work, and smooth support throughout.
+
                     </p>
                     <div className="info">
-                      <div className="img">
-                        <div className="img-box">
-                          <img src="/img/clients/1.jpg" alt="" />
-                        </div>
-                      </div>
+
                       <div className="cont">
                         <div className="author">
                           <h6 className="author-name custom-font">
-                            Alex Regelman
+                            srinandhinitex
                           </h6>
-                          <span className="author-details">
-                            Co-founder, Colabrio
-                          </span>
+                          <div className="mb-2">
+                            <div className="stars">
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="item">
+                  <div className="item" >
                     <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
+Thriftizer fast and good work! Communication has been easy and the team has been flexible.
+
+                    I would work with them in the future for other projects, for sure.
                     </p>
                     <div className="info">
-                      <div className="img">
-                        <div className="img-box">
-                          <img src="/img/clients/2.jpg" alt="" />
-                        </div>
-                      </div>
+
                       <div className="cont">
                         <div className="author">
                           <h6 className="author-name custom-font">
-                            Alex Regelman
+                            CleanLab
                           </h6>
-                          <span className="author-details">
-                            Co-founder, Colabrio
-                          </span>
+                          <div className="mb-2">
+                            <div className="stars">
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="item">
+                                    <div className="item" >
                     <p>
-                      Nulla metus metus ullamcorper vel tincidunt sed euismod
-                      nibh volutpat velit class aptent taciti sociosqu ad
-                      litora.
+                    Got our website done quickly and the thriftizer team is amazing in understanding our needs and delivering it!
+Very patient and provide the best support 
                     </p>
                     <div className="info">
-                      <div className="img">
-                        <div className="img-box">
-                          <img src="/img/clients/3.jpg" alt="" />
-                        </div>
-                      </div>
+
                       <div className="cont">
                         <div className="author">
                           <h6 className="author-name custom-font">
-                            Alex Regelman
+                            Matapayals
                           </h6>
-                          <span className="author-details">
-                            Co-founder, Colabrio
-                          </span>
+                          <div className="mb-2">
+                            <div className="stars">
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -158,7 +161,110 @@ const VideoWithTestimonials = () => {
             </div>
           </div>
         </div>
+
+        {/* Local Video Modal */}
+        {isOpen && (
+          <div className="video-modal">
+            <div className="overlay" onClick={() => setOpen(false)}></div>
+            <div className="video-content">
+              <video src="/Video/video_main.mp4" controls autoPlay />
+            </div>
+          </div>
+        )}
       </div>
+
+
+
+
+
+
+      <div
+        className={'skills-circle pt-50 '}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-7">
+              <div className="">
+                <div>
+                  At Thriftizer, we don’t just deliver services, we build success stories. Our team combines creative thinking, data-driven decisions, and deep industry insight to help brands scale with confidence and clarity.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* Inline Styles */}
+      <style jsx>{`
+        .vid-butn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 60px;
+          height: 60px;
+          background: #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          transition: background 0.3s ease;
+        }
+
+        .vid-butn:hover {
+          background: #eee;
+        }
+
+        .icon i {
+          font-size: 20px;
+          color: #000;
+        }
+
+        .video-modal {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.85);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+        }
+
+        .video-modal .video-content {
+          position: relative;
+          max-width: 90vw;
+          max-height: 90vh;
+        }
+
+        .video-modal video {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+
+        .video-modal .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          cursor: pointer;
+        }
+      `}</style>
     </section>
   );
 };

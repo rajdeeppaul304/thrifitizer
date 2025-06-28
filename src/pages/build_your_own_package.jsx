@@ -592,7 +592,7 @@ const ContactUs = () => {
                         onClick={(e) => e.stopPropagation()}
                       />
                       <span className="service-label">{service.name}</span>
-                      <span className="service-price">₹{service.price.toLocaleString()}</span>
+                      {/* <span className="service-price">₹{service.price.toLocaleString()}</span> */}
                     </div>
                   ))}
                 </div>

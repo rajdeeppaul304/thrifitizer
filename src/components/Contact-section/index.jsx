@@ -31,7 +31,7 @@ const ContactSection = () => {
             <h3
               style={{ letterSpacing: "normal", textTransform: "none" }}
             >
-              Contact us.
+              Contact &nbsp;Us.
             </h3>
           </Split>
           <span

@@ -38,13 +38,12 @@ class Testimonials1 extends React.Component {
       <section
         className={`testimonials section-padding ${this.props.subBgLftstl ? "sub-bg lftstl" : ""} ${this.props.withBG ? "bg-img" : ""} ${this.props.parallaxie ? "parallaxie" : ""} ${!this.props.overlay ? "noOverlay" : ""}`}
         style={{
-          backgroundImage: `${
-            this.props.withBG && !this.props.imgSrc
-              ? "url(/img/slid/3.jpg)"
+          backgroundImage: `${this.props.withBG && !this.props.imgSrc
+              ? "url(/img/slid/happy_customer.jpg)"
               : this.props.imgSrc
-              ? `url(${this.props.imgSrc})`
-              : "none"
-          }`,
+                ? `url(${this.props.imgSrc})`
+                : "none"
+            }`,
         }}
         data-overlay-dark={`${this.props.overlay ? "9" : "0"}`}
       >
@@ -80,10 +79,7 @@ class Testimonials1 extends React.Component {
               >
                 <div className="item">
                   <p>
-                    Working with Avo digital agency to support our organic and
-                    paid social media activity has extended the marketing
-                    activities we are able to achieve platform has made
-                    collaboration easy.
+                    Thank you for the amazing work. The website turned out perfectly exactly how I imagined. Appreciate the clean design, professional work, and smooth support throughout.
                   </p>
                   <div className="info">
                     <div className="cont">
@@ -91,30 +87,42 @@ class Testimonials1 extends React.Component {
                         {this.props.subBgLftstl ? (
                           <>
                             <div className="lxleft">
-                              <div className="img">
-                                <img src="/img/clients/1.jpg" alt="" />
+                              <div className="mb-2">
+                                <div className="stars">
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                </div>
                               </div>
                             </div>
                             <div className="fxright">
                               <h6 className="author-name custom-font">
-                                Alex Regelman
+                                srinandhinitex
                               </h6>
-                              <span className="author-details">
+                              {/* <span className="author-details">
                                 Co-founder, Colabrio
-                              </span>
+                              </span> */}
                             </div>
                           </>
                         ) : (
                           <>
-                            <div className="img">
-                              <img src="/img/clients/1.jpg" alt="" />
+                            <div className="mb-2">
+                              <div className="stars">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                              </div>
                             </div>
                             <h6 className="author-name custom-font">
-                              Alex Regelman
+                              srinandhinitex
                             </h6>
-                            <span className="author-details">
+                            {/* <span className="author-details">
                               Co-founder, Colabrio
-                            </span>
+                            </span> */}
                           </>
                         )}
                       </div>
@@ -123,10 +131,9 @@ class Testimonials1 extends React.Component {
                 </div>
                 <div className="item">
                   <p>
-                    Avo started out managing our SEO efforts, but their
-                    scientific approach to digital marketing and the results
-                    they have achieved made it an easy decision for us to
-                    handover the management.
+                    Thriftizer fast and good work! Communication has been easy and the team has been flexible.
+
+                    I would work with them in the future for other projects, for sure.
                   </p>
                   <div className="info">
                     <div className="cont">
@@ -134,30 +141,42 @@ class Testimonials1 extends React.Component {
                         {this.props.subBgLftstl ? (
                           <>
                             <div className="lxleft">
-                              <div className="img">
-                                <img src="/img/clients/1.jpg" alt="" />
+                              <div className="mb-2">
+                                <div className="stars">
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                </div>
                               </div>
                             </div>
                             <div className="fxright">
                               <h6 className="author-name custom-font">
-                                Alex Regelman
+                                CleanLab
                               </h6>
-                              <span className="author-details">
+                              {/* <span className="author-details">
                                 Co-founder, Colabrio
-                              </span>
+                              </span> */}
                             </div>
                           </>
                         ) : (
                           <>
-                            <div className="img">
-                              <img src="/img/clients/1.jpg" alt="" />
+                            <div className="mb-2">
+                              <div className="stars">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                              </div>
                             </div>
                             <h6 className="author-name custom-font">
-                              Alex Regelman
+                              CleanLab
                             </h6>
-                            <span className="author-details">
+                            {/* <span className="author-details">
                               Co-founder, Colabrio
-                            </span>
+                            </span> */}
                           </>
                         )}
                       </div>
@@ -166,10 +185,7 @@ class Testimonials1 extends React.Component {
                 </div>
                 <div className="item">
                   <p>
-                    I would highly recommend Avo Digital. I worked with the team
-                    on an animation for our U+2018 Click &amp; Collect U+2019
-                    service. This team is different from any other agency I have
-                    worked with in the past.
+                    We had wonderful experience working with Thriftizer. They are excellent at their work and are very collaborative  and supportive. They helped bring our website vision to life and were truly interested finding solutions to our requirements. We’d love to work with them again and recommend them to others!
                   </p>
                   <div className="info">
                     <div className="cont">
@@ -177,30 +193,42 @@ class Testimonials1 extends React.Component {
                         {this.props.subBgLftstl ? (
                           <>
                             <div className="lxleft">
-                              <div className="img">
-                                <img src="/img/clients/1.jpg" alt="" />
+                              <div className="mb-2">
+                                <div className="stars">
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star"></i>
+                                </div>
                               </div>
                             </div>
                             <div className="fxright">
                               <h6 className="author-name custom-font">
-                                Alex Regelman
+                                Mangharam Chocolate Solutions
                               </h6>
-                              <span className="author-details">
+                              {/* <span className="author-details">
                                 Co-founder, Colabrio
-                              </span>
+                              </span> */}
                             </div>
                           </>
                         ) : (
                           <>
-                            <div className="img">
-                              <img src="/img/clients/1.jpg" alt="" />
+                            <div className="mb-2">
+                              <div className="stars">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                              </div>
                             </div>
                             <h6 className="author-name custom-font">
-                              Alex Regelman
+                              Mangharam Chocolate Solutions
                             </h6>
-                            <span className="author-details">
+                            {/* <span className="author-details">
                               Co-founder, Colabrio
-                            </span>
+                            </span> */}
                           </>
                         )}
                       </div>
