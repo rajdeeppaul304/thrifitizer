@@ -10,7 +10,8 @@ const Demos = dynamic(
 export default function Home() {
   return (
     <DarkTheme>
-      <Homepage4 />
+      {/* <Homepage4 /> */}
+    <Demos />
     </DarkTheme>
   )
 }

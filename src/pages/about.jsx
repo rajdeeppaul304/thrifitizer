@@ -12,6 +12,12 @@ import Team1 from "../components/Team1";
 import VideoWithTestimonials from "../components/Video-with-testimonials";
 import DarkTheme from "../layouts/Dark";
 
+
+
+
+
+
+
 const AboutDark = () => {
   const navbarRef = useRef(null);
 
