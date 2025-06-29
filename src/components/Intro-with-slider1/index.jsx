@@ -32,6 +32,8 @@ const IntroWithSlider1 = ({ sliderRef }) => {
       ref={sliderRef}
       className="slider slider-prlx fixed-slider text-center"
     >
+
+
       <div className="swiper-container parallax-slider">
         {!load ? (
           <Swiper

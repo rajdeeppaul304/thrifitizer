@@ -64,6 +64,15 @@ class Testimonials1 extends React.Component {
             data-wow-delay=".5s"
           >
             <div className="col-lg-8">
+              <style jsx>{`
+  .slic-item,
+  :global(.slick-slide) {
+    overflow: hidden;
+  }
+
+
+
+`}</style>
               <Slider
                 className="slic-item"
                 {...{
@@ -77,8 +86,8 @@ class Testimonials1 extends React.Component {
                   slidesToShow: 1,
                 }}
               >
-                <div className="item">
-                  <p>
+                <div className="item" >
+                  <p style={{width:"95%"}}>
                     Thank you for the amazing work. The website turned out perfectly exactly how I imagined. Appreciate the clean design, professional work, and smooth support throughout.
                   </p>
                   <div className="info">
@@ -129,8 +138,8 @@ class Testimonials1 extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="item">
-                  <p>
+                <div className="item" >
+                  <p style={{width:"90%"}}>
                     Thriftizer fast and good work! Communication has been easy and the team has been flexible.
 
                     I would work with them in the future for other projects, for sure.
@@ -183,8 +192,8 @@ class Testimonials1 extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="item">
-                  <p>
+                <div className="item" >
+                  <p style={{width:"90%"}}> 
                     We had wonderful experience working with Thriftizer. They are excellent at their work and are very collaborative  and supportive. They helped bring our website vision to life and were truly interested finding solutions to our requirements. We’d love to work with them again and recommend them to others!
                   </p>
                   <div className="info">

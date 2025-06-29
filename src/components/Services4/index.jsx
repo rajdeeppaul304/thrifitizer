@@ -131,7 +131,7 @@ const Services4 = ({ withBG, withPadding, halfBG, withOutTitle }) => {
               >
                 <div className="flip-card-inner">
                   {/* Front Side */}
-                  <div className="flip-card-front">
+                  <div className="flip-card-front" style={{textAlign:'center'}}>
                     <span className={`icon ${item.icon}`}></span>
                     <h6>{item.title}</h6>
                   </div>

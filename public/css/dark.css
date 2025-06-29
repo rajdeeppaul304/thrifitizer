@@ -65,6 +65,12 @@
   /* letter-spacing: 4px; */
 }
 
+
+.words .word{
+  margin-right: 12px;
+}
+
+
 body {
   color: #fff;
   background: #0c0f16;

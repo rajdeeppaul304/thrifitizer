@@ -7,7 +7,6 @@ import SwiperCore, {
   Pagination,
   Parallax,
   Mousewheel,
-  Autoplay,
 } from "swiper";
 
 import "swiper/css";
@@ -17,7 +16,7 @@ import "swiper/css/mousewheel";
 import tooltipEffect from "../../common/tooltipEffect";
 import removeSlashFromPagination from "../../common/removeSlashFromPagination";
 
-SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Parallax, Mousewheel]);
 
 const ShowcasesGrid = () => {
   const [load, setLoad] = React.useState(true);
@@ -25,39 +24,40 @@ const ShowcasesGrid = () => {
     setTimeout(() => {
       setLoad(false);
       tooltipEffect();
-      removeSlashFromPagination();
+      removeSlashFromPagination()
     });
   }, []);
 
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   const paginationRef = React.useRef(null);
-
   return (
     <header className="slider showcase-grid">
       <div id="content-carousel-container-unq-1" className="swiper-container">
         {!load ? (
           <Swiper
-            speed={3000} // Smooth continuous movement
+            speed={1000}
             mousewheel={true}
+            autoplay={true}
             loop={true}
             spaceBetween={30}
-            autoplay={{
-              delay: 0, // No delay - continuous movement
-              disableOnInteraction: false,
-              reverseDirection: false,
-            }}
-            freeMode={true} // Enable free mode for continuous scrolling
-            freeModeSticky={false} // Disable sticky stops
             navigation={{
               prevEl: navigationPrevRef.current,
               nextEl: navigationNextRef.current,
             }}
             breakpoints={{
-              0: { slidesPerView: 1 },
-              640: { slidesPerView: 2 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 4 },
+              0: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
             }}
             onBeforeInit={(swiper) => {
               swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -65,14 +65,16 @@ const ShowcasesGrid = () => {
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
-                for (let i = 0; i < swiper.slides.length; i++) {
+                for (var i = 0; i < swiper.slides.length; i++) {
                   swiper.slides[i].childNodes[0].setAttribute(
                     "data-swiper-parallax",
                     0.75 * swiper.width
                   );
                 }
+
                 swiper.params.navigation.prevEl = navigationPrevRef.current;
                 swiper.params.navigation.nextEl = navigationNextRef.current;
+
                 swiper.navigation.destroy();
                 swiper.navigation.init();
                 swiper.navigation.update();
@@ -83,12 +85,16 @@ const ShowcasesGrid = () => {
           >
             {ShowcassesFullScreenData.map((slide) => (
               <SwiperSlide key={slide.id} className="swiper-slide">
-                <Link passHref href={slide.url}>
+                <Link passHref href="/project-details2/project-details2-dark">
                   <div
-                    className="bg-img showcase-card"
+                    className="bg-img"
                     style={{
                       backgroundImage: `url(${slide.image})`,
                     }}
+                    data-tooltip-tit={
+                      slide.title.first + " " + slide.title.second
+                    }
+                    data-tooltip-sub={slide.sub}
                   ></div>
                 </Link>
               </SwiperSlide>
@@ -119,19 +125,9 @@ const ShowcasesGrid = () => {
             <span>Prev Slide</span>
           </div>
         </div>
+
         <div className="swiper-pagination dots" ref={paginationRef}></div>
       </div>
-      <style jsx global>{`
-        .showcase-card {
-          transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s;
-          will-change: transform;
-        }
-        .showcase-card:hover {
-          transform: scale(1.08);
-          z-index: 2;
-          box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-        }
-      `}</style>
     </header>
   );
 };

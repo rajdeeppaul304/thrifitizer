@@ -3,6 +3,7 @@ import React from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
 import Split from "../Split";
+import CountUp from 'react-countup';
 
 const NumbersWithVideo = ({ theme = "dark" }) => {
   const [isOpen, setOpen] = React.useState(false);
@@ -22,7 +23,8 @@ const NumbersWithVideo = ({ theme = "dark" }) => {
                 <div className="item no-bord">
                   <span className="icon pe-7s-smile"></span>
                   <h3 className="custom-font">
-                    <span className="count">  2600 </span> +
+                    {/* <span className="count">  2600 </span> + */}
+                    <CountUp end={2600} duration={5} /> +
                   </h3>
                   <Split>
                     <p className="wow txt words chars splitting" data-splitting>
@@ -35,11 +37,12 @@ const NumbersWithVideo = ({ theme = "dark" }) => {
                 <div className="item">
                   <span className="icon pe-7s-portfolio"></span>
                   <h3 className="custom-font">
-                    <span className="count">3250</span> +
+                    {/* <span className="count">3250</span> + */}
+                    <CountUp end={3250} duration={5.2} /> +
                   </h3>
                   <Split>
                     <p className="wow txt words chars splitting" data-splitting>
-                      Compleate Projects
+                      Complete Projects
                     </p>
                   </Split>
                 </div>
@@ -48,7 +51,8 @@ const NumbersWithVideo = ({ theme = "dark" }) => {
                 <div className="item">
                   <span className="icon pe-7s-cloud-download"></span>
                   <h3 className="custom-font">
-                    <span className="count">12 </span> +
+                    {/* <span className="count">12 </span> + */}
+                    <CountUp end={12} duration={5.4} /> +
                   </h3>
                   <Split>
                     <p className="wow txt words chars splitting" data-splitting>
@@ -61,7 +65,8 @@ const NumbersWithVideo = ({ theme = "dark" }) => {
                 <div className="item">
                   <span className="icon pe-7s-medal"></span>
                   <h3 className="custom-font">
-                    <span className="count">4</span>
+                    {/* <span className="count">4</span> */}
+                    <CountUp end={4} duration={5.6} /> +
                   </h3>
                   <Split>
                     <p className="wow txt words chars splitting" data-splitting>
@@ -73,53 +78,7 @@ const NumbersWithVideo = ({ theme = "dark" }) => {
             </div>
           </div>
         </div>
-        {/* {typeof window !== "undefined" && (
-          <ModalVideo
-            channel="vimeo"
-            autoplay
-            isOpen={isOpen}
-            videoId="127203262"
-            onClose={() => setOpen(false)}
-          />
-        )}
-        <div className="showreel">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-9">
-                <div className="video-box">
-                  <div className="tit-text">
-                    <Split>
-                      <h3 className="wow words chars splitting" data-splitting>
-                        Showreel
-                      </h3>
-                    </Split>
-                  </div>
-                  <div className="wow imago">
-                    <div className="img">
-                      <img src="/img/vid.jpg" alt="" />
-                    </div>
-                    <div className="vid-icon">
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setOpen(true);
-                        }}
-                        className="vid"
-                        href="https://vimeo.com/127203262"
-                      >
-                        <div className="vid-butn">
-                          <span className="icon">
-                            <i className="fas fa-play"></i>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+
       </div>
     </section>
   );

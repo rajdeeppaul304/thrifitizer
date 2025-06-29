@@ -103,7 +103,7 @@ const Homepage4 = () => {
         <Testimonials1 subBgLftstl parallaxie withBG overlay/>
         {/* <TeamWithSkills /> */}
         {/* <TrustedPartners  /> */}
-        <TrustedPartners partners={partners} />
+        <TrustedPartners partners={partners} headingText="We are Partners with" />
         {/* <BlogsThreeColumn2 subBG /> */}
         <BlogsThreeColumn1 subBG />
 

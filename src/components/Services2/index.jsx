@@ -47,13 +47,14 @@ const Services2 = () => {
     setIsModalOpen(false);
   };
 
-  const nextService = () => {
-    setCurrentServiceIndex((prev) => (prev + 1) % services.length);
-  };
+const nextService = () => {
+  window.location.href = "/build_your_own_package";  // replace with your desired URL
+};
 
-  const prevService = () => {
-    setCurrentServiceIndex((prev) => (prev - 1 + services.length) % services.length);
-  };
+const prevService = () => {
+  window.location.href = "/contact";  // replace with your desired URL
+};
+
 
   const currentService = services[currentServiceIndex];
 
@@ -339,8 +340,8 @@ const Services2 = () => {
                       e.target.style.borderColor = 'rgba(255, 255, 255, 0.2)';
                     }}
                   >
-                    <ChevronLeft size={16} />
-                    <span>Previous</span>
+                    {/* <ChevronLeft size={16} /> */}
+                    <span>Contact Us</span>
                   </button>
 
                   <button
@@ -370,8 +371,8 @@ const Services2 = () => {
                       e.target.style.transform = 'translateY(0)';
                     }}
                   >
-                    <span>Next</span>
-                    <ChevronRight size={16} />
+                    <span>Build Your Package</span>
+                    {/* <ChevronRight size={16} /> */}
                   </button>
                 </div>
               </div>

@@ -34,11 +34,11 @@ const PortfolioCustomColumn = ({
                 data-splitting
                 style={{ letterSpacing: "normal", textTransform: "none" }}
               >
-                our works.
+                Our &nbsp;Works.
               </h3>
             </Split>
             <span className="tbg text-right" style={{ letterSpacing: "normal", textTransform: "none" }}>
-              portfolio
+              Portfolio
             </span>
           </div>
         </div>
