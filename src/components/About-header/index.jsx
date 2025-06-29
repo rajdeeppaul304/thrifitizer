@@ -3,7 +3,7 @@ import React from "react";
 const AboutHeader = () => {
   return (
     <header
-      className="pages-header bg-img valign parallaxie"
+      className="pages-header bg-img valign"
       style={{ position: "relative", overflow: "hidden", height: "100vh" }}
     >
       {/* ✅ Background video */}
