@@ -1,5 +1,7 @@
 {
     "lightLogo": "/img/logo/logo.png",
     "darkLogo": "/img/logo/logo.png",
+    "lightLogo2": "/img/logo/logo2.png",
+    "darkLogo2": "/img/logo/logo2.png",
     "showLoading": true
 }

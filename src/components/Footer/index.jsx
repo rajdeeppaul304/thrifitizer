@@ -83,6 +83,8 @@ const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
                   )}
 
                 </ul>
+
+                
               </div>
 
 <div className="social-icon" style={{ marginTop: "2rem" }}>
@@ -170,7 +172,25 @@ const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
           </div>
         </div>
 
+
         <div className="copyrights text-center" style={{ fontSize: "1rem", marginTop: "2rem", letterSpacing: "normal" }}>
+<div
+  className="policy-links d-flex justify-content-center flex-column flex-md-row align-items-center text-center"
+  style={{
+    gap: "1rem",
+    fontSize: "1rem",
+    color: "#fff",
+    // marginTop: "2rem",
+      marginBottom: "1rem",
+
+  }}
+>
+  <a href="/legal/policy" style={{ color: "#fff", textDecoration: "none" }}>Privacy Policy</a>
+  <a href="/legal/tos" style={{ color: "#fff", textDecoration: "none" }}>Terms of Service</a>
+  <a href="/legal/contact_info" style={{ color: "#fff", textDecoration: "none" }}>Contact Information</a>
+  <a href="/legal/refund" style={{ color: "#fff", textDecoration: "none" }}>Refund Policy</a>
+</div>
+
           <p>© 2025 Thriftizer Solutions LLP.</p>
         </div>
       </div>

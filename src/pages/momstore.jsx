@@ -45,7 +45,7 @@ const ProjectDetails3Dark = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="The Mom Store"  subText="The Mom Store"/>
+      <ProjectDetails2Header images={images} Text="The Mom Store"  subText="https://themomstore.in/"/>
       <ProjectDetails2Introduction projectName="The Mom Store" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

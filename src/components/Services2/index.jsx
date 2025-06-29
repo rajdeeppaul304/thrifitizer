@@ -7,7 +7,7 @@ const Services2 = () => {
 
   const services = [
     {
-      title: "Digital Marketing",
+      title: " 360° performance marketing",
       subtitle: "Performance Driven",
       description: "Our digital marketing services are designed to scale your brand profitably across multiple channels. From Meta and Google Ads to performance marketing strategies, we focus on optimizing every customer touchpoint. We analyze your audience behavior, create engaging ad creatives, set up retargeting funnels, and monitor performance with real-time analytics to ensure high ROI and sustainable growth."
     },
@@ -62,12 +62,25 @@ const prevService = () => {
     <>
       <section className="services section-padding">
         <div className="container">
+                  { (
+          <div className="sec-head custom-font text-center" style={{marginBottom:'0px', marginTop:'50px'}}>
+            <h6 className="wow fadeIn" data-wow-delay=".5s">
+              Best Features
+            </h6>
+            {/* <Split> */}
+              <h3 className="wow words chars splitting" data-splitting>
+                Services.
+              </h3>
+            {/* </Split> */}
+            <span className="tbg">Services</span>
+          </div>
+        )}
 <div className="row rone">
   <div className="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
     <div className="mas-item" onClick={() => openModal(0)} style={{cursor: 'pointer'}}>
       <span className="icon fas fa-desktop"></span>
       <h6>
-        Digital  <br /> Marketing
+        360° performance  <br />   marketing
       </h6>
       <div className="text-right">
         <a 

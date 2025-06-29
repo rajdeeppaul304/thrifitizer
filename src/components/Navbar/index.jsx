@@ -3,12 +3,12 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import Link from "next/link";
 import appData from "../../data/app.json";
-import { handleMobileDropdown, handleSearch } from "../../common/navbar";
+import { handleDropdown, handleMobileDropdown, handleSearch } from "../../common/navbar";
 
 const Navbar = ({ lr, nr, theme }) => {
-  React.useEffect(() => {
-    handleSearch();
-  }, []);
+  // React.useEffect(() => {
+  //   handleSearch();
+  // }, []);
   return (
     <nav
       ref={nr}
@@ -25,17 +25,32 @@ const Navbar = ({ lr, nr, theme }) => {
       `}</style>
       <div className="container">
         <Link href="/" legacyBehavior>
-          <a className="logo">
-            {theme ? (
-              theme === "themeL" ? (
-                <img ref={lr} src={appData.darkLogo} alt="logo" style={{ width: "80px" }} />
-              ) : (
-                <img ref={lr} src={appData.lightLogo} alt="logo" style={{ width: "80px" }} />
-              )
-            ) : (
-              <img ref={lr} src={appData.lightLogo} alt="logo" style={{ width: "80px" }} />
-            )}
-          </a>
+<div className="logo-group d-flex align-items-center">
+  <a className="logo mr-2" style={{ width: "90px" , marginRight:'45px'}}>
+    {theme ? (
+      theme === "themeL" ? (
+        <img ref={lr} src={appData.darkLogo} alt="logo" style={{ width: "100px" , marginRight:'45px'}} />
+      ) : (
+        <img ref={lr} src={appData.lightLogo} alt="logo" style={{ width: "100px", marginRight:'45px' }} />
+      )
+    ) : (
+      <img ref={lr} src={appData.lightLogo} alt="logo" style={{ width: "100px", marginRight:'45px' }} />
+    )}
+  </a>
+
+  <a className="logo">
+    {theme ? (
+      theme === "themeL" ? (
+        <img src={appData.darkLogo2} alt="logo 2" style={{ width: "100px", marginRight:'25px' }} />
+      ) : (
+        <img src={appData.lightLogo2} alt="logo 2" style={{ width: "100px", marginRight:'25px' }} />
+      )
+    ) : (
+      <img src={appData.lightLogo2} alt="logo 2" style={{ width: "100px", marginRight:'25px' }} />
+    )}
+  </a>
+</div>
+
         </Link>
 
         <button
@@ -60,6 +75,37 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">Home</a>
               </Link>
             </li>
+                        <li className="nav-item dropdown" onClick={handleDropdown}>
+                          <span
+                            className="nav-link dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Services
+                          </span>
+                          <div className="dropdown-menu">
+                            <Link href="/services/360_degree_marketing">
+                              <a className="dropdown-item">360 Degree Marketing</a>
+                            </Link>
+                            <Link href="/services/brand_strategy">
+                              <a className="dropdown-item">Brand Strategy</a>
+                            </Link>
+                            <Link href="/services/email_marketing">
+                              <a className="dropdown-item">Email Marketing</a>
+                            </Link>
+                            <Link href="/services/influencer_affiliate">
+                              <a className="dropdown-item">Influencer Affiliate</a>
+                            </Link>
+                            <Link href="/services/seo_content">
+                              <a className="dropdown-item">Seo Content</a>
+                            </Link>
+                            <Link href="/services/social_media_management">
+                              <a className="dropdown-item">Social Media Management</a>
+                            </Link>
+                          </div>
+                        </li>
             {/* <li className="nav-item">
               <Link href="/works3/works3-dark/" legacyBehavior>
                 <a className="nav-link">Services</a>
@@ -91,26 +137,25 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
           </ul>
-          <div className="search">
-            <span className="icon pe-7s-search cursor-pointer"></span>
-            <div className="search-form text-center custom-font">
-              <Formik
-                initialValues={{
-                  search: "",
-                }}
-                onSubmit={async (values, { resetForm }) => {
-                  alert(JSON.stringify(values, null, 2));
-                  resetForm();
-                }}
-              >
-                {() => (
-                  <Form>
-                    <Field type="text" name="search" placeholder="Search" />
-                  </Form>
-                )}
-              </Formik>
-              <span className="close pe-7s-close cursor-pointer"></span>
-            </div>
+          <div className="icons_ search"
+          style={{
+                display: 'flex',
+                gap: '20px',
+                alignItems: 'center',
+                textAlign: 'center',
+                justifyContent: 'center'
+          }}    
+          >
+          <a href="https://www.facebook.com/thriftizer/">
+            <i className="  fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/thriftizer/">
+            <i className=" fab fa-linkedin"></i>
+          </a>
+
+          <a href="https://www.instagram.com/thriftizersolutionsllp">
+            <i className="fab fa-instagram"></i>
+          </a>
           </div>
         </div>
       </div>

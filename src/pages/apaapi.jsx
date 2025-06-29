@@ -44,7 +44,7 @@ const ProjectDetails5Dark = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Apaapi"  subText="Apaapi"/>
+      <ProjectDetails2Header images={images} Text="Apaapi"  subText="https://apaapi.com/"/>
       <ProjectDetails2Introduction projectName="Apaapi" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

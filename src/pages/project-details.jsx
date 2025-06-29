@@ -15,14 +15,20 @@ import TrustedPartners from "../components/Trusted-Partners";
 import Footer from "../components/Footer";
 import AboutHeader from "../components/portfolio_header";
 
+const partners1 = [
+  { id: 1, name: 'Google', image: '/trustedPartners/google.png' },
+  { id: 2, name: 'Meta', image: '/trustedPartners/meta.png' },
+  { id: 3, name: 'Omnisend', image: '/trustedPartners/omnisend.png' },
+  { id: 4, name: 'Shopify', image: '/trustedPartners/Shopify.png' }
+];
 
-
-const partners = [
+const partners2 = [
   { id: 1, name: 'Google', image: '/Awards/1.jpg' },
   { id: 2, name: 'Meta', image: '/Awards/2.png' },
   { id: 3, name: 'Omnisend', image: '/Awards/3.png' },
   { id: 4, name: 'Shopify', image: '/Awards/4.jpg' }
 ];
+
 
 
 
@@ -86,7 +92,7 @@ const ProjectDetailsDark = () => {
       <AboutHeader/>
       <ProjectDetailsIntroduction />
       <NumbersWithVideo/>
-      <TrustedPartners partners={partners} headingText="Our Achievements."/>
+            <TrustedPartners partners={partners1} headingText="Our Achievements."/>
 
       {/* <ProjectDetailsImages /> */}
       <ProjectDetailsDescription />
@@ -95,6 +101,8 @@ const ProjectDetailsDark = () => {
         videoType="vimeo"
         videoId={127203262}
       /> */}
+            <TrustedPartners partners={partners2} headingText="Our Achievements."/>
+
               <Testimonials1 subBgLftstl parallaxie withBG overlay/>
 
       <NextProject

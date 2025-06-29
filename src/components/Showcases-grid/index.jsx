@@ -96,31 +96,39 @@ const ShowcasesGrid = () => {
           </Swiper>
         ) : null}
       </div>
-      <div className="txt-botm">
-        <div
-          ref={navigationNextRef}
-          className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
-        >
-          <div>
-            <span>Next Slide</span>
-          </div>
-          <div>
-            <i className="fas fa-chevron-right"></i>
-          </div>
-        </div>
-        <div
-          ref={navigationPrevRef}
-          className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
-        >
-          <div>
-            <i className="fas fa-chevron-left"></i>
-          </div>
-          <div>
-            <span>Prev Slide</span>
-          </div>
-        </div>
-        <div className="swiper-pagination dots" ref={paginationRef}></div>
-      </div>
+<div className="txt-botm">
+  <div
+    ref={navigationNextRef}
+    className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
+  >
+    <div>
+      <span>Next Slide</span>
+    </div>
+    <div>
+      <i className="fas fa-chevron-right"></i>
+    </div>
+  </div>
+
+  {/* Centered Text */}
+  <div className="center-text">
+    <span>Our Best Clients</span>
+  </div>
+
+  <div
+    ref={navigationPrevRef}
+    className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
+  >
+    <div>
+      <i className="fas fa-chevron-left"></i>
+    </div>
+    <div>
+      <span>Prev Slide</span>
+    </div>
+  </div>
+
+  <div className="swiper-pagination dots" ref={paginationRef}></div>
+</div>
+
       <style jsx global>{`
         .showcase-card {
           transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s;
@@ -131,6 +139,29 @@ const ShowcasesGrid = () => {
           z-index: 2;
           box-shadow: 0 8px 32px rgba(0,0,0,0.18);
         }
+          .txt-botm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px 0;
+}
+
+.center-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #75dab4; /* Adjust to match your design */
+  z-index: 1;
+  pointer-events: none; /* Allows clicks to pass through */
+}
+     .swiper-nav-ctrl{
+        display:none;
+
+    }
+
       `}</style>
     </header>
   );
