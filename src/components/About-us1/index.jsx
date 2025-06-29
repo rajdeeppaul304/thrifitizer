@@ -171,7 +171,7 @@ const AboutUs1 = () => {
   height: 100px;
   object-fit: contain; /* keeps aspect ratio without distortion */
   display: block;
-  opacity: 0.8;
+  // opacity: 0.8;
   transition: filter 0.3s, opacity 0.3s;
   margin: 0 auto;
 }

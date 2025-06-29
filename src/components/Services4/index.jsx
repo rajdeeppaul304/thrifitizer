@@ -45,7 +45,7 @@ const flipCardStyles = `
 .flip-card-front .icon {
   font-size: 48px;
   margin-bottom: 18px;
-  color: #217953; /* green shade */
+  color: #75dab4; /* green shade */
 }
 .flip-card-front h6 {
   font-size: 1.25rem;
@@ -55,7 +55,7 @@ const flipCardStyles = `
 }
 .flip-card-back {
   transform: rotateY(180deg);
-  background: #217953;
+  background: #75dab4;
   color: #fff;
   z-index: 3;
 }
@@ -65,7 +65,7 @@ const flipCardStyles = `
 }
 .flip-card-back .btn {
   background: #fff;
-  color: #217953;
+  color: #75dab4;
   border: none;
   padding: 8px 22px;
   border-radius: 24px;
@@ -75,8 +75,13 @@ const flipCardStyles = `
 }
 .flip-card-back .btn:hover {
   background: #f3f3f3;
-  color: #217953;
+  color: #75dab4;
 }
+.flip-card-back p{
+color:white;
+}
+
+
 `;
 
 const Services4 = ({ withBG, withPadding, halfBG, withOutTitle }) => {

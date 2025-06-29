@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "lightImage": "/Our clients/dotkey.jpg",
-    "darkImage": "/Our clients/dotkey.jpg",
+    "lightImage": "/Our clients/1.jpg",
+    "darkImage": "/Our clients/1.jpg",
     "url": "Thriftizer Solutions"
   },
   {
     "id": 2,
-    "lightImage": "/Our clients/leafy_affair.jpeg",
-    "darkImage": "/Our clients/leafy_affair.jpeg",
+    "lightImage": "/Our clients/2.jpg",
+    "darkImage": "/Our clients/2.jpg",
     "url": "Thriftizer Solutions"
   },
   {
     "id": 3,
-    "lightImage": "/Our clients/Screenshot_2025_0625_131316.png",
-    "darkImage": "/Our clients/Screenshot_2025_0625_131316.png",
+    "lightImage": "/Our clients/3.jpg",
+    "darkImage": "/Our clients/3.jpg",
     "url": "Thriftizer Solutions"
   },
   {
     "id": 4,
-    "lightImage": "/Our clients/ishqe.png",
-    "darkImage": "/Our clients/ishqe.png",
+    "lightImage": "/Our clients/4.jpg",
+    "darkImage": "/Our clients/4.jpg",
     "url": "Thriftizer Solutions"
   },
   {
     "id": 5,
-    "lightImage": "/Our clients/himalaya.jpeg",
-    "darkImage": "/Our clients/himalaya.jpeg",
+    "lightImage": "/Our clients/5.jpg",
+    "darkImage": "/Our clients/5.jpg",
     "url": "Thriftizer Solutions"
   },
   {
     "id": 6,
-    "lightImage": "/Our clients/onna.jpeg",
-    "darkImage": "/Our clients/onna.jpeg",
+    "lightImage": "/Our clients/6.jpg",
+    "darkImage": "/Our clients/6.jpg",
     "url": "Thriftizer Solutions"
   },
   {
     "id": 7,
-    "lightImage": "/Our clients/snowfoam.png",
-    "darkImage": "/Our clients/snowfoam.png",
+    "lightImage": "/Our clients/7.jpg",
+    "darkImage": "/Our clients/7.jpg",
     "url": "Thriftizer Solutions"
   },
   {
     "id": 8,
-    "lightImage": "/Our clients/Screenshot_2025_0625_134708.png",
-    "darkImage": "/Our clients/Screenshot_2025_0625_134708.png",
+    "lightImage": "/Our clients/8.jpg",
+    "darkImage": "/Our clients/8.jpg",
     "url": "Thriftizer Solutions"
   }
 ]

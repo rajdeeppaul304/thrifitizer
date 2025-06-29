@@ -82,7 +82,7 @@ const Services2 = () => {
   </div>
   <div className="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
     <div className="mas-item" onClick={() => openModal(1)} style={{cursor: 'pointer'}}>
-      <span className="icon fas fa-camera"></span>
+      <span className="icon fas fa-camera " ></span>
       <h6>
         Social Media  <br /> Management
       </h6>
@@ -92,7 +92,7 @@ const Services2 = () => {
           href="/contact"
           onClick={(e) => e.stopPropagation()}
         >
-          <i className="fas fa-chevron-right"></i>
+          <i className="fas fa-chevron-right" ></i>
         </a>
       </div>
       <div className="bg-color"></div>
