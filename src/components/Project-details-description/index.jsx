@@ -5,7 +5,7 @@ const galleryItems = [
   {
     id: 1,
     image: "/company/Watch.jpg",
-    title: "fireboltt",
+    title: "Fire Boltt",
     url: "/fireboltt/",
     services: [],
     industries: [],
@@ -41,7 +41,7 @@ const galleryItems = [
   {
     id: 5,
     image: "/company/htrz.jpg",
-    title: "HTRZ",
+    title: "HTRZMODZ",
     url: "/htrz/",
     services: [],
     industries: [],
@@ -95,7 +95,7 @@ const galleryItems = [
   {
     id: 11,
     image: "/scroller/IMG-20250621-WA0006.jpg",
-    title: "safar Furniture",
+    title: "Insaraf Furniture",
     url: "/safar-furniture/",
     services: [],
     industries: [],
@@ -104,7 +104,7 @@ const galleryItems = [
   {
     id: 12,
     image: "/scroller/IMG-20250621-WA0005.jpg",
-    title: "design house",
+    title: "The Design House Dubai",
     url: "/design-house/",
     services: [],
     industries: [],
@@ -240,7 +240,7 @@ const ProjectDetailsDescription = () => {
         }
       `}</style>
       <div className="container">
-        <div className="row align-items-center mb-5">
+        <div className="row align-items-center mb-25">
           <div className="col-lg-3 col-md-4">
             <div className="htit">
               <h4>

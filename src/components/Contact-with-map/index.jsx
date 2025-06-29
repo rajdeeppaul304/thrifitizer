@@ -191,19 +191,26 @@ React.useEffect(() => {
                     <span>Book a Call</span>
                   </button> */}
                   <a
-  href="https://api.whatsapp.com/send/?phone=918861324254&text=Hello&type=phone_number&app_absent=0"
-  target="_blank"
-  rel="noopener noreferrer"
-  className={`btn-curve ${theme === 'dark' ? 'btn-lit' : 'btn-color'} mr-3 custom-hover-btn`}
->
-  <span>Book a Call</span>
-</a>
+                    href="https://api.whatsapp.com/send/?phone=918861324254&text=Hello&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`btn-curve ${theme === 'dark' ? 'btn-lit' : 'btn-color'} mr-3 custom-hover-btn`}
+                  >
+                    <span>Book a Call</span>
+                  </a>
 
+                  <a
+                    href="/build_your_own_package"
 
-
-                  <button className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} custom-hover-btn`}>
+                    rel="noopener noreferrer"
+                    className={`btn-curve ${theme === 'dark' ? 'btn-lit' : 'btn-color'} mr-3 custom-hover-btn`}
+                  >
                     <span>Start a Project</span>
-                  </button>
+                  </a>
+
+                  {/* <button className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} custom-hover-btn`}>
+                    <span>Start a Project</span>
+                  </button> */}
                 </div>
               </div>
             </div>
