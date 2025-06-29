@@ -154,7 +154,7 @@ const AboutUs1 = () => {
           height: 70px;
         }
         .logos-track {
-        background-color:black;
+        background-color:#0b0d0b;
           display: flex;
           width: calc(200% + 40px);
           animation: scroll-logos 18s linear infinite;
