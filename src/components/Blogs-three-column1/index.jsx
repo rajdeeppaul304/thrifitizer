@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Split from '../Split';
 
+
+
 const BlogsThreeColumn1 = ({ subBG, newHome }) => {
   return (
     <section className={`blog-grid section-padding ${subBG ? "sub-bg" : ""}`}>

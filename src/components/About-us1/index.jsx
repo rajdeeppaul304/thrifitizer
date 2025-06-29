@@ -2,6 +2,13 @@
 import React from "react";
 import Split from "../Split";
 import AboutUs1Date from "../../data/sections/about-us1.json";
+
+import "swiper/css";
+import "swiper/css/autoplay";
+import { Autoplay, FreeMode  } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
   // "/Wearefeaturedin/file_000000000d3461f79b65c32d7e2658d3.png",
   // "/Wearefeaturedin/file_00000000c84061f89fbb6cbbadcb1de6.png",
   // "/Wearefeaturedin/file_000000006c6061fd8485ddd06b2b21ee.png",
@@ -28,15 +35,40 @@ const AboutUs1 = () => {
       {/* Featured In Section */}
       <div className="featured-in-section" style={{marginTop: '-20px'}}>
         <h1 className="featured-title">We Are Featured In.</h1>
-        <div className="logos-slider" style={{  height: '120px' }}>
-          <div className="logos-track" >
-            {featuredLogos.concat(featuredLogos).map((logo, idx) => (
-              <div className="logo-item" key={idx}>
-                <img src={logo} alt={`logo${idx + 1}`} />
-              </div>
-            ))}
-          </div>
+
+        <div className="logos-track2">
+        <Swiper
+          modules={[Autoplay, FreeMode]}
+          loop={true}
+          freeMode={true}
+          allowTouchMove={false}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          slidesPerView={5.5}
+          spaceBetween={32}
+          speed={5000}
+          className="logo-swiper"
+          breakpoints={{
+            320: { slidesPerView: 2.5 },
+            576: { slidesPerView: 3.5 },
+            768: { slidesPerView: 4.5 },
+            992: { slidesPerView: 5.5 },
+          }}
+        >
+
+        {featuredLogos.map((logo, idx) => (
+          <SwiperSlide key={idx}>
+            <div className="logo-item">
+              <img src={logo} alt={`logo ${idx + 1}`} style={{ filter: "grayscale(20%)", maxHeight: "100px", objectFit: "contain" }} />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
         </div>
+
+
       </div>
       <div className="container">
         <div className="row about-section">
@@ -153,11 +185,11 @@ const AboutUs1 = () => {
           position: relative;
           height: 70px;
         }
-        .logos-track {
+        .logos-track2 {
         background-color:#0b0d0b;
           display: flex;
-          width: calc(200% + 40px);
-          animation: scroll-logos 18s linear infinite;
+          // width: calc(200% + 40px);
+          // animation: scroll-logos 18s linear infinite;
         }
 .logo-item {
   flex: 0 0 120px;
