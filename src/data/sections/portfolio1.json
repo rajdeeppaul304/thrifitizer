@@ -4,41 +4,41 @@
     "title": "Apaapi",
     "description": "We dive deep into your brand, target audience, and market position.",
     "image": "/company/apaaag.jpg",
-    "link":"apaapi"
+    "link":"/apaapi"
   },
   {
     "id": 2,
     "title": "Moborr",
     "description": "Using insights and goals, we design a custom marketing plan focused on ROI.",
     "image": "/company/Monborr.jpg",
-    "link":"eroke"
+    "link":"/moborr"
   },
   {
     "id": 3,
     "title": "Curious Cub ",
     "description": "Our team brings the plan to life — from creatives to campaigns, we handle it all.",
     "image": "/company/curious.jpg",
-    "link":"eroke"
+    "link":"/curious_cub"
   },
   {
     "id": 4,
     "title": "Colonial Candle",
     "description": "With data as our compass, we constantly analyze, test, and improve to ensure results.",
     "image": "/company/colonial.jpg",
-    "link":"eroke"
+    "link":"/colonial_candle"
   },
   {
     "id": 5,
     "title": "Mom Store",
     "description": "We provide transparent reporting and clear communication to keep you informed every step of the way.",
     "image": "/scroller/IMG-20250621-WA0001.jpg",
-    "link":"eroke"
+    "link":"/momstore"
   },
   {
     "id": 6,
     "title": "Glam Plus",
     "description": "Building on proven success, we scale campaigns and introduce innovative strategies for continued growth.",
     "image": "/scroller/IMG-20250620-WA0045.jpg",
-    "link":"eroke"
+    "link":"/glam"
   }
 ]

@@ -35,11 +35,11 @@ const ProjectDetails3Dark = () => {
   // Extract image paths from the data
   const images = '/momstore/banner.jpg';
   const imagePaths = [
-    '/momstore/1.jpg',
-    '/momstore/2.jpg',
-    '/momstore/3.jpg',
-    '/momstore/4.jpg',
-    '/momstore/5.jpg',
+    '/momstore/a.jpg',
+    '/momstore/b.jpg',
+    '/momstore/c.jpg',
+    '/momstore/d.jpg',
+    '/momstore/e.jpg',
 
   ];
   return (

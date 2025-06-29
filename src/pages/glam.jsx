@@ -33,13 +33,13 @@ const ProjectDetails3Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/Glam/banner1.png';
+  const images = '/Glam/banner.jpg';
   const imagePaths = [
-    '/Glam/Screenshot_2025_0625_083402.png',
-    '/Glam/Screenshot_2025_0625_083546.png',
-    '/Glam/Screenshot_2025_0625_083612.png',
-    '/Glam/Screenshot_2025_0625_083507.png',
-    '/Glam/Screenshot_2025_0625_083520.png',
+    '/Glam/1.jpg',
+    '/Glam/2.jpg',
+    '/Glam/3.jpg',
+    '/Glam/4.jpg',
+    '/Glam/5.jpg',
   ];
   return (
     <DarkTheme>
