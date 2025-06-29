@@ -89,7 +89,7 @@ const preloaderStyles = `
     padding: 0;
   }
   .mil-preloader .mil-preloader-animation .mil-pos-abs .mil-head1 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     padding: 0 0 0 0;
   }
 }

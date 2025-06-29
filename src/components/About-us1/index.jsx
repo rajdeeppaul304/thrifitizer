@@ -27,7 +27,7 @@ const AboutUs1 = () => {
     <div className="about section-padding">
       {/* Featured In Section */}
       <div className="featured-in-section" style={{marginTop: '-20px'}}>
-        <h1 className="featured-title" style={{fontSize:'4em'}}>We Are Featured In.</h1>
+        <h1 className="featured-title">We Are Featured In.</h1>
         <div className="logos-slider" style={{  height: '120px' }}>
           <div className="logos-track" >
             {featuredLogos.concat(featuredLogos).map((logo, idx) => (
@@ -142,7 +142,7 @@ const AboutUs1 = () => {
           text-align: center;
         }
         .featured-title {
-          font-size: 2.3rem;
+          font-size: 4rem;
           font-weight: 600;
           margin-bottom: 25px;
           letter-spacing: 1px;
@@ -218,6 +218,12 @@ const AboutUs1 = () => {
         }
 
         @media (max-width: 575px) {
+                .featured-title {
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin-bottom: 25px;
+          letter-spacing: 1px;
+        }
           .features-list li {
             flex: 1 1 100%;
           }

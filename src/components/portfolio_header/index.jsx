@@ -46,7 +46,7 @@ const AboutHeader = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="cont text-center">
-              <h1 className="text-white mb-30">Work That Speaks Volumes</h1>
+              <div className="text-white mb-30 responsive-heading2">Work That Speaks Volumes</div>
               
               {/* ✅ Call-to-action Button */}
               <p href="/contact" className=" mt-20">
@@ -57,6 +57,25 @@ const AboutHeader = () => {
           </div>
         </div>
       </div>
+            <style jsx>{`
+        .responsive-heading2 {
+          font-size: 4rem;
+          font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+          .responsive-heading2 {
+            font-size: 2.8rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .responsive-heading2 {
+            font-size: 2rem;
+          }
+        }
+      `}</style>
+
     </header>
   );
 };

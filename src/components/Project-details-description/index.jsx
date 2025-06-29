@@ -85,7 +85,7 @@ const galleryItems = [
   },
   {
     id: 10,
-    image: "/Heyclothing/Screenshot_2025_0625_125119.png",
+    image: "/company/hy_2.jpg",
     title: "HAY Clothing",
     url: "/heyclothing/",
     services: [],

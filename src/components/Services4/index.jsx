@@ -136,12 +136,14 @@ const Services4 = ({ withBG, withPadding, halfBG, withOutTitle }) => {
                     <h6>{item.title}</h6>
                   </div>
                   {/* Back Side */}
-                  <div className="flip-card-back">
+                  <div className="flip-card-back btn-">
                     <p>{item.content}</p>
                     <a href="/about/"
-                      className="btn btn-primary"
+                      className=" btn-curve btn-lit mt-30 color-black"
+
                     >
-                      VIEW MORE
+                      <span>VIEW MORE</span>
+                      
                     </a>
                   </div>
                 </div>
