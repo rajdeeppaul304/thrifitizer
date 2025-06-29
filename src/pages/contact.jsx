@@ -66,7 +66,13 @@ const Contact = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} />
-      <ContactHeader sliderRef={fixedHeader} />
+      {/* <ContactHeader sliderRef={fixedHeader} /> */}
+      <ContactHeader 
+      sliderRef={fixedHeader}
+  title="Let's Build Your Success Story Next."
+  subtitle="Whether you’re launching, scaling, or rebranding — we’d love to help."
+  backgroundText="Contact"
+/>
       <div className="main-content" ref={MainContent}>
         <ContactWithMap />
       </div>
