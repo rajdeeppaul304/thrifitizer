@@ -1940,7 +1940,19 @@ body {
       border-radius: 50%;
       border: 1px solid rgba(255, 255, 255, 0.05);
       color: #fff;
-      font-size: 13px; }
+      font-size: 30px; }
+
+
+    .contact .social-icon a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      color: #fff;
+      font-size: 30px; }
+
 
 header.simpl {
   min-height: 100vh; }

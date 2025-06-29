@@ -176,13 +176,34 @@ React.useEffect(() => {
                     Visit Us.
                   </h3>
                 </Split>
-                <div className="item">
+                <div className="item mb-40">
                   <h6>
                     24/D, 4th Floor,Friends colony ,
                     <br />
                     560068 Bangalore KA,India
                   </h6>
                 </div>
+                                <Split>
+                  <h3 className="custom-font wow" data-splitting>
+                    Follow Us.
+                  </h3>
+                </Split>
+<div className="contact">
+
+  
+                        <div className="social-icon mb-40">
+          <a href="https://www.facebook.com/thriftizer/">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/thriftizer/">
+            <i className="fab fa-linkedin"></i>
+          </a>
+
+          <a href="https://www.instagram.com/thriftizersolutionsllp">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </div>
+</div>
                 <div className="button pt-6"  style={{display:'flex', marginTop:'10px'}}>
                   {/* <button 
                     onClick={openModal}
