@@ -73,7 +73,7 @@ const PortfolioCustomColumn = ({
               </Link>
             </div>
             <div className="cont">
-              <h6 style={{ letterSpacing: "normal", textTransform: "none" }}>{item.title.toLowerCase()}</h6>
+              <h6 style={{ letterSpacing: "normal", textTransform: "none" }}>{item.title}</h6>
               <span style={{ letterSpacing: "normal", textTransform: "none" }}>{item.description.toLowerCase()}</span>
             </div>
           </div>
