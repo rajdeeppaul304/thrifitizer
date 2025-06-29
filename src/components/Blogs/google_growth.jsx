@@ -22,7 +22,7 @@ const BlogDetails = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-7 col-md-9">
-              <div className="cont text-center">
+              <div className="cont text-center" style={{paddingTop:'100px'}}>
                 <h2>Google Algorithm Updates: All Major Changes in 2025</h2>
               </div>
             </div>

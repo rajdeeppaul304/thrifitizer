@@ -5,7 +5,7 @@ import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const BlogsThreeColumn1 = ({ subBG, newHome }) => {
+const BlogsThreeColumn1 = ({ subBG, newHome, isBlogPage=false }) => {
   // Single variables for static text
   const wordpressText = "";
   const byAdminText = "by / Admin";
@@ -120,7 +120,8 @@ const BlogsThreeColumn1 = ({ subBG, newHome }) => {
           </h6>
           <Split>
             <h3 className="wow" data-splitting>
-              Our Blogs.
+              {isBlogPage ? "Also Read." : "Our Blogs."}
+              
             </h3>
           </Split>
           {!newHome && <span className="tbg">Blogs</span>}

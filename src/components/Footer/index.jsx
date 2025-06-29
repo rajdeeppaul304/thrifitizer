@@ -3,7 +3,7 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import appData from "../../data/app.json";
 
-const Footer = ({ noSubBG }) => {
+const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
   function validateEmail(value) {
     let error;
     if (!value) {
@@ -14,7 +14,6 @@ const Footer = ({ noSubBG }) => {
     return error;
   }
 
-  // Inline styles for normal text and headings
   const footerStyles = {
     fontSize: "1rem",
     lineHeight: "1.6",
@@ -29,7 +28,7 @@ const Footer = ({ noSubBG }) => {
     letterSpacing: "normal",
   };
   const subHeadingStyle = {
-    fontSize: "1.1rem",
+    fontSize: isBuildYourPackage ? "1.6rem" : "1.1rem", // Bigger if isBuildYourPackage
     fontWeight: "bold",
     marginBottom: "0.75rem",
     textTransform: "none",
@@ -40,8 +39,12 @@ const Footer = ({ noSubBG }) => {
     height: "auto",
     display: "block",
   };
+  const iconStyle = {
+    fontSize: isBuildYourPackage ? "2em" : "1.3rem",
+  };
 
   const sendEmail = (ms) => new Promise((r) => setTimeout(r, ms));
+
   return (
     <footer
       className={`footer-half ${noSubBG ? "" : "sub-bg"} section-padding pb-0`}
@@ -55,50 +58,66 @@ const Footer = ({ noSubBG }) => {
                 <a href="#0">
                   <img
                     src={`${appData.lightLogo}`}
-                    alt=""
+                    alt="logo"
                     className="logo-img"
                     style={logoImgStyle}
                   />
                 </a>
               </div>
+
               <div className="con-info custom-font">
                 <ul style={{ fontSize: "1rem", letterSpacing: "normal" }}>
-                  <li>
-                    <span style={{ fontWeight: "bold" }}>Email: </span> praveen@thriftizer.com
-                  </li>
-                  <li>
+                  {/* Only show if NOT isBuildYourPackage */}
+                  {!isBuildYourPackage && (
+                    <>
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>Email: </span> praveen@thriftizer.com
+                      </li>
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>Phone: </span> +91 8861324254
+                      </li>
+                                        <li>
                     <span style={{ fontWeight: "bold" }}>Address: </span> 24/D, 4th Floor, Friends colony, 560068 Bangalore KA, India
                   </li>
-                  <li>
-                    <span style={{ fontWeight: "bold" }}>Phone: </span> +91 8861324254
-                  </li>
+                    </>
+                  )}
+
                 </ul>
               </div>
-              <div className="social-icon" style={{ marginTop: "2rem" }}>
-                <h3 className="custom-font stit simple-btn" style={subHeadingStyle}>Follow us</h3>
-                <div className="social" style={{ fontSize: "1.3rem" }}>
-                  <a href="https://www.facebook.com/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/company/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                  <a href="https://www.instagram.com/thriftizersolutionsllp" className="icon" style={{ marginRight: "1rem" }}>
-                    <i className="fab fa-instagram"></i>
-                  </a>
 
-                </div>
-              </div>
+<div className="social-icon" style={{ marginTop: "2rem" }}>
+  <h3 className="custom-font stit simple-btn" style={subHeadingStyle}>Follow us</h3>
+  <div className="social">
+    <a href="https://www.facebook.com/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
+      <i
+        className="fab fa-facebook-f"
+        style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
+      ></i>
+    </a>
+    <a href="https://www.linkedin.com/company/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
+      <i
+        className="fab fa-linkedin"
+        style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
+      ></i>
+    </a>
+    <a href="https://www.instagram.com/thriftizersolutionsllp" className="icon" style={{ marginRight: "1rem" }}>
+      <i
+        className="fab fa-instagram"
+        style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
+      ></i>
+    </a>
+  </div>
+</div>
+
             </div>
           </div>
+
           <div className="col-lg-5 offset-lg-2">
             <div className="subscribe mb-50">
               <h3 className="custom-font stit simple-btn" style={subHeadingStyle}>Newsletter</h3>
               <p style={{ fontSize: "1rem" }}>Sign up for our newsletter!</p>
               <Formik
-                initialValues={{
-                  subscribe: "",
-                }}
+                initialValues={{ subscribe: "" }}
                 onSubmit={async (values, { resetForm }) => {
                   await sendEmail(500);
                   alert(JSON.stringify(values, null, 2));
@@ -150,12 +169,12 @@ const Footer = ({ noSubBG }) => {
             </div>
           </div>
         </div>
+
         <div className="copyrights text-center" style={{ fontSize: "1rem", marginTop: "2rem", letterSpacing: "normal" }}>
-          <p>
-            © 2025 Thriftizer Solutions LLP.
-          </p>
+          <p>© 2025 Thriftizer Solutions LLP.</p>
         </div>
       </div>
+
       <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
     </footer>
   );

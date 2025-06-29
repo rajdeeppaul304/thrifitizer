@@ -43,7 +43,12 @@ const MoodboardIntro = () => (
         {/* Title on small screens full width, margin bottom */}
         <div className="col-lg-3 col-md-4 col-12 mb-4 mb-md-0">
           <div className="htit">
-            <h4>Generate your inspiration board</h4>
+            <h5>
+              
+               <span>        VISUALIZE YOUR BRAND'S ESSENCE. </span>
+               ONE  MOODBOARD AT A TIME.
+         
+  </h5>
           </div>
         </div>
         {/* Text full width on small, aligned on medium and large */}

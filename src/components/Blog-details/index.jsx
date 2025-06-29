@@ -26,7 +26,7 @@ const BlogDetails = () => {
             </div>
           </div>
         </div>
-      </section>
+            </section>
 
 
       <div className="container">
@@ -122,7 +122,7 @@ const BlogDetails = () => {
                 </div>
               </div>
 
-              {/* <div className="pagination">
+              <div className="pagination">
                 <span>
                   <a href="#0">Prev Post</a>
                 </span>
@@ -136,7 +136,7 @@ const BlogDetails = () => {
                 <span className="text-right">
                   <a href="#0">Next Post</a>
                 </span>
-              </div> */}
+              </div>
 
               {/* <div className="comments-area">
                 <h5>Comments :</h5>

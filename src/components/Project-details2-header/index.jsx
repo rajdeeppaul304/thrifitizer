@@ -1,11 +1,16 @@
 import React from "react";
-import Link from "next/link";
 
-const ProjectDetails2Header = ({ images , Text }) => {
+const ProjectDetails2Header = ({ images, Text }) => {
   return (
     <section
-      className="page-header proj-det bg-img parallaxie valign"
-      style={{ backgroundImage: `url(${images})` }}
+      className="page-header proj-det bg-img valign"
+      style={{
+        backgroundImage: `url(${images})`,
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        height: '100vh',
+      }}
       data-overlay-dark="4"
     >
       <div className="container">
@@ -17,7 +22,6 @@ const ProjectDetails2Header = ({ images , Text }) => {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

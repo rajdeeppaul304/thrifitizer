@@ -27,7 +27,7 @@ const AboutUs1 = () => {
     <div className="about section-padding">
       {/* Featured In Section */}
       <div className="featured-in-section" style={{marginTop: '-20px'}}>
-        <h1 className="featured-title">We are featured in</h1>
+        <h1 className="featured-title" style={{fontSize:'4em'}}>We Are Featured In.</h1>
         <div className="logos-slider" style={{  height: '120px' }}>
           <div className="logos-track" >
             {featuredLogos.concat(featuredLogos).map((logo, idx) => (

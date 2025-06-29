@@ -10,7 +10,7 @@ import NextProject from "../components/Next-project";
 import SmallFooter from "../components/Small-footer";
 import Testimonials1 from "../components/Testimonials1";
 
-const ProjectDetails3Dark = () => {
+const ProjectDetails5Dark = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
@@ -33,20 +33,20 @@ const ProjectDetails3Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/momstore/banner.jpg';
+  const images = '/curious_cub/banner.jpg';
   const imagePaths = [
-    '/momstore/1.jpg',
-    '/momstore/2.jpg',
-    '/momstore/3.jpg',
-    '/momstore/4.jpg',
-    '/momstore/5.jpg',
+    '/curious_cub/1.jpg',
+    '/curious_cub/2.jpg',
+    '/curious_cub/3.jpg',
+    '/curious_cub/4.jpg',
+    '/curious_cub/5.jpg',
 
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="The Mom Store"  subText="The Mom Store"/>
-      <ProjectDetails2Introduction projectName="The Mom Store" />
+      <ProjectDetails2Header images={images} Text="Curious Cub"  subText="Curious Cub"/>
+      <ProjectDetails2Introduction projectName="Curious Cub" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       
       {/* <ProjectDetailsVideo
@@ -65,4 +65,4 @@ const ProjectDetails3Dark = () => {
   );
 };
 
-export default ProjectDetails3Dark
+export default ProjectDetails5Dark

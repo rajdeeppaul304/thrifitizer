@@ -511,10 +511,10 @@ const ContactUs = () => {
         <div className="contact-container">
           <div className="contact-content">
             <div className="contact-info">
-              <h2>Let's Build Something Amazing Together</h2>
+              <h2> CUSTOMIZE YOUR PACKAGE <br/>
+ TO MATCH YOUR AMBITION.</h2>
               <p>
-                Ready to transform your vision into reality? Our team of experts is here to help you create digital experiences that make an impact. Get in touch and let's discuss your project.
-              </p>
+Start from scratch or scale what’s working — your goals shape the services. We just make them click.              </p>
               
               <div className="info-item">
                 <svg className="info-icon" fill="currentColor" viewBox="0 0 24 24">
@@ -642,7 +642,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer isBuildYourPackage={true}  />
     </DarkTheme>
   );
 };
