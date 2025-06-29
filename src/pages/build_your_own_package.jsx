@@ -25,7 +25,7 @@ const AboutHeader = () => {
   return (
     <header
       className="pages-header bg-img valign parallaxie"
-      style={{ backgroundImage: "url(/Banner/aboutpage.jpg)" }}
+      // style={{ backgroundImage: "url(/Banner/aboutpage.jpg)" }}
       data-overlay-dark="5"
     >
       <div className="container">
@@ -34,10 +34,10 @@ const AboutHeader = () => {
             <div className="cont text-center">
               <h1>Build Your Package</h1>
               <div className="path">
-                <a href="#0">Home</a>
+                <a href="/home">Home</a>
                 <span>/</span>
-                <a href="#0" className="active">
-                  About Us
+                <a href="/build_your_own_package" className="active">
+                  Package Builder
                 </a>
               </div>
             </div>

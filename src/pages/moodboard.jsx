@@ -23,9 +23,9 @@ const MoodboardHeader = () => (
 >
   Moodboard Generator
 </h1>            <div className="path d-flex justify-content-center flex-wrap gap-1">
-              <a href="#0">Home</a>
+              <a href="/home">Home</a>
               <span>/</span>
-              <a href="#0" className="active">
+              <a href="/moodboard" className="active">
                 Moodboard
               </a>
             </div>
