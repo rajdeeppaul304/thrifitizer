@@ -61,133 +61,119 @@ const Services2 = () => {
     <>
       <section className="services section-padding">
         <div className="container">
-          <div className="row rone">
-            <div className="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
-              <div className="mas-item" onClick={() => openModal(0)} style={{cursor: 'pointer'}}>
-                <span className="icon pe-7s-monitor"></span>
-                <h6>
-                  Digital  <br /> Marketing
-                </h6>
-                <div className="text-right">
-                  <a 
-                    className="more" 
-                    href="/contact"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <i className="fas fa-chevron-right"></i>
-                  </a>
-                </div>
-                <div className="bg-color"></div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 offset-lg-1 wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div className="mas-item" onClick={() => openModal(1)} style={{cursor: 'pointer'}}>
-                <span className="icon pe-7s-camera"></span>
-                <h6>
-                  Social Media  <br /> Management
-                </h6>
-                <div className="text-right">
-                  <a 
-                    className="more" 
-                    href="/contact"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <i className="fas fa-chevron-right"></i>
-                  </a>
-                </div>
-                <div className="bg-color"></div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 offset-lg-1 wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div className="mas-item" onClick={() => openModal(2)} style={{cursor: 'pointer'}}>
-                <span className="icon pe-7s-phone"></span>
-                <h6>
-                  SEO & Content  <br /> Marketing
-                </h6>
-                <div className="text-right">
-                  <a 
-                    className="more" 
-                    href="/contact"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <i className="fas fa-chevron-right"></i>
-                  </a>
-                </div>
-                <div className="bg-color"></div>
-              </div>
-            </div>
-          </div>
-          <div className="row rtwo">
-            <div
-              className="col-lg-3 offset-lg-1 wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div className="mas-item" onClick={() => openModal(3)} style={{cursor: 'pointer'}}>
-                <span className="icon pe-7s-diskette"></span>
-                <h6>
-                  Brand Strategy <br /> & Design 
-                </h6>
-                <div className="text-right">
-                  <a 
-                    className="more" 
-                    href="/contact"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <i className="fas fa-chevron-right"></i>
-                  </a>
-                </div>
-                <div className="bg-color"></div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 offset-lg-1 wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div className="mas-item" onClick={() => openModal(4)} style={{cursor: 'pointer'}}>
-                <span className="icon pe-7s-help2"></span>
-                <h6>
-                  Influencer &  <br /> Affiliate Marketing
-                </h6>
-                <div className="text-right">
-                  <a 
-                    className="more" 
-                    href="/contact"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <i className="fas fa-chevron-right"></i>
-                  </a>
-                </div>
-                <div className="bg-color"></div>
-              </div>
-            </div>
-            <div
-              className="col-lg-3 offset-lg-1 wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div className="mas-item" onClick={() => openModal(5)} style={{cursor: 'pointer'}}>
-                <span className="icon pe-7s-arc"></span>
-                <h6>
-                  Email Marketing  <br /> & Automation
-                </h6>
-                <div className="text-right">
-                  <a 
-                    className="more" 
-                    href="/contact"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <i className="fas fa-chevron-right"></i>
-                  </a>
-                </div>
-                <div className="bg-color"></div> 
-              </div>
-            </div>
-          </div>
+<div className="row rone">
+  <div className="col-lg-3 wow fadeInUp" data-wow-delay=".4s">
+    <div className="mas-item" onClick={() => openModal(0)} style={{cursor: 'pointer'}}>
+      <span className="icon fas fa-desktop"></span>
+      <h6>
+        Digital  <br /> Marketing
+      </h6>
+      <div className="text-right">
+        <a 
+          className="more" 
+          href="/contact"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <i className="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <div className="bg-color"></div>
+    </div>
+  </div>
+  <div className="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
+    <div className="mas-item" onClick={() => openModal(1)} style={{cursor: 'pointer'}}>
+      <span className="icon fas fa-camera"></span>
+      <h6>
+        Social Media  <br /> Management
+      </h6>
+      <div className="text-right">
+        <a 
+          className="more" 
+          href="/contact"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <i className="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <div className="bg-color"></div>
+    </div>
+  </div>
+  <div className="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
+    <div className="mas-item" onClick={() => openModal(2)} style={{cursor: 'pointer'}}>
+      <span className="icon fas fa-mobile-alt"></span>
+      <h6>
+        SEO & Content  <br /> Marketing
+      </h6>
+      <div className="text-right">
+        <a 
+          className="more" 
+          href="/contact"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <i className="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <div className="bg-color"></div>
+    </div>
+  </div>
+</div>
+<div className="row rtwo">
+  <div className="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
+    <div className="mas-item" onClick={() => openModal(3)} style={{cursor: 'pointer'}}>
+      <span className="icon fas fa-palette"></span>
+      <h6>
+        Brand Strategy <br /> & Design 
+      </h6>
+      <div className="text-right">
+        <a 
+          className="more" 
+          href="/contact"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <i className="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <div className="bg-color"></div>
+    </div>
+  </div>
+  <div className="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
+    <div className="mas-item" onClick={() => openModal(4)} style={{cursor: 'pointer'}}>
+      <span className="icon fas fa-bullhorn"></span>
+      <h6>
+        Influencer &  <br /> Affiliate Marketing
+      </h6>
+      <div className="text-right">
+        <a 
+          className="more" 
+          href="/contact"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <i className="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <div className="bg-color"></div>
+    </div>
+  </div>
+  <div className="col-lg-3 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
+    <div className="mas-item" onClick={() => openModal(5)} style={{cursor: 'pointer'}}>
+      <span className="icon fas fa-envelope-open-text"></span>
+      <h6>
+        Email Marketing  <br /> & Automation
+      </h6>
+      <div className="text-right">
+        <a 
+          className="more" 
+          href="/contact"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <i className="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <div className="bg-color"></div> 
+    </div>
+  </div>
+</div>
+
         </div>
       </section>
 

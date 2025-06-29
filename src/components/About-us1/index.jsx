@@ -13,14 +13,13 @@ import AboutUs1Date from "../../data/sections/about-us1.json";
 const featuredLogos = [
 
 
-  "/Wearefeaturedin/ians.png",
-  "/Wearefeaturedin/file_000000000d3461f79b65c32d7e2658d3.png",
-  "/Wearefeaturedin/theprint.png",
-  "/Wearefeaturedin/latestly_2.jpg",
-  "/Wearefeaturedin/lokmat.png",
-  "/Wearefeaturedin/hindustan_2.png",
-  "/Wearefeaturedin/The_Business_Standard_logo.svg.png",
-  "/Wearefeaturedin/the_week_logo.png"
+  "/Wearefeaturedin/hindustantimes.jpg",
+  "/Wearefeaturedin/ians.jpg",
+  "/Wearefeaturedin/theprint.jpg",
+  "/Wearefeaturedin/latestly.jpg",
+  "/Wearefeaturedin/lokmattimes.jpg",
+  "/Wearefeaturedin/revoi.jpg",
+  "/Wearefeaturedin/theweek.jpg"
 ];
 
 const AboutUs1 = () => {

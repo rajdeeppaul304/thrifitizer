@@ -60,7 +60,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
-  list-style: none; }
+  list-style: none; 
+  word-spacing: 6px;
+  /* letter-spacing: 4px; */
+}
 
 body {
   color: #fff;
@@ -132,8 +135,9 @@ a, span {
 .container {
   max-width: 1200px; }
 
-.custom-font {
-  font-family: 'Barlow Condensed', sans-serif; }
+/* .custom-font {
+  font-family: 'Barlow Condensed', sans-serif;
+ } */
 
 /* ====================== [ End Typography  ] ====================== */
 /* ====================== [ Start Helper Classes  ] ====================== */
@@ -1142,7 +1146,7 @@ body {
   padding-left: 20px;
   margin-bottom: 20px; }
   .sub-title h6 {
-    font-family: 'Barlow Condensed', sans-serif;
+    /* font-family: 'Barlow Condensed', sans-serif; */
     font-weight: 600;
     font-size: 16px;
     /* text-transform: uppercase; */
@@ -3312,7 +3316,8 @@ header.simpl {
           text-transform: uppercase;
           letter-spacing: 2px;
           font-size: 13px;
-          font-family: 'Barlow Condensed', sans-serif; }
+          /* font-family: 'Barlow Condensed', sans-serif;  */
+        }
           .portfolio .gallery .items .item-img .cont span a {
             margin: 0 10px 0 0; }
     .portfolio .gallery .items .cont {
@@ -3327,7 +3332,8 @@ header.simpl {
         letter-spacing: 2px;
         font-weight: 400;
         font-size: 13px;
-        font-family: 'Barlow Condensed', sans-serif; }
+        /* font-family: 'Barlow Condensed', sans-serif;  */
+      }
         .portfolio .gallery .items .cont span a {
           margin: 0 5px; }
   .portfolio .gallery .bords .item-img {
@@ -4672,7 +4678,8 @@ header.simpl {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     background: transparent;
     color: #fff;
-    font-family: 'Barlow Condensed', sans-serif; }
+    /* font-family: 'Barlow Condensed', sans-serif;  */
+  }
 
 .contact-sec .form button {
   color: #fff;

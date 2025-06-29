@@ -1,31 +1,45 @@
 import React from "react";
+import caseStudies from "../../data/caseStudiesData"; // adjust path as needed
 
-const ProjectDetails2Introduction = () => {
+const ProjectDetails2Introduction = ({ projectName }) => {
+  const data = caseStudies[projectName];
+
+  if (!data) {
+    return (
+      <section className="intro-section section-padding">
+        <div className="container">
+          <p>No case study data found for "{projectName}".</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="intro-section section-padding">
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-4">
             <div className="htit">
-              <h4>
-                <span>01 </span> Introduction
-              </h4>
+              <h4>Case Study</h4>
             </div>
           </div>
           <div className="col-lg-8 offset-lg-1 col-md-8">
             <div className="text js-scroll__content">
-              <p className="extra-text">
-                We are a Creative Agency &amp; Startup Studio that provides
-                Digital Products and Services turns to focus on client success.
-                We specialize in user interface design, including front-end
-                development which we consider to be an integral part.
-              </p>
+              <h6 className="mb-15 fw-600">Challenge</h6>
+              <p className="extra-text">{data.challenge}</p>
 
-              <ul className="smp-list mt-30">
-                <li>Aenean sollicitudin</li>
-                <li>lorem quis bibendum auctor</li>
-                <li>nisi elit conseq uat ipsum</li>
-                <li>nec sagittis sem nibh id elit</li>
+              <h6 className="mt-40 mb-15 fw-600">Our Solution</h6>
+              <ul className="smp-list styled-list">
+                {data.solution.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
+
+              <h6 className="mt-40 mb-15 fw-600">Results</h6>
+              <ul className="smp-list styled-list">
+                {data.results.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
               </ul>
             </div>
           </div>

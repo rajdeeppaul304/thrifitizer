@@ -12,28 +12,28 @@ const BlogsThreeColumn1 = ({ subBG, newHome }) => {
 
   const blogs = [
     {
-      img: "/img/blog/google_major_updates.jpg",
+      img: "/img/blog/blog_1.jpg",
       date: "06 Jun 2025",
       title: "Google Algorithm Updates: All Major Changes in 2025.",
       delay: ".3s",
       readMoreLink: "/blog/google_growth",
     },
     {
-      img: "/img/blog/ai_powered.jpg",
+      img: "/img/blog/blog_2.jpg",
       date: "11 Jun 2025",
       title: "How to Optimize for Search Generative Experience (SGE).",
       delay: ".6s",
       readMoreLink: "/blog/optimize_sge",
     },
     {
-      img: "/img/blog/.jpg",
+      img: "/img/blog/blog_3.jpg",
       date: "09 Jun 2025",
       title: "What is AI-Powered Automated Bidding?",
       delay: ".9s",
       readMoreLink: "/blog/automated_bidding",
     },
     {
-      img: "/img/blog/.jpg",
+      img: "/img/blog/blog_4.jpg",
       date: "15 Jun 2025",
       title: "How Fast Does Google Index New Content?",
       delay: "1.2s",

@@ -183,7 +183,7 @@ React.useEffect(() => {
                     560068 Bangalore KA,India
                   </h6>
                 </div>
-                <div className="button" style={{display:'flex'}}>
+                <div className="button pt-6"  style={{display:'flex', marginTop:'10px'}}>
                   {/* <button 
                     onClick={openModal}
                     className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} mr-3 custom-hover-btn`}

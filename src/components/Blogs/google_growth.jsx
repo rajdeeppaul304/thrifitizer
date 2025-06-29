@@ -35,7 +35,7 @@ const BlogDetails = () => {
           <div className="col-lg-11">
             <div className="post">
               <div className="img">
-                <img src="/img/blog/google_major_updates.jpg" alt="Google Algorithm" />
+                <img src="/img/blog/blog_1.jpg" alt="Google Algorithm" />
               </div>
               <div className="content pt-20">
                 <div className="row justify-content-center">

@@ -8,6 +8,7 @@ import ProjectDetailsDescription from "../components/Project-details-description
 import ProjectDetailsVideo from "../components/Project-details-video";
 import NextProject from "../components/Next-project";
 import SmallFooter from "../components/Small-footer";
+import Testimonials1 from "../components/Testimonials1";
 
 const ProjectDetails3Dark = () => {
   const navbarRef = React.useRef(null);
@@ -41,17 +42,19 @@ const ProjectDetails3Dark = () => {
     '/Saraffurniture/Screenshot_2025_0625_094244.png',
   ];
   return (
-    <DarkTheme>
+     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Safar Furniture" />
-      <ProjectDetails2Introduction />
+      <ProjectDetails2Header images={images} Text="Insaraf"  subText="Insaraf"/>
+      <ProjectDetails2Introduction projectName="Insaraf" />
       <ProjectDetails2Images imagePaths={imagePaths} />
-      <ProjectDetailsDescription />
-      <ProjectDetailsVideo
+      
+      {/* <ProjectDetailsVideo
         videoBackground="/img/portfolio/project2/bg.jpg"
         videoType="vimeo"
         videoId={127203262}
-      />
+      /> */}
+      <ProjectDetailsDescription />
+      <Testimonials1 subBgLftstl parallaxie withBG overlay/>
       <NextProject
         projectImage="/img/portfolio/project1/bg.jpg"
         projectTitle="Natural plus modern."
