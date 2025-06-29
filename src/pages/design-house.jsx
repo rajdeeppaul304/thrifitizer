@@ -33,7 +33,7 @@ const ProjectDetails4Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/DesignHouse/banner image .jpg';
+  const images = '/DesignHouse/banner.jpg';
   const imagePaths = [
     '/DesignHouse/1_88dc962d-31ff-4bd1-8472-c9f55659436e.jpg',
     '/DesignHouse/DSC05315_f5bee8f2-dca3-483e-8ff0-63d643094372_1100x.jpg',
