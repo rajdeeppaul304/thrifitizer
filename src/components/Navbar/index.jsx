@@ -38,7 +38,7 @@ const Navbar = ({ lr, nr, theme }) => {
     )}
   </a>
 
-  <a className="logo">
+  {/* <a className="logo">
     {theme ? (
       theme === "themeL" ? (
         <img src={appData.darkLogo2} alt="logo 2" style={{ width: "100px", marginRight:'25px' }} />
@@ -48,7 +48,7 @@ const Navbar = ({ lr, nr, theme }) => {
     ) : (
       <img src={appData.lightLogo2} alt="logo 2" style={{ width: "100px", marginRight:'25px' }} />
     )}
-  </a>
+  </a> */}
 </div>
 
         </Link>

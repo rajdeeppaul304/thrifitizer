@@ -55,14 +55,21 @@ const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
           <div className="col-lg-5">
             <div className="cont">
               <div className="logo" style={{ marginBottom: "1.5rem" }}>
-                <a href="#0">
+                <a href="#0" style={{display:'flex'}}>
                   <img
                     src={`${appData.lightLogo}`}
                     alt="logo"
                     className="logo-img"
                     style={logoImgStyle}
                   />
+                   <img
+                    src={`${appData.lightLogo2}`}
+                    alt="logo"
+                    className="logo-img"
+                    style={logoImgStyle}
+                  />
                 </a>
+                
               </div>
 
               <div className="con-info custom-font">

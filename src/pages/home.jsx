@@ -3,6 +3,8 @@ import Head from 'next/head';
 import AboutUs1 from "../components/About-us1";
 import BlogsThreeColumn2 from "../components/Blogs-three-column2";
 import BlogsThreeColumn1 from "../components/Blogs-three-column1_2";
+// import CircularText from './CircularText';
+// import CircularText from '../components/CircularText';
 
 import ContactSection from "../components/Contact-section";
 import Footer from "../components/Footer";
@@ -80,7 +82,7 @@ const Homepage4 = () => {
         {/* <BlogsThreeColumn2 subBG /> */}
         <BlogsThreeColumn1 subBG />
 
-        {/* <ContactForm /> */}
+
         <ContactSection />
         <Footer />
       </div>
