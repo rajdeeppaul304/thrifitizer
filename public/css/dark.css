@@ -953,18 +953,24 @@ body {
   .cursor-outer.cursor-hover {
     opacity: 0; }
 
-    
+
 /* Disable cursor effect on mobile screens */
 @media (max-width: 768px) {
-  .cursor-inner.cursor-hover {
-    display: none;
-    /* or alternatively, override the styles */
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0;
-    background: none;
+  .mouse-cursor,
+  .cursor-inner,
+  .cursor-inner.cursor-hover,
+  .cursor-outer,
+  .cursor-outer.cursor-hover {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important;
+    visibility: hidden !important;
   }
+
 }
 
 
@@ -5082,10 +5088,15 @@ header.simpl {
     font-size: 40px; } }
 
 @media screen and (max-width: 767px) {
-
+  .mt-40-mobile {
+    margin-top: 40px !important;
+  }
 .extra-text {
   font-size: 14px; }
 
+  .testimonials .item p {
+    font-size: 14px;
+  }
   .sm-mb10 {
     margin-bottom: 10px; }
   .sm-mb20 {

@@ -20,22 +20,22 @@ const ProjectDetails2Introduction = ({ projectName }) => {
         <div className="row">
           <div className="col-lg-3 col-md-4">
             <div className="htit">
-              <h4>Case Study</h4>
+              <h4 style={{fontSize:'30px'}}>Case Study</h4>
             </div>
           </div>
           <div className="col-lg-8 offset-lg-1 col-md-8">
             <div className="text js-scroll__content">
-              <h6 className="mb-15 fw-600 mt-5">Challenge</h6>
+              <h6 className="mb-15 fw-600 mt-40-mobile" style={{fontSize:'22px'}}>Challenge</h6>
               <p className="extra-text">{data.challenge}</p>
 
-              <h6 className="mt-40 mb-15 fw-600">Our Solution</h6>
+              <h6 className="mt-40 mb-15 fw-600" style={{fontSize:'22px'}}>Our Solution</h6>
               <ul className="smp-list styled-list">
                 {data.solution.map((point, index) => (
                   <li className="extra-text" style={{color: '#c8c8c8'}} key={index}>{point}</li>
                 ))}
               </ul>
 
-              <h6 className="mt-40 mb-15 fw-600">Results</h6>
+              <h6 className="mt-40 mb-15 fw-600" style={{fontSize:'22px'}}>Results</h6>
               <ul className="smp-list styled-list">
                 {data.results.map((point, index) => (
                   <li className="extra-text" style={{color: '#c8c8c8'}}  key={index}>{point}</li>
