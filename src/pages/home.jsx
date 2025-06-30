@@ -14,7 +14,7 @@ import Services4 from "../components/Services4";
 import Testimonials1 from "../components/Testimonials1";
 import DarkTheme from "../layouts/Dark";
 import TrustedPartners from "../components/Trusted-Partners";
-import ContactForm from "../components/ContactForm";
+// import ContactForm from "../components/ContactForm";
 
 const partners = [
   { id: 1, name: 'Google', image: '/trustedPartners/google.png' },
@@ -80,7 +80,7 @@ const Homepage4 = () => {
         {/* <BlogsThreeColumn2 subBG /> */}
         <BlogsThreeColumn1 subBG />
 
-        <ContactForm />
+        {/* <ContactForm /> */}
         <ContactSection />
         <Footer />
       </div>

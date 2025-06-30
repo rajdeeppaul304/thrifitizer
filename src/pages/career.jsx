@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import IntroWithSlider1 from "../components/Intro-with-slider1";
 import Navbar from "../components/Navbar";
 import DarkTheme from "../layouts/Dark";
-
+import CareerHeader from "../components/career_info"
 const Career = () => {
   const fixedSlider = useRef(null);
   const mainContent = useRef(null);
@@ -143,6 +143,7 @@ const Career = () => {
       <div ref={mainContent} className="main-content">
         <div className="page-header">
           <div className="" style={{marginTop:'100px'}}>
+            <CareerHeader/>
             <section className="career-section" style={{ padding: '80px 0', minHeight: '100vh' }}>
               <div className="container" style={{ maxWidth: '800px', margin: '0 auto', padding: '0 20px' }}>
                 {/* Header */}
