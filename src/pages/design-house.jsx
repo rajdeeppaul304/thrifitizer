@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import ProjectDetails2Header from "../components/Project-details2-header";
 import ProjectDetails2Introduction from "../components/Project-details2-introduction";
 import ProjectDetails2Images from "../components/Project-details2-images";
-import ProjectDetailsDescription from "../components/Project-details-description";
+import WorksThreeColumnWithFilter from "../components/Works-three-column-with-filter";
 import ProjectDetailsVideo from "../components/Project-details-video";
 import NextProject from "../components/Next-project";
 import SmallFooter from "../components/Small-footer";
@@ -53,7 +53,9 @@ const ProjectDetails4Dark = () => {
         videoType="vimeo"
         videoId={127203262}
       /> */}
-      <ProjectDetailsDescription />
+      <WorksThreeColumnWithFilter
+        filterPosition="center"
+      />
       <Testimonials1 subBgLftstl parallaxie withBG overlay/>
       <NextProject
         projectImage="/img/portfolio/project1/bg.jpg"

@@ -76,7 +76,6 @@ const ProjectDetailsDark = () => {
 
        <WorksThreeColumnWithFilter
         filterPosition="center"
-        // galleryItems={galleryItems}
       />
 
       {/* <ProjectDetailsVideo
