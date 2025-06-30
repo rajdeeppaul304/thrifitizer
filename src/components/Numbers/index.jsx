@@ -20,7 +20,9 @@ const Numbers1 = () => {
                       <VisibilitySensor onChange={start} delayedCall>
                         <>
                           <span className="count" ref={countUpRef} />{" "}
-                          {item.id == 3 ? "K" : ""}
+                          {item.id == 1 ? "+" : ""}
+                          {item.id == 2 ? "+" : ""}
+                          {item.id == 4 ? "+" : ""}
                         </>
                       </VisibilitySensor>
                     )}
