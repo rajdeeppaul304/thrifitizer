@@ -289,8 +289,44 @@ const caseStudies = {
       "Social media engagement rate improving everyday.",
       "Email subscribers grew by 3.5×, thanks to website popups and Instagram Stories integration."
     ]
+  },
+   "Crossbeats": {
+    "name": "Crossbeats – Shopify Store Development",
+    "challenge": "Crossbeats is a cutting-edge Indian tech brand known for its wireless earbuds, smartwatches, and audio gear. While their products competed with global names, their online presence lacked the sleek, high-tech feel expected in this category. Their previous eCommerce site didn’t reflect the innovation or performance their products delivered. The site lacked modern UI/UX suited for tech-savvy customers. Product pages were cluttered, with long load times and minimal hierarchy. Customers had difficulty comparing features between SKUs. Mobile performance was poor, despite a high mobile traffic share.",
+    "solution": [
+      "Created a sleek, dark-themed Shopify layout with strong contrast, kinetic fonts, and motion-inspired elements to capture the energy of the brand.",
+      "Integrated interactive comparison charts and specs tabs on product pages.",
+      "Added 3D product views and GIF loops to showcase features like 'touch control' and 'battery life'.",
+      "Developed filter logic by product type (earbuds, watches, soundbars), features (ANC, battery life, waterproofing), and price.",
+      "Optimized the site for thumb-scroll behavior, collapsible menus, and sticky CTA buttons for mobile.",
+      "Leveraged Shopify-native lazy loading, compressed assets, and predictive search for faster browsing."
+    ],
+    "results": [
+      "Conversion rate improved by 49%, with clear gains on product comparison and bundle pages.",
+      "Mobile checkout drop-off decreased by 35%, post layout and speed optimization.",
+      "Average Order Value (AOV) increased by 22%, aided by cross-sell blocks and curated 'Tech Combos'.",
+      "Return and warranty queries reduced by 18% due to better product detail formatting and FAQs."
+    ]
+  },
+  "Jogler": {
+    "name": "Jogler – Shopify Development",
+    "challenge": "Jolger Active is a fast-emerging activewear brand offering high-performance apparel for everyday athletes. The brand needed a bold, functional, and conversion-focused Shopify store that matched their dynamic product range and fast-paced brand tone. Their previous online store lacked structure and failed to convey product benefits clearly. Mobile responsiveness was poor, causing high bounce rates. Product discoverability was weak due to limited filtering options and poor categorization.",
+    "solution": [
+      "Built a visually striking, high-contrast theme with large product visuals and powerful CTAs.",
+      "Used bold fonts, edge-to-edge banners, and real athlete imagery to build credibility.",
+      "Introduced filters by performance category (Running, Gym, Training), size, and fabric type to improve product discovery.",
+      "Integrated a sticky size guide and model fit details to reduce returns.",
+      "Implemented a real-time stock alert and wishlist feature.",
+      "Used Shopify’s native metafields to display unique features like 'Sweat-wicking' and 'Four-way stretch' on product pages.",
+      "Prioritized mobile-first design with tap-friendly filters, swipeable product carousels, and fast-loading assets."
+    ],
+    "results": [
+      "Conversion rate increased by 61% in the first 45 days post-launch.",
+      "Mobile sales accounted for 72% of total revenue, up from 48%.",
+      "Time on site doubled due to engaging visuals and improved browsing experience.",
+      "Customer return rate dropped by 25% owing to enhanced sizing guidance and product details."
+    ]
   }
-
 
 }
 
