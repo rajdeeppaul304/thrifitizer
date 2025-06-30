@@ -192,7 +192,7 @@ const ProjectDetailsDark = () => {
             <TrustedPartners partners={partners1} headingText="We Are Partners With."/>
 
       {/* <ProjectDetailsImages /> */}
-      <ProjectDetailsDescription />
+      {/* <ProjectDetailsDescription /> */}
       {/* <WorksThreeColumnWithFilter/> */}
 
        <WorksThreeColumnWithFilter

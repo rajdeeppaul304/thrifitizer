@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
 
-
 const WorksThreeColumnWithFilter = ({ filterPosition, galleryItems = [] }) => {
   const [pageLoaded, setPageLoaded] = useState(false);
 
@@ -19,6 +18,7 @@ const WorksThreeColumnWithFilter = ({ filterPosition, galleryItems = [] }) => {
   const categories = [
     ...new Set(galleryItems.flatMap((item) => item.category || [])),
   ];
+
   return (
     <section className="portfolio section-padding pb-70">
       <div className="container">
@@ -47,10 +47,13 @@ const WorksThreeColumnWithFilter = ({ filterPosition, galleryItems = [] }) => {
               <div
                 key={item.id}
                 className={`col-lg-4 col-md-6 items ${
-  (Array.isArray(item.category) ? item.category : [item.category || "uncategorized"])
-    .map((cat) => cat.toLowerCase())
-    .join(" ")
-}`}
+                  (Array.isArray(item.category)
+                    ? item.category
+                    : [item.category || "uncategorized"]
+                  )
+                  .map((cat) => cat.toLowerCase())
+                  .join(" ")
+                }`}
               >
                 <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                   <Link href={item.url || "#"}>
@@ -59,6 +62,12 @@ const WorksThreeColumnWithFilter = ({ filterPosition, galleryItems = [] }) => {
                     </a>
                   </Link>
                 </div>
+                {/* 👇 Title below the image */}
+                {item.title && (
+                  <div className="cont text-center mt-2">
+                    <h6>{item.title}</h6>
+                  </div>
+                )}
               </div>
             ))}
           </div>
