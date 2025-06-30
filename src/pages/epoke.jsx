@@ -38,7 +38,9 @@ const ProjectDetails5Dark = () => {
     '/Epoke/file_0000000009dc61f783561085f5e23a96.png',
     '/Epoke/file_0000000054f861f698aaa0fedde571c9.png',
     '/Epoke/file_00000000298c61f8908ba29a25aacc64.png',
-    '/scroller/IMG-20250620-WA0035.jpg',
+        '/Epoke/file_00000000298c61f8908ba29a25aacc64.png',
+
+    // '/scroller/IMG-20250620-WA0035.jpg',
     '/Epoke/Screenshot_2025_0625_081556.png',
   ];
   return (

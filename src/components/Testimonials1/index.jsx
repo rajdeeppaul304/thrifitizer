@@ -6,6 +6,57 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import removeOverlay from "../../common/removeOverlay";
 import parallaxie from "../../common/parallaxie";
+const testimonialData = [
+  {
+    id: 1,
+    content:
+      "Thank you for the amazing work. The website turned out perfectly exactly how I imagined. Appreciate the clean design, professional work, and smooth support throughout.",
+    author: "srinandhinitex",
+    stars: 5,
+  },
+  {
+    id: 2,
+    content:
+      "Thriftizer fast and good work! Communication has been easy and the team has been flexible. I would work with them in the future for other projects, for sure.",
+    author: "cleanlab",
+    stars: 5,
+  },
+  ,
+  {
+    id: 3,
+    content:
+      "We had wonderful experience working with Thriftizer. They are excellent at their work and are very collaborative  and supportive. They helped bring our website vision to life and were truly interested finding solutions to our requirements. We’d love to work with them again and recommend them to others!",
+    author: "Mangharam Chocolate Solutions",
+    stars: 5,
+  },
+
+    {
+    id: 4,
+    content:
+      "Exceptional service, they helped me in my E-commerce development through Shopify. ",
+    author: "Art Infynyty",
+    stars: 5,
+  },
+  {
+    id: 5,
+    content:
+      "Praveen and his team are going a fantastic job. His suggestions and work has made a significant improvement on our site. Would definitely recommend him! ",
+    author: "HAY!",
+    stars: 5,
+  },
+  ,
+  {
+    id: 6,
+    content:
+      "Good solid technical team combined with speedy execution Highly recommended.",
+    author: "Instore",
+    stars: 5,
+  },
+
+
+
+  // Add more testimonials if needed
+];
 
 class Testimonials1 extends React.Component {
   constructor(props) {
@@ -73,178 +124,59 @@ class Testimonials1 extends React.Component {
 
 
 `}</style>
-              <Slider
-                className="slic-item"
-                {...{
-                  ref: (c) => (this.slider = c),
-                  dots: true,
-                  infinite: true,
-                  arrows: true,
-                  autoplay: true,
-                  rows: 1,
-                  slidesToScroll: 1,
-                  slidesToShow: 1,
-                }}
-              >
-                <div className="item" >
-                  <p style={{width:"95%"}}>
-                    Thank you for the amazing work. The website turned out perfectly exactly how I imagined. Appreciate the clean design, professional work, and smooth support throughout.
-                  </p>
-                  <div className="info">
-                    <div className="cont">
-                      <div className="author">
-                        {this.props.subBgLftstl ? (
-                          <>
-                            <div className="lxleft">
-                              <div className="mb-2">
-                                <div className="stars">
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="fxright">
-                              <h6 className="author-name custom-font">
-                                srinandhinitex
-                              </h6>
-                              {/* <span className="author-details">
-                                Co-founder, Colabrio
-                              </span> */}
-                            </div>
-                          </>
-                        ) : (
-                          <>
-                            <div className="mb-2">
-                              <div className="stars">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                              </div>
-                            </div>
-                            <h6 className="author-name custom-font">
-                              srinandhinitex
-                            </h6>
-                            {/* <span className="author-details">
-                              Co-founder, Colabrio
-                            </span> */}
-                          </>
-                        )}
-                      </div>
+<Slider
+  className="slic-item"
+  {...{
+    ref: (c) => (this.slider = c),
+    dots: true,
+    infinite: true,
+    arrows: true,
+    autoplay: true,
+    rows: 1,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+  }}
+>
+  {testimonialData.map((item) => (
+    <div className="item" key={item.id}>
+      <p style={{ width: "95%" }}>{item.content}</p>
+      <div className="info">
+        <div className="cont">
+          <div className="author">
+            {this.props.subBgLftstl ? (
+              <>
+                <div className="lxleft">
+                  <div className="mb-2">
+                    <div className="stars">
+                      {Array(item.stars).fill(0).map((_, i) => (
+                        <i className="fas fa-star" key={i}></i>
+                      ))}
                     </div>
                   </div>
                 </div>
-                <div className="item" >
-                  <p style={{width:"90%"}}>
-                    Thriftizer fast and good work! Communication has been easy and the team has been flexible.
+                <div className="fxright">
+                  <h6 className="author-name custom-font">{item.author}</h6>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="mb-2">
+                  <div className="stars">
+                    {Array(item.stars).fill(0).map((_, i) => (
+                      <i className="fas fa-star" key={i}></i>
+                    ))}
+                  </div>
+                </div>
+                <h6 className="author-name custom-font">{item.author}</h6>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</Slider>
 
-                    I would work with them in the future for other projects, for sure.
-                  </p>
-                  <div className="info">
-                    <div className="cont">
-                      <div className="author">
-                        {this.props.subBgLftstl ? (
-                          <>
-                            <div className="lxleft">
-                              <div className="mb-2">
-                                <div className="stars">
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="fxright">
-                              <h6 className="author-name custom-font">
-                                CleanLab
-                              </h6>
-                              {/* <span className="author-details">
-                                Co-founder, Colabrio
-                              </span> */}
-                            </div>
-                          </>
-                        ) : (
-                          <>
-                            <div className="mb-2">
-                              <div className="stars">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                              </div>
-                            </div>
-                            <h6 className="author-name custom-font">
-                              CleanLab
-                            </h6>
-                            {/* <span className="author-details">
-                              Co-founder, Colabrio
-                            </span> */}
-                          </>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item" >
-                  <p style={{width:"90%"}}> 
-                    We had wonderful experience working with Thriftizer. They are excellent at their work and are very collaborative  and supportive. They helped bring our website vision to life and were truly interested finding solutions to our requirements. We’d love to work with them again and recommend them to others!
-                  </p>
-                  <div className="info">
-                    <div className="cont">
-                      <div className="author">
-                        {this.props.subBgLftstl ? (
-                          <>
-                            <div className="lxleft">
-                              <div className="mb-2">
-                                <div className="stars">
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="fxright">
-                              <h6 className="author-name custom-font">
-                                Mangharam Chocolate Solutions
-                              </h6>
-                              {/* <span className="author-details">
-                                Co-founder, Colabrio
-                              </span> */}
-                            </div>
-                          </>
-                        ) : (
-                          <>
-                            <div className="mb-2">
-                              <div className="stars">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-star"></i>
-                              </div>
-                            </div>
-                            <h6 className="author-name custom-font">
-                              Mangharam Chocolate Solutions
-                            </h6>
-                            {/* <span className="author-details">
-                              Co-founder, Colabrio
-                            </span> */}
-                          </>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Slider>
             </div>
           </div>
           {this.renderArrows()}

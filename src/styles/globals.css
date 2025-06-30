@@ -58,11 +58,13 @@ body .slick-dots li button {
 .projdtal .justified-gallery img {
   min-height: 440px;
   height: 440px;
-  /* object-fit: cover; */
-    object-fit: contain;
+  object-fit: cover;
+    /* object-fit: contain; */
 
   width: 100%;
 }
+
+
 
 .projdtal .justified-gallery .big-img {
   min-height: 700px;
