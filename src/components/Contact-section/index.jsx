@@ -18,8 +18,6 @@ const ContactSection = () => {
     return error;
   }
 
-  const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
-
   return (
     <section className="contact-sec section-padding">
       <div className="container">
@@ -28,16 +26,11 @@ const ContactSection = () => {
             Get in touch
           </h6>
           <Split>
-            <h3
-              style={{ letterSpacing: "normal", textTransform: "none" }}
-            >
+            <h3 style={{ letterSpacing: "normal", textTransform: "none" }}>
               Contact &nbsp;Us.
             </h3>
           </Split>
-          <span
-            className="tbg"
-            style={{ letterSpacing: "normal", textTransform: "none" }}
-          >
+          <span className="tbg" style={{ letterSpacing: "normal", textTransform: "none" }}>
             Contact
           </span>
         </div>
@@ -51,21 +44,23 @@ const ContactSection = () => {
                   message: "",
                 }}
                 onSubmit={async (values, { resetForm }) => {
-                  await sendMessage(500);
-                  const formData = new FormData();
-                  formData.append("name", values.name);
-                  formData.append("email", values.email);
-                  formData.append("message", values.message);
-                  const res = await axios.post("/contact.php", formData);
-
-                  if (!res) return;
-
-                  messageRef.current.innerText =
-                    "Your message has been successfully sent. I will contact you soon.";
-                  resetForm();
-                  setTimeout(() => {
-                    messageRef.current.innerText = "";
-                  }, 2000);
+                  try {
+                    const res = await axios.post("/api/contact", values);
+                    if (res.data.success) {
+                      messageRef.current.innerText =
+                        "Your message has been successfully sent. We will contact you soon.";
+                      resetForm();
+                      setTimeout(() => {
+                        messageRef.current.innerText = "";
+                      }, 3000);
+                    } else {
+                      messageRef.current.innerText = "Failed to send message.";
+                    }
+                  } catch (err) {
+                    console.error(err);
+                    messageRef.current.innerText =
+                      "Server error. Please try again later.";
+                  }
                 }}
               >
                 {({ errors, touched }) => (
@@ -103,9 +98,7 @@ const ContactSection = () => {
                               }}
                             />
                             {errors.email && touched.email && (
-                              <div style={{ color: "red" }}>
-                                {errors.email}
-                              </div>
+                              <div style={{ color: "red" }}>{errors.email}</div>
                             )}
                           </div>
                         </div>

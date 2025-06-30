@@ -1,9 +1,8 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
-import axios from 'axios';
-import Split from '../Split';
-import CalendlyWidget from '../CalendlyWidget';
-import Link from 'next/link';
+import axios from "axios";
+import Split from "../Split";
+import CalendlyWidget from "../CalendlyWidget";
 
 const ContactWithMap = ({ theme = "dark" }) => {
   const messageRef = React.useRef(null);
@@ -19,97 +18,69 @@ const ContactWithMap = ({ theme = "dark" }) => {
     return error;
   }
 
-  const sendMessage = (ms) => new Promise((r) => setTimeout(r, ms));
-
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  // Close modal when clicking outside
   const handleModalClick = (e) => {
-    if (e.target === e.currentTarget) {
-      closeModal();
-    }
+    if (e.target === e.currentTarget) closeModal();
   };
 
-  // Handle escape key
   React.useEffect(() => {
     const handleEscape = (e) => {
-      if (e.key === 'Escape' && isModalOpen) {
-        closeModal();
-      }
+      if (e.key === "Escape" && isModalOpen) closeModal();
     };
-    
     if (isModalOpen) {
-      document.addEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'hidden'; // Prevent background scroll
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
     }
-    
     return () => {
-      document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
     };
   }, [isModalOpen]);
 
-
-React.useEffect(() => {
-  const navbar = document.querySelector('.navbar');
-  if (navbar) {
-    navbar.style.zIndex = isModalOpen ? '0' : '999';
-  }
-
-  return () => {
-    if (navbar) {
-      navbar.style.zIndex = '999'; // Reset just in case
-    }
-  };
-}, [isModalOpen]);
-
+  React.useEffect(() => {
+    const navbar = document.querySelector(".navbar");
+    if (navbar) navbar.style.zIndex = isModalOpen ? "0" : "999";
+    return () => {
+      if (navbar) navbar.style.zIndex = "999";
+    };
+  }, [isModalOpen]);
 
   return (
     <>
       <section className="contact section-padding">
         <div className="container">
           <div className="row">
+            {/* Contact Form */}
             <div className="col-lg-6">
               <div className="form md-mb50">
                 <h4 className="extra-title mb-50">Get In Touch.</h4>
-
                 <Formik
-                  initialValues={{
-                    name: "",
-                    email: "",
-                    message: "",
-                  }}
-                  onSubmit={async (values) => {
-                    await sendMessage(500);
-                    // alert(JSON.stringify(values, null, 2));
-                    // show message
-                    const formData = new FormData();
-
-                    formData.append('name', values.name);
-                    formData.append('email', values.email);
-                    formData.append('message', values.message);
-
-                    const res = await axios.post('/contact.php', formData);
-
-                    if (!res) return;
-
-                    messageRef.current.innerText =
-                      "Your Message has been successfully sent. I will contact you soon.";
-                    // Reset the values
-                    values.name = "";
-                    values.email = "";
-                    values.message = "";
-                    // clear message
-                    setTimeout(() => {
-                      messageRef.current.innerText = "";
-                    }, 2000);
+                  initialValues={{ name: "", email: "", message: "" }}
+                  onSubmit={async (values, { resetForm }) => {
+                    try {
+                      const res = await axios.post("/api/contact", values);
+                      if (res.data.success) {
+                        messageRef.current.innerText =
+                          "Your message has been successfully sent. We will contact you soon.";
+                        resetForm();
+                        setTimeout(() => {
+                          messageRef.current.innerText = "";
+                        }, 3000);
+                      } else {
+                        messageRef.current.innerText = "Failed to send message.";
+                      }
+                    } catch (err) {
+                      console.error("API error:", err);
+                      messageRef.current.innerText =
+                        "Server error. Please try again later.";
+                    }
                   }}
                 >
                   {({ errors, touched }) => (
                     <Form id="contact-form">
                       <div className="messages" ref={messageRef}></div>
-
                       <div className="controls">
                         <div className="form-group">
                           <Field
@@ -117,10 +88,9 @@ React.useEffect(() => {
                             type="text"
                             name="name"
                             placeholder="Name"
-                            required="required"
+                            required
                           />
                         </div>
-
                         <div className="form-group">
                           <Field
                             validate={validateEmail}
@@ -128,13 +98,12 @@ React.useEffect(() => {
                             type="email"
                             name="email"
                             placeholder="Email"
-                            required="required"
+                            required
                           />
                           {errors.email && touched.email && (
                             <div>{errors.email}</div>
                           )}
                         </div>
-
                         <div className="form-group">
                           <Field
                             as="textarea"
@@ -142,13 +111,14 @@ React.useEffect(() => {
                             name="message"
                             placeholder="Message"
                             rows="4"
-                            required="required"
+                            required
                           />
                         </div>
-
                         <button
                           type="submit"
-                          className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} disabled custom-hover-btn`}
+                          className={`btn-curve ${
+                            theme === "dark" ? "btn-lit" : "btn-color"
+                          } disabled custom-hover-btn`}
                         >
                           <span>Send Message</span>
                         </button>
@@ -158,6 +128,8 @@ React.useEffect(() => {
                 </Formik>
               </div>
             </div>
+
+            {/* Contact Info */}
             <div className="col-lg-5 offset-lg-1">
               <div className="cont-info">
                 <h4 className="extra-title mb-50">Contact Info.</h4>
@@ -168,7 +140,9 @@ React.useEffect(() => {
                 </Split>
                 <div className="item mb-40">
                   <h5>
-                    <a href="#0">praveen@thriftizer.com</a>
+                    <a href="mailto:praveen@thriftizer.com">
+                      praveen@thriftizer.com
+                    </a>
                   </h5>
                 </div>
                 <Split>
@@ -178,60 +152,55 @@ React.useEffect(() => {
                 </Split>
                 <div className="item mb-40">
                   <h6>
-                    24/D, 4th Floor,Friends colony ,
+                    24/D, 4th Floor, Friends Colony,
                     <br />
-                    560068 Bangalore KA,India
+                    560068 Bangalore KA, India
                   </h6>
                 </div>
-                                <Split>
+                <Split>
                   <h3 className="custom-font wow" data-splitting>
                     Follow Us.
                   </h3>
                 </Split>
-<div className="contact">
-
-  
-                        <div className="social-icon mb-40">
-          <a href="https://www.facebook.com/thriftizer/">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/thriftizer/">
-            <i className="fab fa-linkedin"></i>
-          </a>
-
-          <a href="https://www.instagram.com/thriftizersolutionsllp">
-            <i className="fab fa-instagram"></i>
-          </a>
-        </div>
-</div>
-                <div className="button pt-6"  style={{display:'flex', marginTop:'10px'}}>
-                  {/* <button 
-                    onClick={openModal}
-                    className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} mr-3 custom-hover-btn`}
+                <div className="social-icon mb-40">
+                  <a href="https://www.facebook.com/thriftizer/" target="_blank">
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/thriftizer/"
+                    target="_blank"
                   >
-                    <span>Book a Call</span>
-                  </button> */}
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/thriftizersolutionsllp"
+                    target="_blank"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </div>
+
+                <div className="button pt-6" style={{ display: "flex", marginTop: "10px" }}>
                   <a
                     href="https://api.whatsapp.com/send/?phone=918861324254&text=Hello&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`btn-curve ${theme === 'dark' ? 'btn-lit' : 'btn-color'} mr-3 custom-hover-btn`}
+                    className={`btn-curve ${
+                      theme === "dark" ? "btn-lit" : "btn-color"
+                    } mr-3 custom-hover-btn`}
                   >
                     <span>Book a Call</span>
                   </a>
 
                   <a
                     href="/build_your_own_package"
-
                     rel="noopener noreferrer"
-                    className={`btn-curve ${theme === 'dark' ? 'btn-lit' : 'btn-color'} mr-3 custom-hover-btn`}
+                    className={`btn-curve ${
+                      theme === "dark" ? "btn-lit" : "btn-color"
+                    } custom-hover-btn`}
                   >
                     <span>Start a Project</span>
                   </a>
-
-                  {/* <button className={`btn-curve ${theme === 'dark' ? 'btn-lit':'btn-color'} custom-hover-btn`}>
-                    <span>Start a Project</span>
-                  </button> */}
                 </div>
               </div>
             </div>
@@ -245,8 +214,8 @@ React.useEffect(() => {
           <div className="calendly-modal">
             <div className="calendly-modal-header">
               <h3>Book a Call</h3>
-              <button 
-                className="calendly-modal-close" 
+              <button
+                className="calendly-modal-close"
                 onClick={closeModal}
                 aria-label="Close modal"
               >
@@ -260,6 +229,7 @@ React.useEffect(() => {
         </div>
       )}
 
+      {/* Google Map */}
       <div className="map" id="ieatmaps">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.2730928974597!2d77.63670107473297!3d12.890153187417695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1545d1a215b3%3A0x7bd6e22703ec81cb!2sThriftizer%20Solutions%20LLP!5e0!3m2!1sen!2sin!4v1750625342625!5m2!1sen!2sin"
@@ -269,12 +239,13 @@ React.useEffect(() => {
         ></iframe>
       </div>
 
+      {/* Footer */}
       <footer className="footer-half sub-bg">
         <div className="container">
           <div className="copyrights text-center mt-0">
             <p>
-              © 2022, Avo Template. Made with passion by 
-              <a href="#0">ThemesCamp</a>.
+              {/* © 2022, Avo Template. Made with passion by{" "} */}
+              <a href="/">Thriftizer</a>.
             </p>
           </div>
         </div>
