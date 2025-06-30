@@ -25,20 +25,20 @@ const ProjectDetails2Introduction = ({ projectName }) => {
           </div>
           <div className="col-lg-8 offset-lg-1 col-md-8">
             <div className="text js-scroll__content">
-              <h6 className="mb-15 fw-600">Challenge</h6>
+              <h6 className="mb-15 fw-600 mt-5">Challenge</h6>
               <p className="extra-text">{data.challenge}</p>
 
               <h6 className="mt-40 mb-15 fw-600">Our Solution</h6>
               <ul className="smp-list styled-list">
                 {data.solution.map((point, index) => (
-                  <li className="extra-text" style={{fontSize:'22px', color: '#c8c8c8'}} key={index}>{point}</li>
+                  <li className="extra-text" style={{color: '#c8c8c8'}} key={index}>{point}</li>
                 ))}
               </ul>
 
               <h6 className="mt-40 mb-15 fw-600">Results</h6>
               <ul className="smp-list styled-list">
                 {data.results.map((point, index) => (
-                  <li style={{fontSize:'22px', color: '#c8c8c8'}} key={index}>{point}</li>
+                  <li className="extra-text" style={{color: '#c8c8c8'}}  key={index}>{point}</li>
                 ))}
               </ul>
             </div>

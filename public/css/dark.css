@@ -937,21 +937,6 @@ body {
   background-color: #75dab4;
   opacity: 0.6;
 }
-
-/* Disable cursor effect on mobile screens */
-@media (max-width: 768px) {
-  .cursor-inner.cursor-hover {
-    display: none;
-    /* or alternatively, override the styles */
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0;
-    background: none;
-  }
-}
-
-
 .cursor-outer {
   margin-left: -15px;
   margin-top: -15px;
@@ -967,6 +952,23 @@ body {
   transition: all .08s ease-out; }
   .cursor-outer.cursor-hover {
     opacity: 0; }
+
+    
+/* Disable cursor effect on mobile screens */
+@media (max-width: 768px) {
+  .cursor-inner.cursor-hover {
+    display: none;
+    /* or alternatively, override the styles */
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0;
+    background: none;
+  }
+}
+
+
+
 
 /* ====================== [ End Cursor Style ] ====================== */
 /* ====================== [ Start progress-wrap ] ====================== */
@@ -5080,6 +5082,10 @@ header.simpl {
     font-size: 40px; } }
 
 @media screen and (max-width: 767px) {
+
+.extra-text {
+  font-size: 14px; }
+
   .sm-mb10 {
     margin-bottom: 10px; }
   .sm-mb20 {
