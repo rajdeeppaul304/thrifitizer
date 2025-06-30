@@ -7,9 +7,12 @@ import LoadingScreen from "../components/Loading-Screen";
 import "../styles/globals.css";
 import "../../node_modules/react-datepicker/dist/react-datepicker.css";
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+import WhatsAppButton from "../components/WhatsAppButton";
 
 function MyApp({ Component, pageProps }) {
+
   return (
+
     <>
       <Head>
         <title>Thriftizer</title>
@@ -42,6 +45,8 @@ function MyApp({ Component, pageProps }) {
         id="initWow" 
         src="/js/initWow.js"
       ></Script>
+<WhatsAppButton />
+
     </>
   );
 }

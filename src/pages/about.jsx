@@ -37,37 +37,7 @@ const AboutDark = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    // WhatsApp button settings
-    var wa_btnSetting = {
-      btnColor: "#16BE45",
-      ctaText: "WhatsApp Us",
-      cornerRadius: 40,
-      marginBottom: 20,
-      marginLeft: 20,
-      marginRight: 20,
-      btnPosition: "left",
-      whatsAppNumber: "918861324254",
-      welcomeMessage: "Hello",
-      zIndex: 999999,
-      btnColorScheme: "light"
-    };
 
-    // Dynamically load WhatsApp widget script if not already loaded
-    if (!window._waEmbed) {
-      const script = document.createElement("script");
-      script.src = "https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?12345";
-      script.async = true;
-      script.onload = () => {
-        if (window._waEmbed) {
-          window._waEmbed(wa_btnSetting);
-        }
-      };
-      document.body.appendChild(script);
-    } else {
-      window._waEmbed(wa_btnSetting);
-    }
-  }, []);
 
   return (
     <DarkTheme>
