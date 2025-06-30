@@ -70,5 +70,53 @@
     "image": "./scroller/IMG-20250621-WA0005.jpg",
     "sub": "design house",
     "url": "/design-house/"
+  },
+    {
+    "id": 13,
+    "image": "./apaapi/3.jpg",
+    "sub": "Apaapi",
+    "url": "/apaapi/"
+  },
+  {
+    "id": 14,
+    "image": "./moborr/1.jpg",
+    "sub": "Moborr",
+    "url": "/moborr/"
+  },
+  {
+    "id": 15,
+    "image": "./colonial_candle/1.jpg",
+    "sub": "Colonial Candle",
+    "url": "/colonial_candle/"
+  },
+  {
+    "id": 16,
+    "image": "/rubz/1.jpg",
+    "sub": "Rubz",
+    "url": "/rubz/"
+  },
+  {
+    "id": 17,
+    "image": "/himalaya/1.jpg",
+    "sub": "Himalaya Fine Art",
+    "url": "/himalaya/"
+  },
+  {
+    "id": 18,
+    "image": "./curious_cub/1.jpg",
+    "sub": "Curious Cub",
+    "url": "/curious_cub/"
+  },
+  {
+    "id": 19,
+    "image": "./crossbeats/1.jpg",
+    "sub": "Crossbeats",
+    "url": "/crossbeats/"
+  },
+  {
+    "id": 20,
+    "image": "./Jogler/1.jpg",
+    "sub": "Jogler",
+    "url": "/Jogler/"
   }
 ]

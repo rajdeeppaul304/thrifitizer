@@ -161,6 +161,11 @@ const Navbar = ({ lr, nr, theme }) => {
           <a href="https://www.instagram.com/thriftizersolutionsllp">
             <i className="fab fa-instagram"></i>
           </a>
+
+          <a href="">
+            <i className="fab fa-shopify"></i>
+          </a>
+
           </div>
         </div>
       </div>

@@ -98,7 +98,7 @@ const CareerHeader = () => {
                 transition: 'all 0.3s ease'
               }}>
                 <Image
-                  src="/img/team/main-team.jpg" // Replace with your actual team image
+                  src="/img/team/team.jpg" // Replace with your actual team image
                   alt="Our Amazing Team"
                   width={600}
                   height={400}
@@ -231,7 +231,7 @@ const CareerHeader = () => {
       </section>
 
       {/* Video Section */}
-      <section style={{ padding: '80px 0' }}>
+      {/* <section style={{ padding: '80px 0' }}>
         <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 20px' }}>
           <div style={{ textAlign: 'center', marginBottom: '50px' }}>
             <h2 style={{
@@ -272,7 +272,7 @@ const CareerHeader = () => {
             </video>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Become a Thriftizer Section */}
       <section style={{ 
