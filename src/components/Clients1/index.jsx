@@ -12,9 +12,9 @@ const Clients1 = ({ theme, subBG }) => {
         <div className="row">
           <div className="col-lg-4 valign">
             <div className="sec-head custom-font mb-0">
-              <h6>Clients</h6>
+              <h6> Renowned brands that   </h6>
               <h3>
-                Our <br /> Clients.
+                Trust <br /> Us.
               </h3>
             </div>
           </div>

@@ -351,7 +351,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
                       <i className="fas fa-bullseye"></i>
                     </div>
                     <h3>Cohesive Ad Strategies</h3>
-                    <p>Craft cohesive ad strategies across Google Ads, Meta, YouTube, Pinterest, and TikTok.</p>
+                    <p>Craft cohesive ad strategies across Google Ads, Meta, YouTube, Pinterest, and Instagram.</p>
                     <div className="platform-grid">
                       <div className="platform-item ">
                         <i className="fab fa-google"></i>
@@ -370,8 +370,8 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
                         <h4>Pinterest</h4>
                       </div>
                       <div className="platform-item">
-                        <i className="fab fa-tiktok"></i>
-                        <h4>TikTok</h4>
+                        <i className="fab fa-instagram"></i>
+                        <h4>Instagram</h4>
                       </div>
                     </div>
                   </div>

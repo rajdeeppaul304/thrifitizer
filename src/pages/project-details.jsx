@@ -61,7 +61,7 @@ const ProjectDetailsDark = () => {
       <AboutHeader/>
       <ProjectDetailsIntroduction />
       <NumbersWithVideo/>
-            <TrustedPartners partners={partners1} headingText="Our Achievements."/>
+            <TrustedPartners partners={partners1} headingText="We Are Partners With."/>
 
       {/* <ProjectDetailsImages /> */}
       <ProjectDetailsDescription />

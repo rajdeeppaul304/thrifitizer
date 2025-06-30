@@ -361,7 +361,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
               <i className="fas fa-photo-video"></i>
             </div>
             <h3>Native Content Production</h3>
-            <p>Produce native static posts, Reels, Stories, and carousels—optimized for Instagram, Facebook, and TikTok.</p>
+            <p>Produce native static posts, Reels, Stories, and carousels—optimized for Instagram, and Facebook.</p>
           </div>
         </div>
       </div>

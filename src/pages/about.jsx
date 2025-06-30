@@ -8,6 +8,7 @@ import MinimalArea from "../components/Minimal-area";
 import Navbar from "../components/Navbar";
 // import Services4 from "../components/Services4";
 import Services2 from "../components/Services2";
+import Services4 from "../components/Services4";
 
 import SkillsCircle from "../components/Skills-circle";
 import Team1 from "../components/Team1";
@@ -45,7 +46,8 @@ const AboutDark = () => {
       <AboutHeader />
       <AboutIntro />
       {/* <Services4 withPadding withOutTitle /> */}
-      <Services2 withPadding  />
+      {/* <Services2 withPadding  /> */}
+        <Services4 withBG withPadding />
 
       <VideoWithTestimonials />
       {/* <SkillsCircle subBG theme="dark" /> */}

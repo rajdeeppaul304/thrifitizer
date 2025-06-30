@@ -31,14 +31,14 @@ const ProjectDetails2Introduction = ({ projectName }) => {
               <h6 className="mt-40 mb-15 fw-600">Our Solution</h6>
               <ul className="smp-list styled-list">
                 {data.solution.map((point, index) => (
-                  <li key={index}>{point}</li>
+                  <li className="extra-text" style={{fontSize:'22px', color: '#c8c8c8'}} key={index}>{point}</li>
                 ))}
               </ul>
 
               <h6 className="mt-40 mb-15 fw-600">Results</h6>
               <ul className="smp-list styled-list">
                 {data.results.map((point, index) => (
-                  <li key={index}>{point}</li>
+                  <li style={{fontSize:'22px', color: '#c8c8c8'}} key={index}>{point}</li>
                 ))}
               </ul>
             </div>
