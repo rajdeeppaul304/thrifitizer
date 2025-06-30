@@ -11,6 +11,11 @@ import SwiperCore, {
 } from "swiper";
 
 import "swiper/css";
+import "swiper/css/autoplay";
+import {FreeMode  } from "swiper";
+
+
+import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/mousewheel";
@@ -96,38 +101,36 @@ const ShowcasesGrid = () => {
           </Swiper>
         ) : null}
       </div>
-<div className="txt-botm">
-  <div
-    ref={navigationNextRef}
-    className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
-  >
-    <div>
-      <span>Next Slide</span>
-    </div>
-    <div>
-      <i className="fas fa-chevron-right"></i>
-    </div>
-  </div>
+<Swiper
+  modules={[Autoplay, FreeMode]}
+  loop={true}
+  freeMode={true}
+  allowTouchMove={false}
+  autoplay={{
+    delay: 0,
+    disableOnInteraction: false,
+  }}
+  slidesPerView={5.5}
+  spaceBetween={32}
+  speed={5000}
+  className="logo-swiper"
+  breakpoints={{
+    320: { slidesPerView: 2.5 },
+    576: { slidesPerView: 3.5 },
+    768: { slidesPerView: 4.5 },
+    992: { slidesPerView: 7.5 },
+  }}
+>
+  {Array.from({ length: 20 }).map((_, idx) => (
+    <SwiperSlide key={idx}>
+      <div className="first-class" style={{ color: idx % 2 === 0 ? "#75dab4" : "#ffffff" }}>
+        <span>Our Best Clients</span>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
-  {/* Centered Text */}
-  <div className="center-text">
-    <span>Our Best Clients</span>
-  </div>
 
-  <div
-    ref={navigationPrevRef}
-    className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
-  >
-    <div>
-      <i className="fas fa-chevron-left"></i>
-    </div>
-    <div>
-      <span>Prev Slide</span>
-    </div>
-  </div>
-
-  <div className="swiper-pagination dots" ref={paginationRef}></div>
-</div>
 
       <style jsx global>{`
         .showcase-card {
