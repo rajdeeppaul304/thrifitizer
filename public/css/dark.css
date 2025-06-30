@@ -2445,7 +2445,9 @@ header.simpl {
     height: 100%;
     left: 0;
     top: 0;
-    text-align: center; }
+    text-align: center; 
+  overflow:hidden;
+  }
 
 .static {
   position: static; }

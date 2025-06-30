@@ -113,11 +113,11 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">Services</a>
               </Link>
             </li> */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link href="/about/" legacyBehavior>
                 <a className="nav-link">About</a>
               </Link>
-            </li>
+            </li> */}
                         <li className="nav-item dropdown" onClick={handleDropdown}>
                           <span
                             className="nav-link dropdown-toggle"
@@ -126,7 +126,7 @@ const Navbar = ({ lr, nr, theme }) => {
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
-                            About
+                            About Us
                           </span>
                           <div className="dropdown-menu">
                             <Link href="/about">
