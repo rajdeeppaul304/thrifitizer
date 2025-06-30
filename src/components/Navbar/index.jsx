@@ -75,7 +75,7 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">Home</a>
               </Link>
             </li>
-                        {/* <li className="nav-item dropdown" onClick={handleDropdown}>
+                        <li className="nav-item dropdown" onClick={handleDropdown}>
                           <span
                             className="nav-link dropdown-toggle"
                             data-toggle="dropdown"
@@ -105,7 +105,9 @@ const Navbar = ({ lr, nr, theme }) => {
                               <a className="dropdown-item">Social Media Management</a>
                             </Link>
                           </div>
-                        </li> */}
+                        </li>
+
+
             {/* <li className="nav-item">
               <Link href="/works3/works3-dark/" legacyBehavior>
                 <a className="nav-link">Services</a>
@@ -116,6 +118,28 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">About</a>
               </Link>
             </li>
+                        <li className="nav-item dropdown" onClick={handleDropdown}>
+                          <span
+                            className="nav-link dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            About
+                          </span>
+                          <div className="dropdown-menu">
+                            <Link href="/about">
+                              <a className="dropdown-item">About</a>
+                            </Link>
+                            <Link href="/career">
+                              <a className="dropdown-item">Career</a>
+                            </Link>
+
+                          </div>
+                        </li>
+
+
             <li className="nav-item">
               <Link href="/project-details/" legacyBehavior>
                 <a className="nav-link">Portfolio</a>
@@ -131,11 +155,11 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">Package Builder</a>
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link href="/career/" legacyBehavior>
                 <a className="nav-link">Career</a>
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link href="/contact/" legacyBehavior>
                 <a className="nav-link">Contact</a>
@@ -151,18 +175,18 @@ const Navbar = ({ lr, nr, theme }) => {
                 justifyContent: 'center'
           }}    
           >
-          <a href="https://www.facebook.com/thriftizer/">
+          <a target="_blank" href="https://www.facebook.com/thriftizer/">
             <i className="  fab fa-facebook-f"></i>
           </a>
-          <a href="https://www.linkedin.com/company/thriftizer/">
+          <a target="_blank" href="https://www.linkedin.com/company/thriftizer/">
             <i className=" fab fa-linkedin"></i>
           </a>
 
-          <a href="https://www.instagram.com/thriftizersolutionsllp">
+          <a target="_blank" href="https://www.instagram.com/thriftizersolutionsllp">
             <i className="fab fa-instagram"></i>
           </a>
 
-          <a href="">
+          <a target="_blank" href="https://www.shopify.com/partners/directory/partner/thriftizer-solutions">
             <i className="fab fa-shopify"></i>
           </a>
 

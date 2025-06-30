@@ -39,12 +39,13 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .hero-title {
             font-size: 3.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #75dab4 0%, #4caf50 100%);
+            background: white;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 1.5rem;
             line-height: 1.5;
+            color:white;
           }
 
           .hero-subtitle {
@@ -68,17 +69,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
             position: relative;
           }
 
-          .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: linear-gradient(90deg, #75dab4, #4caf50);
-            border-radius: 2px;
-          }
+
 
           .service-card {
             background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
@@ -361,6 +352,8 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
         </div>
       </div>
     </section>
+
+
       {/* Overview Section */}
       <section className="section-content">
         <div className="container">

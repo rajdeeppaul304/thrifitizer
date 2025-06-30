@@ -54,22 +54,27 @@ const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
         <div className="row">
           <div className="col-lg-5">
             <div className="cont">
-              <div className="logo" style={{ marginBottom: "1.5rem" }}>
-                <a href="#0" style={{display:'flex'}}>
+              <div className="logo" style={{ marginBottom: "1.5rem", display: 'flex', alignItems:'center'}}>
+                <a href="/" >
                   <img
                     src={`${appData.lightLogo}`}
                     alt="logo"
                     className="logo-img"
                     style={logoImgStyle}
                   />
-                   <img
+
+                </a>
+                <a target="_blank" href="https://www.shopify.com/partners/directory/partner/thriftizer-solutions" >
+                  <img
                     src={`${appData.lightLogo2}`}
                     alt="logo"
                     className="logo-img"
                     style={logoImgStyle}
                   />
+
                 </a>
-                
+
+
               </div>
 
               <div className="con-info custom-font">
@@ -83,40 +88,40 @@ const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
                       <li>
                         <span style={{ fontWeight: "bold" }}>Phone: </span> +91 8861324254
                       </li>
-                                        <li>
-                    <span style={{ fontWeight: "bold" }}>Address: </span> 24/D, 4th Floor, Friends colony, 560068 Bangalore KA, India
-                  </li>
+                      <li>
+                        <span style={{ fontWeight: "bold" }}>Address: </span> 24/D, 4th Floor, Friends colony, 560068 Bangalore KA, India
+                      </li>
                     </>
                   )}
 
                 </ul>
 
-                
+
               </div>
 
-<div className="social-icon" style={{ marginTop: "2rem" }}>
-  <h3 className="custom-font stit simple-btn" style={subHeadingStyle}>Follow us</h3>
-  <div className="social">
-    <a href="https://www.facebook.com/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
-      <i
-        className="fab fa-facebook-f"
-        style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
-      ></i>
-    </a>
-    <a href="https://www.linkedin.com/company/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
-      <i
-        className="fab fa-linkedin"
-        style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
-      ></i>
-    </a>
-    <a href="https://www.instagram.com/thriftizersolutionsllp" className="icon" style={{ marginRight: "1rem" }}>
-      <i
-        className="fab fa-instagram"
-        style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
-      ></i>
-    </a>
-  </div>
-</div>
+              <div className="social-icon" style={{ marginTop: "2rem" }}>
+                <h3 className="custom-font stit simple-btn" style={subHeadingStyle}>Follow us</h3>
+                <div className="social">
+                  <a href="https://www.facebook.com/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
+                    <i
+                      className="fab fa-facebook-f"
+                      style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
+                    ></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
+                    <i
+                      className="fab fa-linkedin"
+                      style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
+                    ></i>
+                  </a>
+                  <a href="https://www.instagram.com/thriftizersolutionsllp" className="icon" style={{ marginRight: "1rem" }}>
+                    <i
+                      className="fab fa-instagram"
+                      style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
+                    ></i>
+                  </a>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -181,22 +186,22 @@ const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
 
 
         <div className="copyrights text-center" style={{ fontSize: "1rem", marginTop: "2rem", letterSpacing: "normal" }}>
-<div
-  className="policy-links d-flex justify-content-center flex-column flex-md-row align-items-center text-center"
-  style={{
-    gap: "1rem",
-    fontSize: "1rem",
-    color: "#fff",
-    // marginTop: "2rem",
-      marginBottom: "1rem",
+          <div
+            className="policy-links d-flex justify-content-center flex-column flex-md-row align-items-center text-center"
+            style={{
+              gap: "1rem",
+              fontSize: "1rem",
+              color: "#fff",
+              // marginTop: "2rem",
+              marginBottom: "1rem",
 
-  }}
->
-  <a href="/legal/policy" style={{ color: "#fff", textDecoration: "none" }}>Privacy Policy</a>
-  <a href="/legal/tos" style={{ color: "#fff", textDecoration: "none" }}>Terms of Service</a>
-  <a href="/legal/contact_info" style={{ color: "#fff", textDecoration: "none" }}>Contact Information</a>
-  <a href="/legal/refund" style={{ color: "#fff", textDecoration: "none" }}>Refund Policy</a>
-</div>
+            }}
+          >
+            <a href="/legal/policy" style={{ color: "#fff", textDecoration: "none" }}>Privacy Policy</a>
+            <a href="/legal/tos" style={{ color: "#fff", textDecoration: "none" }}>Terms of Service</a>
+            <a href="/legal/contact_info" style={{ color: "#fff", textDecoration: "none" }}>Contact Information</a>
+            <a href="/legal/refund" style={{ color: "#fff", textDecoration: "none" }}>Refund Policy</a>
+          </div>
 
           <p>© 2025 Thriftizer Solutions LLP.</p>
         </div>

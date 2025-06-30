@@ -1,12 +1,11 @@
 // import StylesServices from './styles.jsx';
 
-   const ThreeSixtyDegree = () => {
-   return(
+const ThreeSixtyDegree = () => {
+  return (
 
-          <div className="performance-marketing-page">
-        <style jsx>{`
+    <div className="performance-marketing-page">
+      <style jsx>{`
           .performance-marketing-page {
-            background: linear-gradient(135deg, #0d1117 0%, #161b26 50%, #1a1f2e 100%);
             min-height: 100vh;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,8 +13,6 @@
 
           .hero-section {
             padding: 100px 0 80px;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23667eea;stop-opacity:0.1" /><stop offset="100%" style="stop-color:%23764ba2;stop-opacity:0.1" /></linearGradient></defs><rect width="1200" height="800" fill="url(%23grad1)"/></svg>');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -42,12 +39,13 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .hero-title {
             font-size: 3.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #75dab4 0%, #4caf50 100%);
+            background: white;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 1.5rem;
             line-height: 1.5;
+            color:white;
           }
 
           .hero-subtitle {
@@ -71,17 +69,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
             position: relative;
           }
 
-          .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: linear-gradient(90deg, #75dab4, #4caf50);
-            border-radius: 2px;
-          }
+
 
           .service-card {
             background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
@@ -298,21 +286,70 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           }
         `}</style>
 
-{/* Hero Section */}
-<section className="hero-section">
-  <div className="container">
-    <div className="row justify-content-center">
-      <div className="col-lg-10">
-        <div className="hero-content text-center">
-          <h1 className="hero-title">Brand Strategy & Design</h1>
-          <p className="hero-subtitle">
-            We craft distinctive brand identities that resonate with your audience. From logo and voice to full digital experience, designed specifically for Shopify storefronts.
-          </p>
+      {/* Hero Section */}
+    <section
+      className="hero-section"
+      style={{
+        position: "relative",
+        height: "100vh",
+        overflow: "hidden",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+      }}
+    >
+      {/* Background video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: -2,
+        }}
+      >
+        <source src="/Video/services_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Overlay */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
+          zIndex: -1,
+        }}
+      ></div>
+
+      {/* Content */}
+      <div
+        className="container"
+        style={{ position: "relative", zIndex: 1 }}
+      >
+        <div className="row justify-content-center">
+          <div className="col-lg-10">
+            <div className="hero-content text-white">
+              <h1 className="hero-title">Brand Strategy & Design</h1>
+              <p className="hero-subtitle">
+                            We craft distinctive brand identities that resonate with your audience. From logo and voice to full digital experience, designed specifically for Shopify storefronts.
+
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 {/* Overview Section */}
 <section className="section-content">
