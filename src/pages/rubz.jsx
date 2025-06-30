@@ -33,13 +33,13 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/apaapi/banner_1.jpg';
+  const images = '/rubz/banner.jpg';
   const imagePaths = [
-    '/apaapi/2.jpg',
-    '/apaapi/3.jpg',
-    '/apaapi/4.jpg',
-    '/apaapi/5.jpg',
-    '/apaapi/1.jpg',
+    '/rubz/1.jpg',
+    '/rubz/2.jpg',
+    '/rubz/3.jpg',
+    '/rubz/4.jpg',
+    '/rubz/5.jpg',
   ];
   return (
     <DarkTheme>

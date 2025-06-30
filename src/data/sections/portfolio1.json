@@ -29,16 +29,16 @@
   },
   {
     "id": 5,
-    "title": "Mom Store",
+    "title": "Rubz",
     "description": "We provide transparent reporting and clear communication to keep you informed every step of the way.",
-    "image": "/scroller/IMG-20250621-WA0001.jpg",
-    "link":"/momstore"
+    "image": "/rubz/1.jpg",
+    "link":"/rubz"
   },
   {
     "id": 6,
-    "title": "Glam Plus",
+    "title": "Himalaya Art",
     "description": "Building on proven success, we scale campaigns and introduce innovative strategies for continued growth.",
-    "image": "/scroller/IMG-20250620-WA0045.jpg",
-    "link":"/glam"
+    "image": "/himalaya/1.jpg",
+    "link":"/himalaya"
   }
 ]
