@@ -1,10 +1,10 @@
 // import StylesServices from './styles.jsx';
 
-   const ThreeSixtyDegree = () => {
-   return(
+const ThreeSixtyDegree = () => {
+  return (
 
-          <div className="performance-marketing-page">
-        <style jsx>{`
+    <div className="performance-marketing-page">
+      <style jsx>{`
           .performance-marketing-page {
             background: linear-gradient(135deg, #0d1117 0%, #161b26 50%, #1a1f2e 100%);
             min-height: 100vh;
@@ -298,254 +298,259 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           }
         `}</style>
 
-        {/* Hero Section */}
-        <section className="hero-section">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-10">
-                <div className="hero-content text-center">
-                  <h1 className="hero-title">360° Performance Marketing</h1>
-                  <p className="hero-subtitle">
-                    Holistic performance marketing across every digital channel—paid search, social ads, display, and beyond—to ensure unified, ROI-driven campaigns tailored for Shopify and BigCommerce stores.
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="hero-content text-center">
+                <h1 className="hero-title">360° Performance Marketing</h1>
+                <p className="hero-subtitle">
+                  Holistic performance marketing across every digital channel—paid search, social ads, display, and beyond—to ensure unified, ROI-driven campaigns tailored for Shopify and BigCommerce stores.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Overview Section */}
+      <section className="section-content">
+        <div className="container">
+          <h2 className="section-title">Overview</h2>
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="service-card">
+                <div className="service-card-content">
+                  <div className="service-icon">
+                    <i className="fas fa-chart-line"></i>
+                  </div>
+                  <h3>Complete Digital Marketing Ecosystem</h3>
+                  <p>
+                    At Thriftizer, we deliver holistic performance marketing across every digital channel—paid search, social ads, display, and beyond—to ensure unified, ROI-driven campaigns tailored for Shopify and BigCommerce stores.
+                  </p>
+                  <p>
+                    Our comprehensive approach ensures that every marketing dollar works harder, every campaign learns from the others, and every channel contributes to your overall growth strategy.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Overview Section */}
-        <section className="section-content">
-          <div className="container">
-            <h2 className="section-title">Overview</h2>
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="service-card">
-                  <div className="service-card-content">
-                    <div className="service-icon">
-                      <i className="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Complete Digital Marketing Ecosystem</h3>
-                    <p>
-                      At Thriftizer, we deliver holistic performance marketing across every digital channel—paid search, social ads, display, and beyond—to ensure unified, ROI-driven campaigns tailored for Shopify and BigCommerce stores.
-                    </p>
-                    <p>
-                      Our comprehensive approach ensures that every marketing dollar works harder, every campaign learns from the others, and every channel contributes to your overall growth strategy.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* What We Do Section */}
-        <section className="section-content">
-          <div className="container">
-            <h2 className="section-title">What We Do</h2>
-            <div className="row">
-              <div className="col-lg-6 mb-4">
-                <div className="service-card">
-                  <div className="service-card-content">
-                    <div className="service-icon">
-                      <i className="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Cohesive Ad Strategies</h3>
-                    <p>Craft cohesive ad strategies across Google Ads, Meta, YouTube, Pinterest, and Instagram.</p>
-                    <div className="platform-grid">
-                      <div className="platform-item ">
-                        <i className="fab fa-google"></i>
-                        <h4>Google Ads</h4>
-                      </div>
-                      <div className="platform-item">
-                        <i className="fab fa-facebook"></i>
-                        <h4>Meta</h4>
-                      </div>
-                      <div className="platform-item">
-                        <i className="fab fa-youtube"></i>
-                        <h4>YouTube</h4>
-                      </div>
-                      <div className="platform-item">
-                        <i className="fab fa-pinterest"></i>
-                        <h4>Pinterest</h4>
-                      </div>
-                      <div className="platform-item">
-                        <i className="fab fa-instagram"></i>
-                        <h4>Instagram</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="service-card">
-                  <div className="service-card-content">
-                    <div className="service-icon">
-                      <i className="fas fa-desktop"></i>
-                    </div>
-                    <h3>Conversion-Focused Pages</h3>
-                    <p>Build conversion-focused landing pages and checkout flows optimized for Shopify UX.</p>
-                    <ul className="service-list">
-                      <li>High-converting landing pages</li>
-                      <li>Optimized checkout flows</li>
-                      <li>Mobile-first design approach</li>
-                      <li>A/B tested elements</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="service-card">
-                  <div className="service-card-content">
-                    <div className="service-icon">
-                      <i className="fas fa-flask"></i>
-                    </div>
-                    <h3>Data-Driven Testing</h3>
-                    <p>Implement data-driven A/B testing and funnel audits using tools like Hotjar, GA4, and Klaviyo.</p>
-                    <ul className="service-list">
-                      <li>Advanced A/B testing protocols</li>
-                      <li>Comprehensive funnel analysis</li>
-                      <li>User behavior tracking</li>
-                      <li>Email marketing optimization</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="service-card">
-                  <div className="service-card-content">
-                    <div className="service-icon">
-                      <i className="fas fa-tachometer-alt"></i>
-                    </div>
-                    <h3>Real-Time Optimization</h3>
-                    <p>Provide real-time performance dashboards and weekly optimization sprints.</p>
-                    <ul className="service-list">
-                      <li>Live performance dashboards</li>
-                      <li>Weekly optimization sprints</li>
-                      <li>Real-time alerts and monitoring</li>
-                      <li>Continuous improvement cycles</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Section */}
-        <section className="stats-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-4">
-                <div className="stat-item">
-                  <span className="stat-number">2,000+</span>
-                  <span className="stat-label">Shopify Stores Launched</span>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="stat-item">
-                  <span className="stat-number">30%</span>
-                  <span className="stat-label">Average ROAS Increase</span>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="stat-item">
-                  <span className="stat-number">100%</span>
-                  <span className="stat-label">ROI-Driven Campaigns</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why It Works Section */}
-        <section className="section-content">
-          <div className="container">
-            <h2 className="section-title">Why It Works</h2>
-            <div className="row justify-content-center">
-              <div className="col-lg-10">
-                <div className="service-card">
-                  <div className="service-card-content">
-                    <div className="service-icon">
-                      <i className="fas fa-cogs"></i>
-                    </div>
-                    <h3>Proven Success Formula</h3>
-                    <p>
-                      With over 2,000 Shopify stores launched, Thriftizer refines each channel to work in concert—maximizing ROAS by as much as 30% through cohesive, dashboard-led adjustments.
-                    </p>
-                    <p>
-                      Our success comes from treating your marketing ecosystem as a unified machine where every component amplifies the others, rather than operating in isolation.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Who It's For Section */}
-        <section className="section-content">
-          <div className="container">
-            <h2 className="section-title">Who It's For</h2>
-<div className="row d-flex align-items-stretch">
-  <div className="col-lg-4 mb-4 d-flex">
-    <div className="service-card w-100">
-      <div className="service-card-content">
-        <div className="service-icon">
-          <i className="fas fa-puzzle-piece"></i>
         </div>
-        <h3>Siloed Channel Struggles</h3>
-        <p>Shopify brands struggling with siloed channels that don't work together effectively.</p>
-      </div>
-    </div>
-  </div>
-  <div className="col-lg-4 mb-4 d-flex">
-    <div className="service-card w-100">
-      <div className="service-card-content">
-        <div className="service-icon">
-          <i className="fas fa-rocket"></i>
-        </div>
-        <h3>Ready to Scale</h3>
-        <p>Growing stores ready to scale with performance-driven strategy and data-backed decisions.</p>
-      </div>
-    </div>
-  </div>
-  <div className="col-lg-4 mb-4 d-flex">
-    <div className="service-card w-100">
-      <div className="service-card-content">
-        <div className="service-icon">
-          <i className="fas fa-chart-bar"></i>
-        </div>
-        <h3>Growth Focused</h3>
-        <p>Ecom businesses chasing accelerated sales and lower acquisition costs through optimized funnels.</p>
-      </div>
-    </div>
-  </div>
-</div>
+      </section>
 
+      {/* What We Do Section */}
+      <section className="section-content">
+        <div className="container">
+          <h2 className="section-title">What We Do</h2>
+          <div className="row">
+            <div className="col-lg-6 mb-4">
+              <div className="service-card">
+                <div className="service-card-content">
+                  <div className="service-icon">
+                    <i className="fas fa-bullseye"></i>
+                  </div>
+                  <h3>Cohesive Ad Strategies</h3>
+                  <p>Craft cohesive ad strategies across Google Ads, Meta, YouTube, Pinterest, and Instagram.</p>
+                  <div className="platform-grid">
+                    <div className="platform-item ">
+                      <i className="fab fa-google"></i>
+                      <h4>Google Ads</h4>
+                    </div>
+                    <div className="platform-item">
+                      <i className="fab fa-facebook"></i>
+                      <h4>Meta</h4>
+                    </div>
+                    <div className="platform-item">
+                      <i className="fab fa-youtube"></i>
+                      <h4>YouTube</h4>
+                    </div>
+                    <div className="platform-item">
+                      <i className="fab fa-pinterest"></i>
+                      <h4>Pinterest</h4>
+                    </div>
+                    <div className="platform-item">
+                      <i className="fab fa-instagram"></i>
+                      <h4>Instagram</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 mb-4">
+              <div className="service-card">
+                <div className="service-card-content">
+                  <div className="service-icon">
+                    <i className="fas fa-desktop"></i>
+                  </div>
+                  <h3>Conversion-Focused Pages</h3>
+                  <p>Build conversion-focused landing pages and checkout flows optimized for Shopify UX.</p>
+                  <ul className="service-list">
+                    <li>High-converting landing pages</li>
+                    <li>Optimized checkout flows</li>
+                    <li>Mobile-first design approach</li>
+                    <li>A/B tested elements</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 mb-4">
+              <div className="service-card">
+                <div className="service-card-content">
+                  <div className="service-icon">
+                    <i className="fas fa-flask"></i>
+                  </div>
+                  <h3>Data-Driven Testing</h3>
+                  <p>Implement data-driven A/B testing and funnel audits using tools like Hotjar, GA4, and Klaviyo.</p>
+                  <ul className="service-list">
+                    <li>Advanced A/B testing protocols</li>
+                    <li>Comprehensive funnel analysis</li>
+                    <li>User behavior tracking</li>
+                    <li>Email marketing optimization</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 mb-4">
+              <div className="service-card">
+                <div className="service-card-content">
+                  <div className="service-icon">
+                    <i className="fas fa-tachometer-alt"></i>
+                  </div>
+                  <h3>Real-Time Optimization</h3>
+                  <p>Provide real-time performance dashboards and weekly optimization sprints.</p>
+                  <ul className="service-list">
+                    <li>Live performance dashboards</li>
+                    <li>Weekly optimization sprints</li>
+                    <li>Real-time alerts and monitoring</li>
+                    <li>Continuous improvement cycles</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* CTA Section */}
-        <section className="cta-section ">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-8">
-                <h2 className="cta-title">Ready to Transform Your Marketing?</h2>
-                <p className="cta-subtitle">
-                  Request a free performance audit today and discover how we can multiply your ROI through cross-channel optimization.
-                </p>
-                <a href="/contact" className="cta-button">
-                  Get Your Free Audit
+      {/* Stats Section */}
+      <section className="stats-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="stat-item">
+                <span className="stat-number">2,000+</span>
+                <span className="stat-label">Shopify Stores Launched</span>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="stat-item">
+                <span className="stat-number">30%</span>
+                <span className="stat-label">Average ROAS Increase</span>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="stat-item">
+                <span className="stat-number">100%</span>
+                <span className="stat-label">ROI-Driven Campaigns</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why It Works Section */}
+      <section className="section-content">
+        <div className="container">
+          <h2 className="section-title">Why It Works</h2>
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="service-card">
+                <div className="service-card-content">
+                  <div className="service-icon">
+                    <i className="fas fa-cogs"></i>
+                  </div>
+                  <h3>Proven Success Formula</h3>
+                  <p>
+                    With over 2,000 Shopify stores launched, Thriftizer refines each channel to work in concert—maximizing ROAS by as much as 30% through cohesive, dashboard-led adjustments.
+                  </p>
+                  <p>
+                    Our success comes from treating your marketing ecosystem as a unified machine where every component amplifies the others, rather than operating in isolation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who It's For Section */}
+      <section className="section-content">
+        <div className="container">
+          <h2 className="section-title">Who It's For</h2>
+          <div className="row d-flex align-items-stretch">
+            <div className="col-lg-4 mb-4 d-flex">
+              <div className="service-card w-100">
+                <div className="service-card-content">
+                  <div className="service-icon">
+                    <i className="fas fa-puzzle-piece"></i>
+                  </div>
+                  <h3>Siloed Channel Struggles</h3>
+                  <p>Shopify brands struggling with siloed channels that don't work together effectively.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 mb-4 d-flex">
+              <div className="service-card w-100">
+                <div className="service-card-content">
+                  <div className="service-icon">
+                    <i className="fas fa-rocket"></i>
+                  </div>
+                  <h3>Ready to Scale</h3>
+                  <p>Growing stores ready to scale with performance-driven strategy and data-backed decisions.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 mb-4 d-flex">
+              <div className="service-card w-100">
+                <div className="service-card-content">
+                  <div className="service-icon">
+                    <i className="fas fa-chart-bar"></i>
+                  </div>
+                  <h3>Growth Focused</h3>
+                  <p>Ecom businesses chasing accelerated sales and lower acquisition costs through optimized funnels.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="cta-section ">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <h2 className="cta-title">Ready to Transform Your Marketing?</h2>
+              <p className="cta-subtitle">
+                Request a free performance audit today and discover how we can multiply your ROI through cross-channel optimization.
+              </p>
+              <div className="custom-made">
+                <a href="/contact" className="btn-curve btn-lit custom-button">
+                  <span className="text-color-black">
+                    Get Your Free Audit
+                  </span>
                 </a>
               </div>
+
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
 
 
-   )
-   }
+  )
+}
 
 export default ThreeSixtyDegree;

@@ -468,9 +468,15 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
     <p className="cta-subtitle">
         Request a free performance audit today and discover how we can multiply your ROI through cross-channel optimization.
     </p>
-    <a href="/contact" className="cta-button">
-        Get Your Free Audit
-    </a>
+
+
+                        <div className="custom-made">
+                <a href="/contact" className="btn-curve btn-lit custom-button">
+                  <span className="text-color-black">
+                   Get Your Free Audit
+                  </span>
+                </a>
+              </div>
     </div>
 </div>
 </div>

@@ -451,9 +451,14 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
         <p className="cta-subtitle">
           Uncover the colors, design, and messaging that will scale your store's impact and connection with your audience.
         </p>
-        <a href="/contact" className="cta-button">
-          Schedule My Session
-        </a>
+
+        <div className="custom-made">
+                <a href="/contact" className="btn-curve btn-lit custom-button">
+                  <span className="text-color-black">
+                    Schedule My Session
+                  </span>
+                </a>
+              </div>
       </div>
     </div>
   </div>

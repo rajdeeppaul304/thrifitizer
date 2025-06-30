@@ -1801,6 +1801,9 @@ body {
         text-transform: capitalize; }
       .slider .parallax-slider .caption .btn-curve:hover span {
         color: #0c0f16; }
+        /* added by me */
+    .custom-made .btn-curve:hover span {
+        color: #0c0f16; }
     .slider .parallax-slider .caption.dig h1 {
       font-weight: 800;
       font-size: 80px;

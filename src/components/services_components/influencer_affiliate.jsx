@@ -468,9 +468,16 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
         <p className="cta-subtitle">
           Start with an influencer mapping and outreach plan. We’ll line up 10–15 high-fit creators for you.
         </p>
-        <a href="/contact" className="cta-button">
-          Get Started
-        </a>
+
+
+        
+                <div className="custom-made">
+                <a href="/contact" className="btn-curve btn-lit custom-button">
+                  <span className="text-color-black">
+                    Get Started
+                  </span>
+                </a>
+              </div>
       </div>
     </div>
   </div>

@@ -457,7 +457,13 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
   <div className="container">
     <h2 className="cta-title">Next Steps</h2>
     <p className="cta-subtitle">Receive a comprehensive SEO health score and custom content roadmap — on us.</p>
-    <a href="/contact" className="cta-button">Get Your Free Audit</a>
+                    <div className="custom-made">
+                <a href="/contact" className="btn-curve btn-lit custom-button">
+                  <span className="text-color-black">
+                   Get Your Free Audit
+                  </span>
+                </a>
+              </div>
   </div>
 </section>
 

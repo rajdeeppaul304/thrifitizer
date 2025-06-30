@@ -491,9 +491,15 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
         <p className="cta-subtitle">
           Get started with a free email sequence teardown. We’ll show quick wins and opportunities.
         </p>
-        <a href="/contact" className="cta-button">
-          Request Your Free Teardown
-        </a>
+
+
+                <div className="custom-made">
+                <a href="/contact" className="btn-curve btn-lit custom-button">
+                  <span className="text-color-black">
+                    Request Your Free Teardown
+                  </span>
+                </a>
+              </div>
       </div>
     </div>
   </div>
