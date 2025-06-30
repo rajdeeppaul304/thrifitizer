@@ -23,7 +23,7 @@ const Navbar = ({ lr, nr, theme }) => {
           color: #217953 !important;
         }
       `}</style>
-      <div className="container">
+      <div className="container" style={{maxWidth:'1300px'}}>
         <Link href="/" legacyBehavior>
 <div className="logo-group d-flex align-items-center">
   <a className="logo mr-2" style={{ width: "90px" , marginRight:'45px'}}>
@@ -75,7 +75,7 @@ const Navbar = ({ lr, nr, theme }) => {
                 <a className="nav-link">Home</a>
               </Link>
             </li>
-                        <li className="nav-item dropdown" onClick={handleDropdown}>
+                        {/* <li className="nav-item dropdown" onClick={handleDropdown}>
                           <span
                             className="nav-link dropdown-toggle"
                             data-toggle="dropdown"
@@ -105,7 +105,7 @@ const Navbar = ({ lr, nr, theme }) => {
                               <a className="dropdown-item">Social Media Management</a>
                             </Link>
                           </div>
-                        </li>
+                        </li> */}
             {/* <li className="nav-item">
               <Link href="/works3/works3-dark/" legacyBehavior>
                 <a className="nav-link">Services</a>
@@ -129,6 +129,11 @@ const Navbar = ({ lr, nr, theme }) => {
             <li className="nav-item">
               <Link href="/build_your_own_package/" legacyBehavior>
                 <a className="nav-link">Package Builder</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/career/" legacyBehavior>
+                <a className="nav-link">Career</a>
               </Link>
             </li>
             <li className="nav-item">

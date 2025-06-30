@@ -174,7 +174,7 @@ const AboutUs1 = () => {
           text-align: center;
         }
         .featured-title {
-          font-size: 4rem;
+          font-size: 3rem;
           font-weight: 600;
           margin-bottom: 25px;
           letter-spacing: 1px;

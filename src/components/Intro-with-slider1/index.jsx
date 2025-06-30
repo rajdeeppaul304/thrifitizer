@@ -175,7 +175,7 @@ const IntroWithSlider1 = ({ sliderRef }) => {
           className="swiper-pagination top botm custom-font"
         ></div>
 
-        <div className="social-icon">
+        {/* <div className="social-icon">
           <a href="https://www.facebook.com/thriftizer/">
             <i className="fab fa-facebook-f"></i>
           </a>
@@ -186,7 +186,7 @@ const IntroWithSlider1 = ({ sliderRef }) => {
           <a href="https://www.instagram.com/thriftizersolutionsllp">
             <i className="fab fa-instagram"></i>
           </a>
-        </div>
+        </div> */}
       </div>
     </header>
   );
