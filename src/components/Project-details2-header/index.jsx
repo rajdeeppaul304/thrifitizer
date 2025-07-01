@@ -20,13 +20,20 @@ const ProjectDetails2Header = ({ images, Text, subText="", subTitle="" }) => {
           background-position: center center;
           background-repeat: no-repeat;
           background-size: cover;
-          height: 100vh; /* or any other height */
+
         }
+          .utujv{
+          margin-top:-50px
+          }
 
         @media (max-width: 768px) {
           .page-header {
             background-image: url('${images[1]}');
+             height: 100vh;
           }
+             .utujv{
+             margin-top:-80px
+             }
         }
       `}</style>
 
@@ -34,10 +41,10 @@ const ProjectDetails2Header = ({ images, Text, subText="", subTitle="" }) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-7 col-md-9">
-            <div className="cont"
+            <div className="cont utujv"
             style={{
               position:'absolute',
-              marginTop:'-10px',
+
             }}
             >
               <h1>{Text}</h1>

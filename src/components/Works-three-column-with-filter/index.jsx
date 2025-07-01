@@ -125,7 +125,7 @@ const galleryItems = [
   },
   {
     id: 13,
-    image: "/apaapi/3.jpg",
+    image: "/apaapi/outer_image.jpg",
     title: "Apaapi",
     url: "/apaapi/",
     services: [],
@@ -135,7 +135,7 @@ const galleryItems = [
   },
   {
     id: 14,
-    image: "/moborr/1.jpg",
+    image: "/moborr/outer_image.jpg",
     title: "Moborr",
     url: "/moborr/",
     services: [],
@@ -175,7 +175,7 @@ const galleryItems = [
   },
   {
     id: 18,
-    image: "/curious_cub/1.jpg",
+    image: "/curious_cub/outer_image.jpg",
     title: "Curious Cub",
     url: "/curious_cub/",
     services: [],

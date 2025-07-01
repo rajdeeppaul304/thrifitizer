@@ -73,13 +73,13 @@
   },
     {
     "id": 13,
-    "image": "./apaapi/3.jpg",
+    "image": "./apaapi/outer_image.jpg",
     "sub": "Apaapi",
     "url": "/apaapi/"
   },
   {
     "id": 14,
-    "image": "./moborr/1.jpg",
+    "image": "./moborr/outer_image.jpg",
     "sub": "Moborr",
     "url": "/moborr/"
   },
@@ -103,7 +103,7 @@
   },
   {
     "id": 18,
-    "image": "./curious_cub/1.jpg",
+    "image": "./curious_cub/outer_image.jpg",
     "sub": "Curious Cub",
     "url": "/curious_cub/"
   },
