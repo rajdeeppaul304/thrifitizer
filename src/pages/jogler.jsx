@@ -33,7 +33,7 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = ['/jogler/banner.jpg', '/jogler/banner.jpg'];
+  const images = ['/jogler/banner.jpg', '/jogler/mobile_banner.jpg'];
   const imagePaths = [
     '/jogler/1.jpg',
     '/jogler/2.jpg',

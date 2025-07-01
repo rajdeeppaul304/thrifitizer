@@ -195,7 +195,7 @@ const galleryItems = [
   },
   {
     id: 20,
-    image: "/jogler/1.jpg",
+    image: "/jogler/outer_image.jpg",
     title: "Jogler",
     url: "/jogler/",
     services: [],
@@ -226,6 +226,7 @@ const WorksThreeColumnWithFilter = ({ filterPosition }) => {
   return (
     <section className="portfolio section-padding pb-70">
       <div className="container">
+        <h1 className="mb-20 mt-10 responsive-heading text-center">Explore Our Work.</h1>
         <div className="row">
           <div
             className={`filtering ${
