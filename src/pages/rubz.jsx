@@ -33,18 +33,20 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/rubz/banner.jpg';
+  const images = ['/rubz/banner.jpg', '/rubz/1.jpg'];
   const imagePaths = [
-    '/rubz/1.jpg',
+    '/rubz/1.jpeg',
     '/rubz/2.jpg',
-    '/rubz/3.jpg',
-    '/rubz/4.jpg',
-    '/rubz/5.jpg',
+    '/rubz/3.jpeg',
+    '/rubz/4.jpeg',
+    '/rubz/5.png',
+
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Rubz"  subText="https://Rubz.in/"/>
+      <ProjectDetails2Header images={images} Text="Rubz"  subText="https://Rubz.in/" 
+      subTitle='Website maintenance and performance marketing via Meta and Google Ads.'/>
       <ProjectDetails2Introduction projectName="Rubz.in" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

@@ -2892,8 +2892,7 @@ header.simpl {
     .intro-section .item p a:last-of-type {
       margin-right: 0; }
 
-.extra-text {
-  font-size: 22px; }
+
 
 .video-wrapper {
   min-height: 500px; }
@@ -4050,6 +4049,11 @@ header.simpl {
       margin-right: 10px; }
       .testim-box .swiper-container .controls .swiper-nav-ctrl:after {
         display: none; }
+
+
+
+      .smp-list  .extra-text,li {
+  font-size: 15px; }
   .testim-box .swiper-container .swiper-pagination {
     position: absolute;
     right: 80px;

@@ -33,7 +33,7 @@ const ProjectDetails3Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/Saraffurniture/bannerimage.png';
+  const images = ['/Saraffurniture/bannerimage.png', '/Saraffurniture/bannerimage.png'];
   const imagePaths = [
     '/Saraffurniture/Screenshot_2025_0625_094156.png',
     '/Saraffurniture/Screenshot_2025_0625_094209.png',
@@ -44,7 +44,8 @@ const ProjectDetails3Dark = () => {
   return (
      <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Insaraf"  subText="https://www.insaraf.com/"/>
+      <ProjectDetails2Header images={images} Text="Insaraf"  subText="https://www.insaraf.com/" 
+      subTitle='Providing website maintenance, SEO enhancements, and performance-driven Google Ads.'/>
       <ProjectDetails2Introduction projectName="Insaraf" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

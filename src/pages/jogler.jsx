@@ -33,7 +33,7 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/jogler/banner.jpg';
+  const images = ['/jogler/banner.jpg', '/jogler/banner.jpg'];
   const imagePaths = [
     '/jogler/1.jpg',
     '/jogler/2.jpg',
@@ -46,7 +46,8 @@ const ProjectDetails5Dark = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Jogler"  subText="https://www.jogler.com/"/>
+      <ProjectDetails2Header images={images} Text="Jogler"  subText="https://www.jogler.com/" 
+      subTitle='Website developed for a precision instruments manufacturer, focused on functionality and clarity.'/>
       <ProjectDetails2Introduction projectName="Jogler" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

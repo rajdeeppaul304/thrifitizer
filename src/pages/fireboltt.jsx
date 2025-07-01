@@ -31,20 +31,22 @@ const ProjectDetails3Dark = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [navbarRef]);
-
-  // Extract image paths from the data
-  const images = '/Fireboltt/file_00000000ff90622fb0a8f9f69f4f7ff1.png';
+ 
+  // Extract image paths from the data Fireboltt
+  const images = ['/Fireboltt/banner.png', '/Fireboltt/mobile_banner.png'];
   const imagePaths = [
-    '/Fireboltt/file_00000000ff90622fb0a8f9f69f4f7ff1.png',
-    '/Fireboltt/file_00000000045461f8bb3ce9660e00929c.png',
-    '/Fireboltt/file_00000000715061f4b0fb6ba507f9a6ec.png',
-    '/Fireboltt/file_00000000bbcc61f8bdc05c86b7905c46.png',
-    '/Fireboltt/file_00000000efa0622f9ee0205addabacc3 (1).png',
+    '/Fireboltt/1.jpg',
+    '/Fireboltt/2.png',
+    '/Fireboltt/3.jpg',
+    '/Fireboltt/4.jpg',
+    '/Fireboltt/5.png',
+
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Fire-Boltt"  subText="https://www.fireboltt.com/"/>
+      <ProjectDetails2Header images={images} Text="Fire-Boltt"  subText="https://www.fireboltt.com/"
+      subTitle='Shopify website developed for a high-performance wearable tech brand.'/>
       <ProjectDetails2Introduction projectName="Fire-Boltt" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

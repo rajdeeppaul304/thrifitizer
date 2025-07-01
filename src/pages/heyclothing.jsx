@@ -32,19 +32,20 @@ const ProjectDetails3Dark = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [navbarRef]);
 
-  // Extract image paths from the data
-  const images = '/Heyclothing/bannerimage.png';
+  // Extract image paths from the data Heyclothing
+  const images = ['/Heyclothing/bannerimage.png', '/Heyclothing/scroller.png'];
   const imagePaths = [
-    '/Heyclothing/Mask_group.png',
-    '/Heyclothing/Screenshot_2025_0625_125053.png',
-    '/Heyclothing/Screenshot_2025_0625_125137.png',
-    '/Heyclothing/Screenshot_2025_0625_125119.png',
-    '/Heyclothing/bannerimage.png',
+    '/Heyclothing/1.png',
+    '/Heyclothing/2.jpeg',
+    '/Heyclothing/3.png',
+    '/Heyclothing/4.png',
+    '/Heyclothing/5.png',
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="HAY Clothing"  subText="https://www.hayclothing.in/"/>
+      <ProjectDetails2Header images={images} Text="HAY Clothing"  subText="https://www.hayclothing.in/"
+      subTitle='Website developed with integrated SEO, Meta, and Google ad strategies for growth.'/>
       <ProjectDetails2Introduction projectName="HAY Clothing" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

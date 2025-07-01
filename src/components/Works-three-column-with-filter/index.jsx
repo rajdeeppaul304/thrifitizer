@@ -16,7 +16,7 @@ const galleryItems = [
   {
     id: 2,
     image: "/scroller/IMG-20250620-WA0037.jpg",
-    title: "EpokeArt ",
+    title: "EpokeArt",
     url: "/epoke/",
     services: [],
     industries: [],
@@ -155,7 +155,7 @@ const galleryItems = [
   },
   {
     id: 16,
-    image: "/scroller/IMG-20250621-WA0005.jpg",
+    image: "/rubz/1.jpg",
     title: "Rubz",
     url: "/rubz/",
     services: [],
@@ -165,7 +165,7 @@ const galleryItems = [
   },
   {
     id: 17,
-    image: "/scroller/IMG-20250621-WA0005.jpg",
+    image: "/himalaya/1.jpg",
     title: "Himalaya Fine Art",
     url: "/himalaya/",
     services: [],
@@ -195,9 +195,9 @@ const galleryItems = [
   },
   {
     id: 20,
-    image: "/Jogler/1.jpg",
+    image: "/jogler/1.jpg",
     title: "Jogler",
-    url: "/Jogler/",
+    url: "/jogler/",
     services: [],
     industries: [],
     type: "image",

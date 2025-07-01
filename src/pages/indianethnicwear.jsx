@@ -33,18 +33,18 @@ const ProjectDetails3Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/Indianethnic/Header_Banner_1.jpg';
+  const images = ['/Indianethnic/Banner_2_e81b47e4-4ea9-434d-93ac-ae82bb18f7fb.jpg', '/Indianethnic/Banner_2_e81b47e4-4ea9-434d-93ac-ae82bb18f7fb.jpg']; 
   const imagePaths = [
     '/Indianethnic/Banner_36858bbd-6220-48cb-9564-847588a57b5a.jpg',
     '/Indianethnic/Banners_4c35e9af-c6bf-4361-97fc-0849332074d5.png',
     '/Indianethnic/Banner_bd5ae374-03d7-4ea5-8e3e-98130892235f.jpg',
     '/Indianethnic/Banner_12.jpg',
-    '/Indianethnic/Banner_2_e81b47e4-4ea9-434d-93ac-ae82bb18f7fb.jpg',
+    '/Indianethnic/Header_Banner_1.jpg',
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="The Indian Ethnic Co."  subText="https://theindianethnicco.com/"/>
+      <ProjectDetails2Header images={images} Text="The Indian Ethnic Co."  subText="https://theindianethnicco.com/" subTitle='Shopify website developed to bring artisanal ethnic fashion online.'/>
       <ProjectDetails2Introduction projectName="The Indian Ethnic Co." />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

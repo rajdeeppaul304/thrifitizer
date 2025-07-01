@@ -115,7 +115,7 @@
   },
   {
     "id": 20,
-    "image": "./Jogler/1.jpg",
+    "image": "/jogler/1.jpg",
     "sub": "Jogler",
     "url": "/Jogler/"
   }

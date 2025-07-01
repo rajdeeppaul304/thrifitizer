@@ -33,7 +33,7 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/colonial_candle/banner.jpg';
+  const images = ['/colonial_candle/banner.jpg', '/colonial_candle/mobile_banner.png'];
   const imagePaths = [
     '/colonial_candle/1.jpg',
     '/colonial_candle/2.jpg',
@@ -45,7 +45,7 @@ const ProjectDetails5Dark = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Colonial Candle"  subText="https://colonialcandle.com/"/>
+      <ProjectDetails2Header images={images} Text="Colonial Candle"  subText="https://colonialcandle.com/" subTitle='Shopify store development for a legacy home fragrance brand.'/>
       <ProjectDetails2Introduction projectName="Colonial Candle" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

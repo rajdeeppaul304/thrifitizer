@@ -33,18 +33,20 @@ const ProjectDetails3Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/Instore/banner.png';
+  const images = ['/Instore/banner.png', '/Instore/mobile_banner.png'];
   const imagePaths = [
-    '/Instore/Screenshot_2025_0625_084614.png',
-    '/Instore/Screenshot_2025_0625_084736.png',
-    '/Instore/Screenshot_2025_0625_084903.png',
-    '/Instore/Screenshot_2025_0625_084838.png',
-    '/Instore/Screenshot_2025_0625_085122.png',
+    '/Instore/1.jpg',
+    '/Instore/2.jpg',
+    '/Instore/3.jpg',
+    '/Instore/4.jpg',
+    '/Instore/5.png',
+
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Instore "  subText="https://instore.co.in/"/>
+      <ProjectDetails2Header images={images} Text="Instore "  subText="https://instore.co.in/"
+      subTitle='Ongoing website maintenance with end-to-end SEO, Meta, and Google Ads management.'/>
       <ProjectDetails2Introduction projectName="Instore.co.in" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

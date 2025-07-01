@@ -33,18 +33,20 @@ const ProjectDetails4Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/DesignHouse/banner.jpg';
+  const images = ['/DesignHouse/banner.jpg', '/DesignHouse/mobile_banner.png'];
   const imagePaths = [
-    '/DesignHouse/1_88dc962d-31ff-4bd1-8472-c9f55659436e.jpg',
-    '/DesignHouse/DSC05315_f5bee8f2-dca3-483e-8ff0-63d643094372_1100x.jpg',
-    '/DesignHouse/Sharon_03_1_1100x.jpg',
-    '/DesignHouse/dubai-table.jpg',
-    '/DesignHouse/IMG_2755_1_-Square_1100x.jpg',
+    '/DesignHouse/1.jpg',
+    '/DesignHouse/2.jpg',
+    '/DesignHouse/3.jpg',
+    '/DesignHouse/4.jpg',
+    '/DesignHouse/5.jpg',
+
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="The Design House Dubai"  subText="https://thedesignhousedubai.com/"/>
+      <ProjectDetails2Header images={images} Text="The Design House Dubai"  subText="https://thedesignhousedubai.com/"
+      subTitle='Website revamp with full-scale SEO, Meta Ads, and Google Ads for luxury interior retail.'/>
       <ProjectDetails2Introduction projectName="The Design House Dubai" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

@@ -33,7 +33,7 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/crossbeats/banner.jpg';
+  const images = ['/crossbeats/banner.jpg', '/crossbeats/mobile_banner.png'];
   const imagePaths = [
     '/crossbeats/1.jpg',
     '/crossbeats/2.jpg',
@@ -44,7 +44,8 @@ const ProjectDetails5Dark = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Crossbeats"  subText="https://crossbeats.com/"/>
+      <ProjectDetails2Header images={images} Text="Crossbeats"  subText="https://crossbeats.com/"
+      subTitle='Robust Shopify website development for a leading consumer tech brand.'/>
       <ProjectDetails2Introduction projectName="Crossbeats" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

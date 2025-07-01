@@ -33,19 +33,19 @@ const ProjectDetails3Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/momstore/banner.jpg';
+  const images = ['/momstore/banner.jpg', '/momstore/banner.jpg'];
   const imagePaths = [
-    '/momstore/a.jpg',
-    '/momstore/b.jpg',
-    '/momstore/c.jpg',
-    '/momstore/d.jpg',
-    '/momstore/e.jpg',
+    '/momstore/1.jpg',
+    '/momstore/2.jpg',
+    '/momstore/3.jpg',
+    '/momstore/4.jpg',
+    '/momstore/5.png',
 
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="The Mom Store"  subText="https://themomstore.in/"/>
+      <ProjectDetails2Header images={images} Text="The Mom Store"  subText="https://themomstore.in/" subTitle='Custom Shopify website developed to support their growing parent-focused product line.'/>
       <ProjectDetails2Introduction projectName="The Mom Store" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

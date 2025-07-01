@@ -33,18 +33,20 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/apaapi/banner_1.jpg';
+  const images = ['/apaapi/banner_1.jpg', '/apaapi/mobile_banner.png'];
   const imagePaths = [
+    '/apaapi/1.jpg',
     '/apaapi/2.jpg',
     '/apaapi/3.jpg',
     '/apaapi/4.jpg',
     '/apaapi/5.jpg',
-    '/apaapi/1.jpg',
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Apaapi"  subText="https://apaapi.com/"/>
+      <ProjectDetails2Header images={images} Text="Apaapi"  subText="https://apaapi.com/" 
+      subTitle="Developed a vibrant Shopify store with ongoing Meta Ads and organic social media content to boost engagement."
+      />
       <ProjectDetails2Introduction projectName="Apaapi" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

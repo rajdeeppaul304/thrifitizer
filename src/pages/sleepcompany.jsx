@@ -33,18 +33,20 @@ const ProjectDetails3Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/Sleepcompany/bannerimage.png';
+  const images = ['/Sleepcompany/bannerimage.png', '/Sleepcompany/mobile_banner.png'];
   const imagePaths = [
-    '/Sleepcompany/Main_Banner_01_Mobile.jpeg',
-    '/Sleepcompany/Recliner_Sofa_Website_Banner_01.jpeg',
-    '/Sleepcompany/Screenshot_2025_0625_091539.png',
-    '/Sleepcompany/Screenshot_2025_0625_092229.png',
-    '/Sleepcompany/1st-banner-SmartGRID-page_1.jpeg',
+    '/Sleepcompany/1.jpg',
+    '/Sleepcompany/2.jpeg',
+    '/Sleepcompany/3.jpeg',
+    '/Sleepcompany/4.jpg',
+    '/Sleepcompany/5.png',
+
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="The Sleep Company"  subText="https://thesleepcompany.in/"/>
+      <ProjectDetails2Header images={images} Text="The Sleep Company"  subText="https://thesleepcompany.in/"
+      subTitle='Full website development delivering an optimized user experience for a D2C sleep-tech brand.'/>
       <ProjectDetails2Introduction projectName="The Sleep Company" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

@@ -33,18 +33,19 @@ const ProjectDetails3Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/Glam/banner.jpg';
+  const images = ['/Glam/banner.jpg', '/Glam/mobile_banner.png'];
   const imagePaths = [
-    '/Glam/1.jpg',
+    '/Glam/1.png',
     '/Glam/2.jpg',
-    '/Glam/3.jpg',
+    '/Glam/3.png',
     '/Glam/4.jpg',
     '/Glam/5.jpg',
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="GlamPlus Store"  subText="https://www.glamplus.ai/"/>
+      <ProjectDetails2Header images={images} Text="GlamPlus Store"  subText="https://www.glamplus.ai/" 
+      subTitle='Website development with full-service digital marketing across SEO, Meta, and Google Ads.'/>
       <ProjectDetails2Introduction projectName="GlamPlus Store" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

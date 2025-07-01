@@ -33,7 +33,7 @@ const ProjectDetails3Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/Htr/banner.jpg';
+  const images = ['/Htr/banner.jpg', '/Htr/banner.jpg'];
   const imagePaths = [
     '/Htr/Screenshot_2025_0625_095230.png',
     '/Htr/Screenshot_2025_0625_095304.png',
@@ -44,7 +44,8 @@ const ProjectDetails3Dark = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="HTRZMODZ"  subText="https://htrzmodz.com/"/>
+      <ProjectDetails2Header images={images} Text="HTRZMODZ"  subText="https://htrzmodz.com/"
+      subTitle='Running Meta and Google Ads to scale visibility for gaming accessories.'/>
       <ProjectDetails2Introduction projectName="HTRZMODZ" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

@@ -33,7 +33,8 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/moborr/banner.jpg';
+  const images = ['/moborr/banner.jpg', '/moborr/banner.jpg'];
+
   const imagePaths = [
     '/moborr/1.jpg',
     '/moborr/2.jpg',
@@ -45,7 +46,8 @@ const ProjectDetails5Dark = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Moborr"  subText="https://moborr.com/"/>
+      <ProjectDetails2Header images={images} Text="Moborr"  subText="https://moborr.com/" 
+      subTitle='Crafted a clean, minimalistic Shopify website focused on showcasing sustainable fashion with an elevated UX.'/>
       <ProjectDetails2Introduction projectName="Moborr" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

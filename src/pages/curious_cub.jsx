@@ -33,7 +33,7 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/curious_cub/banner.jpg';
+  const images = ['/curious_cub/banner.jpg', '/curious_cub/mobile_banner.png'];
   const imagePaths = [
     '/curious_cub/1.jpg',
     '/curious_cub/2.jpg',
@@ -45,7 +45,8 @@ const ProjectDetails5Dark = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Curious Cub"  subText="https://www.curiouscub.in/"/>
+      <ProjectDetails2Header images={images} Text="Curious Cub"  subText="https://www.curiouscub.in/"
+      subTitle='Website developed to support growth for an early childhood learning brand.'/>
       <ProjectDetails2Introduction projectName="Curious Cub" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

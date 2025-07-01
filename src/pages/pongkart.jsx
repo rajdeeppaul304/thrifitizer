@@ -32,19 +32,21 @@ const ProjectDetails3Dark = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [navbarRef]);
 
-  // Extract image paths from the data
-  const images = '/Pongkart/banner.png';
+  // Extract image paths from the  Pongkart
+  const images = ['/Pongkart/banner.png', '/Pongkart/banner.png'];
   const imagePaths = [
-    '/Pongkart/Screenshot_2025_0625_090524.png',
-    '/Pongkart/Screenshot_2025_0625_090559.png',
-    '/Pongkart/Screenshot_2025_0625_090651.png',
-    '/Pongkart/Screenshot_2025_0625_090852.png',
-    '/Pongkart/banner.png',
+    '/Pongkart/1.jpg',
+    '/Pongkart/2.jpg',
+    '/Pongkart/3.jpg',
+    '/Pongkart/4.jpg',
+    '/Pongkart/5.png',
+
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="PongKart"  subText="https://www.pongkart.com/"/>
+      <ProjectDetails2Header images={images} Text="PongKart"  subText="https://www.pongkart.com/" 
+      subTitle='Shopify store development for a modern, scalable eCommerce foundation.'/>
       <ProjectDetails2Introduction projectName="PongKart" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       

@@ -33,7 +33,7 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = '/himalaya/banner.jpg';
+  const images = ['/himalaya/banner.jpg', '/himalaya/banner.jpg'];
   const imagePaths = [
     '/himalaya/1.jpg',
     '/himalaya/2.jpg',
@@ -44,7 +44,8 @@ const ProjectDetails5Dark = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Himalaya Fine Art"  subText="https://www.himalayafineart.com/"/>
+      <ProjectDetails2Header images={images} Text="Himalaya Fine Art"  subText="https://www.himalayafineart.com/" 
+      subTitle='Providing website maintenance and ongoing digital marketing support.'/>
       <ProjectDetails2Introduction projectName="Himalaya Fine Art" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       
