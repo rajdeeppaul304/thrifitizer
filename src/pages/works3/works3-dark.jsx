@@ -189,7 +189,7 @@ const Works3Dark = () => {
           </div>
         </section>
 
-        {/* Section 3: Why Work With Us */}}
+        {/* Section 3: Why Work With Us */}
         <section className="section-padding bg-dark">
           <div className="container">
             <div className="row justify-content-center mb-30">
@@ -303,7 +303,7 @@ const Works3Dark = () => {
                     href="mailto:hello@youragency.com"
                     className="butn butn-bg"
                     style={{
-                      background: "rgb(117, 218, 180);",
+                      background: "#75dab4;",
                       color: "#fff",
                       borderRadius: "30px",
                       padding: "12px 32px",
@@ -317,7 +317,7 @@ const Works3Dark = () => {
                     <span>Book a Free Consultation</span>
                   </a>
                   <div className="mt-10">
-                    <a href="mailto:hello@youragency.com" className="fz-16" style={{ color: "rgb(117, 218, 180);" }}>
+                    <a href="mailto:hello@youragency.com" className="fz-16" style={{ color: "#75dab4;" }}>
                       praveen@thriftizer.com
                     </a>
                   </div>
@@ -327,14 +327,14 @@ const Works3Dark = () => {
                       className="butn butn-bg"
                       style={{
                         background: "#23272f",
-                        color: "rgb(117, 218, 180)",
+                        color: "#75dab4",
                         borderRadius: "30px",
                         padding: "12px 32px",
                         fontWeight: 600,
                         fontSize: "1.1rem",
                         margin: "0 8px",
                         display: "inline-block",
-                        border: "2px solid rgb(117, 218, 180);",
+                        border: "2px solid #75dab4;",
                       }}
                     >
                       <span>Let’s Get Started &rarr;</span>

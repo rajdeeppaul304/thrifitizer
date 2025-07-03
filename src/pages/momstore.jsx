@@ -39,7 +39,9 @@ const ProjectDetails3Dark = () => {
     '/momstore/2.jpg',
     '/momstore/3.jpg',
     '/momstore/4.jpg',
-    '/momstore/5.png',
+    // '/momstore/5.png',
+                '/curious_cub/video.mp4',
+
 
   ];
   return (

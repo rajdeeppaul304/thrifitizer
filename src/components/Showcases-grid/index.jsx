@@ -112,18 +112,31 @@ const ShowcasesGrid = () => {
   }}
   slidesPerView={5.5}
   spaceBetween={32}
-  speed={5000}
+  speed={1000}
   className="logo-swiper"
   breakpoints={{
     320: { slidesPerView: 2.5 },
     576: { slidesPerView: 3.5 },
     768: { slidesPerView: 4.5 },
-    992: { slidesPerView: 7.5 },
+    992: { slidesPerView: 5.5 },
   }}
 >
   {Array.from({ length: 20 }).map((_, idx) => (
     <SwiperSlide key={idx}>
-      <div className="first-class" style={{ color: idx % 2 === 0 ? "#75dab4" : "#ffffff" }}>
+      <div
+        className="first-class"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "12px",
+          color: idx % 2 === 0 ? "#75dab4" : "#ffffff",
+        }}
+      >
+        <img
+          src="/img/logo/logo2.png" // Replace with your logo URL
+          alt="Client Logo"
+          style={{ width: "50px", height: "50px", objectFit: "cover" }}
+        />
         <span>Our Best Clients</span>
       </div>
     </SwiperSlide>

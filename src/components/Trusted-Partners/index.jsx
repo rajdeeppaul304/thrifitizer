@@ -19,6 +19,7 @@ const TrustedPartners = ({ partners, headingText }) => {
                   layout="fill"
                   objectFit="contain"
                 />
+                
               </div>
             </div>
           ))}
@@ -42,6 +43,18 @@ const TrustedPartners = ({ partners, headingText }) => {
             font-size: 1.5rem;
           }
         }
+
+        .partner-image-wrapper {
+          position: relative;
+          filter: grayscale(0%);
+          transition: filter 0.3s ease;
+        }
+
+        .partner-image-wrapper:hover {
+          filter: grayscale(0%);
+        }
+
+        
       `}</style>
     </section>
   );

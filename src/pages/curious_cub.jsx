@@ -39,7 +39,9 @@ const ProjectDetails5Dark = () => {
     '/curious_cub/2.jpg',
     '/curious_cub/3.jpg',
     '/curious_cub/4.jpg',
-    '/curious_cub/5.jpg',
+    // '/curious_cub/5.jpg',
+        '/curious_cub/video.mp4',
+
 
   ];
   return (

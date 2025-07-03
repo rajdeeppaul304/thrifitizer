@@ -1,7 +1,16 @@
+h1,h2,h3,h4,h5,h6{
+  color: aliceblue;
+};
+h1,h2,h3,h4,h5,h6:hover{
+  color: #480051;
+}
 .blog-crv .item {
   display: flex;
   align-items: center;
   height: 100%;
+}
+.flip-card-back{
+  background-color: #23272f !important;
 }
 .block-sec .testim-box .slick-dots li button {
   display: block;
@@ -166,4 +175,16 @@ section.team.section-padding {
   position: relative;
   height: 21rem; 
   width: 100%;
+}
+.abt-con{
+  padding: 45px !important;
+}
+.features-list{
+  background: #0c0f16 !important;
+}
+.cta-section{
+  background-color: #0c0f16 !important;
+}
+.cta-title{
+  color: #40F8AF !important;
 }

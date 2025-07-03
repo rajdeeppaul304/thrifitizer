@@ -113,7 +113,7 @@
 /*----------------------------------------*/
 /*  1.1 Theme Default
 /*----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Marcellus&family=Syne:wght@400;500;600;700;800&family=Aladin&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap');
 .tp-product-tab-2 .nav-tabs .nav-link .tp-product-tab-tooltip, .tp-tab-line, .tp-offcanvas-area, .tp-offcanvas-social ul li a, .tp-offcanvas-2-left, .tp-offcanvas-2-right, .tp-offcanvas-2-close, .tp-offcanvas-2-close-btn .text, .tp-offcanvas-2-close-btn .text span, .tpoffcanvas__logo, .tpoffcanvas__right-info, .tpoffcanvas__social-link ul li a::before, .tp-swiper-dot .swiper-pagination-bullet, .tp-swiper-dot-border .swiper-pagination-bullet, .tp-swiper-scrollbar, .back-to-top-wrapper, a,
 button,
 p,
@@ -122,6 +122,7 @@ select,
 textarea,
 li,
 .transition-3 {
+    font-family: "Quicksand", sans-serif !important;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
@@ -130,6 +131,7 @@ li,
 }
 
 .tp-hotspot svg, .tp-pagination ul li a svg, .tp-pagination ul li span svg, .tp-swiper-arrow button svg {
+    font-family: "Quicksand", sans-serif !important;
   -webkit-transform: translateY(-2px);
   -moz-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
@@ -150,24 +152,24 @@ li,
   transform: translateY(-50%);
 }
 
-@font-face {
+/* @font-face {
   font-family: "gallery_modernregular";
   src: url("../fonts/gallerymodern-webfont.woff2") format("woff2"), url("../fonts/gallerymodern-webfont.woff") format("woff"), url("../fonts/gallerymodern-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 :root {
   /**
   @font family declaration
   */
-  --tp-ff-body: 'Syne', sans-serif;
-  --tp-ff-heading: 'Syne', sans-serif;
-  --tp-ff-p: 'Syne', sans-serif;
+  /* --tp-ff-body: 'Syne', sans-serif; */
+  /* --tp-ff-heading: 'Syne', sans-serif; */
+  /* --tp-ff-p: 'Syne', sans-serif;
   --tp-ff-syne: 'Syne', sans-serif;
   --tp-ff-gallery: 'gallery_modernregular', sans-serif;
   --tp-ff-shoulders: 'Big Shoulders Display', cursive;
   --tp-ff-marcellus: 'Marcellus', sans-serif;
-  --tp-ff-aladin: 'Aladin', system-ui;
+  --tp-ff-aladin: 'Aladin', system-ui; */
   --tp-ff-fontawesome: "Font Awesome 6 Pro";
   /**
   @color declaration
@@ -272,14 +274,15 @@ li,
 	typography css start 
 ---------------------------------*/
 body {
-  font-family: var(--tp-ff-body);
+  font-family: "Quicksand", sans-serif;
   font-size: 14px;
   font-weight: normal;
   color: var(--tp-text-body);
-  line-height: 26px;
+  line-height: normal !important;
 }
 
 a {
+  font-family: "Quicksand", sans-serif;
   text-decoration: none;
 }
 
@@ -289,11 +292,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--tp-ff-heading);
+  font-family: "Oswald", sans-serif;
+  /* font-family: var(--tp-ff-heading); */
   color: var(--tp-common-black);
   margin-top: 0px;
-  font-weight: 500;
-  line-height: 1.2;
+  /* font-weight: 500; */
+  /* line-height: 1.2; */
   -webkit-transition: color 0.3s ease-out;
   -moz-transition: color 0.3s ease-out;
   -ms-transition: color 0.3s ease-out;
@@ -326,6 +330,7 @@ h6 {
 }
 
 ul {
+    font-family: "Quicksand", sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -335,7 +340,7 @@ ul {
 }
 
 p {
-  font-family: var(--tp-ff-p);
+  font-family: "Quicksand", sans-serif;
   color: var(--tp-text-body);
   margin-bottom: 15px;
   font-style: normal;
@@ -350,12 +355,14 @@ img {
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
+  font-family: "Quicksand", sans-serif;
   color: inherit;
   text-decoration: none;
 }
 
 a:focus,
 .button:focus {
+  font-family: "Quicksand", sans-serif;
   text-decoration: none;
   outline: none;
 }
@@ -368,6 +375,7 @@ a:hover {
 
 a,
 button {
+  font-family: "Quicksand", sans-serif;
   color: inherit;
   outline: none;
   border: none;

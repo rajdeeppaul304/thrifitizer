@@ -39,7 +39,9 @@ const ProjectDetails5Dark = () => {
     '/crossbeats/2.jpg',
     '/crossbeats/3.jpg',
     '/crossbeats/4.jpg',
-    '/crossbeats/5.jpg',
+    // '/crossbeats/5.jpg',
+        '/crossbeats/video.mp4',
+
   ];
   return (
     <DarkTheme>

@@ -39,7 +39,8 @@ const ProjectDetails5Dark = () => {
     '/rubz/2.jpg',
     '/rubz/3.jpeg',
     '/rubz/4.jpeg',
-    '/rubz/5.png',
+    // '/rubz/5.png',
+            '/rubz/video.mp4',
 
   ];
   return (

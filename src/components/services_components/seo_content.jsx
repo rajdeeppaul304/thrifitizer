@@ -182,7 +182,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           }
 
           .cta-section {
-            background: linear-gradient(135deg, #75dab4 0%, #42caa1 100%);
+            // background: linear-gradient(135deg, #75dab4 0%, #42caa1 100%);
             padding: 60px 0;
             border-radius: 20px;
             text-align: center;
@@ -196,7 +196,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .cta-title {
             font-size: 2.5rem;
             font-weight: 600;
-            color: #ffffff;
+            // color: #000 !important;
             margin-bottom: 1rem;
           }
 

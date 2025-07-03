@@ -39,7 +39,9 @@ const ProjectDetails3Dark = () => {
     '/Indianethnic/Banners_4c35e9af-c6bf-4361-97fc-0849332074d5.png',
     '/Indianethnic/Banner_bd5ae374-03d7-4ea5-8e3e-98130892235f.jpg',
     '/Indianethnic/Banner_12.jpg',
-    '/Indianethnic/Header_Banner_1.jpg',
+    // '/Indianethnic/Header_Banner_1.jpg',
+                '/Indianethnic/video.mp4',
+
   ];
   return (
     <DarkTheme>

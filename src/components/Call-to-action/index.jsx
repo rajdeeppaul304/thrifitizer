@@ -26,7 +26,7 @@ const CallToAction = ({ img, theme, subBG }) => {
             </div>
           </div>
 
-          <div className="col-md-4 col-lg-3 valign">
+          {/* <div className="col-md-4 col-lg-3 valign">
             <Link href="/contact/">
               <a
                 className={`btn-curve ${
@@ -37,7 +37,7 @@ const CallToAction = ({ img, theme, subBG }) => {
                 <span>Get In Touch</span>
               </a>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -39,7 +39,8 @@ const ProjectDetails3Dark = () => {
     '/Instore/2.jpg',
     '/Instore/3.jpg',
     '/Instore/4.jpg',
-    '/Instore/5.png',
+    // '/Instore/5.png',
+            '/Instore/video.mp4',
 
   ];
   return (

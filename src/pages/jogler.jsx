@@ -41,7 +41,9 @@ const ProjectDetails5Dark = () => {
     '/jogler/4.jpg',
 
     // '/scroller/IMG-20250620-WA0035.jpg',
-    '/jogler/5.jpg',
+    // '/jogler/5.jpg',
+                '/jogler/video.mp4',
+
   ];
   return (
     <DarkTheme>

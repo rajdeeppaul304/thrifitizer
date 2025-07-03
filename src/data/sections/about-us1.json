@@ -14,8 +14,7 @@
       "id": 1,
       "icon": "fas fa-magic",
       "name": {
-        "first": "Design ",
-        "second": "with Purpose"
+        "first": "Design with Purpose "
       },
       "wowDelay": ".3s"
     },

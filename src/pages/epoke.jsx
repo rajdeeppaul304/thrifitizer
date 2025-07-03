@@ -39,7 +39,8 @@ const ProjectDetails5Dark = () => {
     '/Epoke/2.png',
     '/Epoke/3.jpg',
     '/Epoke/4.jpg',
-    '/Epoke/5.png',
+    // '/Epoke/5.png',
+        '/Epoke/video.mp4',
 
   ];
   return (

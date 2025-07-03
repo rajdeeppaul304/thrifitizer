@@ -231,12 +231,7 @@ const ContactWithMap = ({ theme = "dark" }) => {
 
       {/* Google Map */}
       <div className="map" id="ieatmaps">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.2730928974597!2d77.63670107473297!3d12.890153187417695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1545d1a215b3%3A0x7bd6e22703ec81cb!2sThriftizer%20Solutions%20LLP!5e0!3m2!1sen!2sin!4v1750625342625!5m2!1sen!2sin"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.354192784659!2d-121.48276012568338!3d38.57169066585917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ad1377eabbaf3%3A0x6aad02473cddd84c!2s2108%20N%20St%2C%20Sacramento%2C%20CA%2095816%2C%20USA!5e0!3m2!1sen!2sin!4v1751541800419!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       {/* Footer */}
@@ -245,7 +240,7 @@ const ContactWithMap = ({ theme = "dark" }) => {
           <div className="copyrights text-center mt-0">
             <p>
               {/* © 2022, Avo Template. Made with passion by{" "} */}
-              <a href="/">Thriftizer</a>.
+              <a href="">@Thriftizer</a>.
             </p>
           </div>
         </div>

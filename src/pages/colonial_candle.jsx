@@ -39,7 +39,7 @@ const ProjectDetails5Dark = () => {
     '/colonial_candle/2.jpg',
     '/colonial_candle/3.jpg',
     '/colonial_candle/4.jpg',
-    '/colonial_candle/5.jpg',
+    '/colonial_candle/video.mp4',
 
   ];
   return (

@@ -39,7 +39,8 @@ const ProjectDetails3Dark = () => {
     '/Fireboltt/2.png',
     '/Fireboltt/3.jpg',
     '/Fireboltt/4.jpg',
-    '/Fireboltt/5.png',
+    // '/Fireboltt/5.png',
+        '/Fireboltt/video.mp4',
 
   ];
   return (

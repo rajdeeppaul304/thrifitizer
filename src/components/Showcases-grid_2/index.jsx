@@ -86,16 +86,17 @@ const ShowcasesGrid = () => {
             {ShowcassesFullScreenData.map((slide) => (
               <SwiperSlide key={slide.id} className="swiper-slide">
                 <Link passHref href="/project-details2/project-details2-dark">
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: `url(${slide.image})`,
-                    }}
-                    data-tooltip-tit={
-                      slide.title.first + " " + slide.title.second
-                    }
-                    data-tooltip-sub={slide.sub}
-                  ></div>
+              <div
+                className="bg-img"
+                style={{
+                  backgroundImage: `url(${slide.image})`,
+                }}
+                data-tooltip-tit={
+                  slide.title.first + " " + slide.title.second
+                }
+                data-tooltip-sub={slide.sub}
+              >
+              </div>
                 </Link>
               </SwiperSlide>
             ))}

@@ -8,6 +8,7 @@ import ProjectDetailsImages from "../components/Project-details-images";
 import ProjectDetailsDescription from "../components/Project-details-description";
 // import PortfolioCustomColumn from "../components/Portfolio-custom-column";
 import WorksThreeColumnWithFilter from "../components/Works-three-column-with-filter";
+// import WorksThreeColumnWithFilter from "../components/Works-three-column-with-filter";
 
 import ProjectDetailsVideo from "../components/Project-details-video";
 import NextProject from "../components/Next-project";

@@ -39,7 +39,9 @@ const ProjectDetails4Dark = () => {
     '/DesignHouse/2.jpg',
     '/DesignHouse/3.jpg',
     '/DesignHouse/4.jpg',
-    '/DesignHouse/5.jpg',
+    // '/DesignHouse/5.jpg',
+            '/DesignHouse/video.mp4',
+
 
   ];
   return (

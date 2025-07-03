@@ -5,6 +5,8 @@ const ThreeSixtyDegree = () => {
 
     <div className="performance-marketing-page">
       <style jsx>{`
+
+
           .performance-marketing-page {
             min-height: 100vh;
             color: #ffffff;
@@ -81,6 +83,8 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+                        border-color: rgba(117, 218, 180, 0.3);
+            box-shadow: 0 20px 40px rgba(117, 218, 180, 0.2);
           }
 
           .service-card::before {
@@ -101,8 +105,6 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
 
           .service-card:hover {
             transform: translateY(-10px);
-            border-color: rgba(117, 218, 180, 0.3);
-            box-shadow: 0 20px 40px rgba(117, 218, 180, 0.2);
           }
 
           .service-card-content {
@@ -182,7 +184,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           }
 
           .cta-section {
-            background: linear-gradient(135deg, #75dab4 0%, #42caa1 100%);
+            // background: linear-gradient(135deg, #75dab4 0%, #42caa1 100%);
             padding: 60px 0;
             border-radius: 20px;
             text-align: center;
@@ -196,7 +198,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .cta-title {
             font-size: 2.5rem;
             font-weight: 600;
-            color: #ffffff;
+            // color: #000000 !important ;
             margin-bottom: 1rem;
           }
 
@@ -284,6 +286,12 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
 
           }
           }
+      .fab{
+        color:white !important;
+      }
+        .fas{
+          color:white !important;
+        }
         `}</style>
 
       {/* Hero Section */}
@@ -499,7 +507,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
       </section>
 
       {/* Why It Works Section */}
-      <section className="section-content">
+      {/* <section className="section-content">
         <div className="container">
           <h2 className="section-title">Why It Works</h2>
           <div className="row justify-content-center">
@@ -521,7 +529,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Who It's For Section */}
       <section className="section-content">

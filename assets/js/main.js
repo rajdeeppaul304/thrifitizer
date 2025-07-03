@@ -3457,7 +3457,7 @@ gsap.timeline()
 		$(".tp-offcanvas-2-area").addClass("opened");
 
 		setTimeout(() => {
-			$('.tp-text-hover-effect-word').addClass('animated-text');
+			$('.tp-text-hover-effect-').addClass('animated-text');
 		}, 900);
 	});
 
@@ -3754,5 +3754,5 @@ $(".anim-zoomin").each(function() {
 
 
 
-})(jQuery);
+(jQuery);
 

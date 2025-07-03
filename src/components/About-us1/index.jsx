@@ -70,7 +70,7 @@ const AboutUs1 = () => {
 
 
       </div>
-      <div className="container">
+      <div className="container abt-con ">
         <div className="row about-section">
           {/* Left Images */}
           <div className="col-lg-5 col-md-12 images-column">
@@ -136,6 +136,21 @@ const AboutUs1 = () => {
       </div>
       {/* Styles */}
       <style jsx>{`
+
+      .features-list{
+              background: #0c0f16 !important;
+              // position: relative;
+              border-radius: 10px;
+              /* padding: 20px; */
+              text-align: center;
+              -webkit-flex: 1 1 calc(33.333% - 20px);
+              -ms-flex: 1 1 calc(33.333% - 20px);
+              flex: 1 1 calc(33.333% - 20px);
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+              -webkit-transition: -webkit-transform 0.3s;
+              transition: transform 0.3s;
+              left: -45px !important;
+              }
         .responsive-img {
           width: 100%;
           height: auto;

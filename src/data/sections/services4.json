@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "360° performance marketing",
-    "icon": "fas fa-bullhorn",
+    "icon":"fas fa-bullhorn" ,
     "content": "Paid ads (Meta, Google, YouTube), funnels, retargeting — all built to convert.",
     "link": "/services/360_degree_marketing"
   },

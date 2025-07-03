@@ -39,7 +39,8 @@ const ProjectDetails3Dark = () => {
     '/Pongkart/2.jpg',
     '/Pongkart/3.jpg',
     '/Pongkart/4.jpg',
-    '/Pongkart/5.png',
+    // '/Pongkart/5.png',
+            '/Pongkart/video.mp4',
 
   ];
   return (

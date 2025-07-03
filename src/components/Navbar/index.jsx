@@ -186,8 +186,8 @@ const Navbar = ({ lr, nr, theme }) => {
             <i className="fab fa-instagram"></i>
           </a>
 
-          <a target="_blank" href="https://www.shopify.com/partners/directory/partner/thriftizer-solutions">
-            <i className="fab fa-shopify"></i>
+          <a target="_blank" href="https://api.whatsapp.com/send/?phone=918861324254&text=Hello&type=phone_number&app_absent=0">
+            <i className="fab fa-whatsapp"></i>
           </a>
 
           </div>

@@ -1,6 +1,10 @@
 import Image from "next/image";
 
 const ProjectDetails2Images = ({ imagePaths = [] }) => {
+  // Get the last image/video path
+  const lastItem = imagePaths[4];
+  const isVideo = lastItem?.toLowerCase().endsWith(".mp4");
+
   return (
     <section className="projdtal">
       <h2 style={{ display: "none" }}> &nbsp; </h2>
@@ -12,7 +16,6 @@ const ProjectDetails2Images = ({ imagePaths = [] }) => {
                 <a href={src} target="_blank">
                   <Image
                     alt=""
-                    
                     src={src}
                     className="img-fluid rounded"
                     width={500}
@@ -23,16 +26,21 @@ const ProjectDetails2Images = ({ imagePaths = [] }) => {
             ))}
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-12">
-            <img
-              src={imagePaths[4]}
-              alt=""
-              className="img-fluid rounded mt-3"
-              style={{ width: "100%" }}
-            />
+
+        {isVideo && (
+          <div className="row">
+            <div className="col-md-12">
+              <video
+                src={lastItem}
+                controls
+                className="img-fluid rounded mt-3"
+                style={{ width: "100%" }}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

@@ -39,7 +39,9 @@ const ProjectDetails3Dark = () => {
     '/Glam/2.jpg',
     '/Glam/3.png',
     '/Glam/4.jpg',
-    '/Glam/5.jpg',
+    // '/Glam/5.jpg',
+            '/Glam/video.mp4',
+
   ];
   return (
     <DarkTheme>

@@ -1,209 +1,189 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { Formik, Form, Field } from "formik";
 import appData from "../../data/app.json";
 
 const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
-  function validateEmail(value) {
-    let error;
-    if (!value) {
-      error = "Required";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-      error = "Invalid email address";
-    }
-    return error;
-  }
-
   const footerStyles = {
     fontSize: "1rem",
     lineHeight: "1.6",
     letterSpacing: "normal",
     textTransform: "none",
+    backgroundColor: "#151921",
+    color: "#ffffff",
   };
+  
   const headingStyle = {
-    fontSize: "1.25rem",
-    fontWeight: "bold",
-    marginBottom: "1rem",
-    textTransform: "none",
-    letterSpacing: "normal",
+    fontSize: "1.1rem",
+    fontWeight: "600",
+    marginBottom: "1.5rem",
+    textTransform: "uppercase",
+    letterSpacing: "0.5px",
+    color: "#75DAB4",
   };
-  const subHeadingStyle = {
-    fontSize: isBuildYourPackage ? "1.6rem" : "1.1rem", // Bigger if isBuildYourPackage
-    fontWeight: "bold",
-    marginBottom: "0.75rem",
-    textTransform: "none",
-    letterSpacing: "normal",
-  };
+  
   const logoImgStyle = {
     width: "120px",
     height: "auto",
     display: "block",
   };
-  const iconStyle = {
-    fontSize: isBuildYourPackage ? "2em" : "1.3rem",
+  
+  const linkStyle = {
+    color: "#ffffff",
+    textDecoration: "none",
+    fontSize: "0.95rem",
+    lineHeight: "1.8",
+    transition: "color 0.3s ease",
   };
-
-  const sendEmail = (ms) => new Promise((r) => setTimeout(r, ms));
+  
+  const iconStyle = {
+    fontSize: "1.2rem",
+    color: "#75DAB4",
+    marginRight: "1rem",
+    transition: "color 0.3s ease",
+  };
 
   return (
     <footer
-      className={`footer-half ${noSubBG ? "" : "sub-bg"} section-padding pb-0`}
+      className="footer-half section-padding pb-0"
       style={footerStyles}
     >
       <div className="container">
         <div className="row">
-          <div className="col-lg-5">
+          {/* Logo and Description */}
+          <div className="col-lg-4 col-md-6 mb-4">
             <div className="cont">
               <div className="logo" style={{ marginBottom: "1.5rem", display: 'flex', alignItems:'center'}}>
-                <a href="/" >
+                <a href="/">
                   <img
                     src={`${appData.lightLogo}`}
                     alt="logo"
                     className="logo-img"
                     style={logoImgStyle}
                   />
-
                 </a>
-                <a target="_blank" href="https://www.shopify.com/partners/directory/partner/thriftizer-solutions" >
+                <a target="_blank" href="https://www.shopify.com/partners/directory/partner/thriftizer-solutions">
                   <img
                     src={`${appData.lightLogo2}`}
                     alt="logo"
                     className="logo-img"
                     style={logoImgStyle}
                   />
-
                 </a>
-
-
               </div>
-
-              <div className="con-info custom-font">
-                <ul style={{ fontSize: "1rem", letterSpacing: "normal" }}>
-                  {/* Only show if NOT isBuildYourPackage */}
-                  {!isBuildYourPackage && (
-                    <>
-                      <li>
-                        <span style={{ fontWeight: "bold" }}>Email: </span> praveen@thriftizer.com
-                      </li>
-                      <li>
-                        <span style={{ fontWeight: "bold" }}>Phone: </span> +91 8861324254
-                      </li>
-                      <li>
-                        <span style={{ fontWeight: "bold" }}>Address: </span> 24/D, 4th Floor, Friends colony, 560068 Bangalore KA, India
-                      </li>
-                    </>
-                  )}
-
-                </ul>
-
-
-              </div>
-
-              <div className="social-icon" style={{ marginTop: "2rem" }}>
-                <h3 className="custom-font stit simple-btn" style={subHeadingStyle}>Follow us</h3>
+              
+              <p style={{ fontSize: "0.95rem", lineHeight: "1.6", color: "#ffffff", marginBottom: "1.5rem" }}>
+                Thriftizer gives you the tools and solutions you need to create 
+                truly professional e-commerce experiences.
+              </p>
+              
+              {/* Social Icons */}
+              <div className="social-icon">
                 <div className="social">
-                  <a href="https://www.facebook.com/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
-                    <i
-                      className="fab fa-facebook-f"
-                      style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
-                    ></i>
+                  <a href="https://www.facebook.com/thriftizer/" className="icon" style={iconStyle}>
+                    <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.linkedin.com/company/thriftizer/" className="icon" style={{ marginRight: "1rem" }}>
-                    <i
-                      className="fab fa-linkedin"
-                      style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
-                    ></i>
+                  <a href="https://www.linkedin.com/company/thriftizer/" className="icon" style={iconStyle}>
+                    <i className="fab fa-linkedin"></i>
                   </a>
-                  <a href="https://www.instagram.com/thriftizersolutionsllp" className="icon" style={{ marginRight: "1rem" }}>
-                    <i
-                      className="fab fa-instagram"
-                      style={{ fontSize: isBuildYourPackage ? "1.8rem" : "1.3rem" }}
-                    ></i>
+                  <a href="https://www.instagram.com/thriftizersolutionsllp" className="icon" style={iconStyle}>
+                    <i className="fab fa-instagram"></i>
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
-          <div className="col-lg-5 offset-lg-2">
-            <div className="subscribe mb-50">
-              <h3 className="custom-font stit simple-btn" style={subHeadingStyle}>Newsletter</h3>
-              <p style={{ fontSize: "1rem" }}>Sign up for our newsletter!</p>
-              <Formik
-                initialValues={{ subscribe: "" }}
-                onSubmit={async (values, { resetForm }) => {
-                  await sendEmail(500);
-                  alert(JSON.stringify(values, null, 2));
-                  resetForm();
-                }}
-              >
-                {({ errors, touched }) => (
-                  <Form>
-                    <div className="form-group custom-font" style={{ fontSize: "1rem" }}>
-                      <Field
-                        validate={validateEmail}
-                        type="email"
-                        name="subscribe"
-                        placeholder="Your email"
-                        style={{
-                          fontSize: "1rem",
-                          padding: "0.5rem 1rem",
-                          marginRight: "1rem",
-                          borderRadius: "4px",
-                          border: "1px solid #ccc",
-                          letterSpacing: "normal",
-                          textTransform: "none",
-                        }}
-                      />
-                      <button
-                        className="cursor-pointer"
-                        style={{
-                          fontSize: "1rem",
-                          padding: "0.5rem 1.5rem",
-                          borderRadius: "4px",
-                          background: "#222",
-                          color: "#fff",
-                          border: "none",
-                          fontWeight: "bold",
-                          marginLeft: "0.5rem",
-                          letterSpacing: "normal",
-                          textTransform: "none",
-                        }}
-                      >
-                        Subscribe
-                      </button>
-                      {errors.subscribe && touched.subscribe && (
-                        <div style={{ color: "red", marginTop: "0.5rem" }}>{errors.subscribe}</div>
-                      )}
-                    </div>
-                  </Form>
-                )}
-              </Formik>
+          {/* Company Links */}
+          <div className="col-lg-2 col-md-6 col-6 mb-4">
+            <div className="footer-links">
+              <h3 className="custom-font" style={headingStyle}>Company</h3>
+              <ul style={{ listStyle: "none", padding: 0 }}>
+                <li style={{ marginBottom: "0.5rem" }}>
+                  <a href="/about" style={linkStyle}>About</a>
+                </li>
+                <li style={{ marginBottom: "0.5rem" }}>
+                  <a href="/project-details" style={linkStyle}>Portfolio</a>
+                </li>
+                <li style={{ marginBottom: "0.5rem" }}>
+                  <a href="/contact" style={linkStyle}>Contact</a>
+                </li>
+                <li style={{ marginBottom: "0.5rem" }}>
+                  <a href="/career" style={linkStyle}>Career</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Help Links */}
+          <div className="col-lg-2 col-md-6 col-6 mb-4">
+            <div className="footer-links">
+              <h3 className="custom-font" style={headingStyle}>Legal</h3>
+              <ul style={{ listStyle: "none", padding: 0 }}>
+                <li style={{ marginBottom: "0.5rem" }}>
+                  <a href="/legal/contac_info" style={linkStyle}>Contact Info</a>
+                </li>
+                <li style={{ marginBottom: "0.5rem" }}>
+                  <a href="/legal/tos" style={linkStyle}>Terms & Conditions</a>
+                </li>
+                <li style={{ marginBottom: "0.5rem" }}>
+                  <a href="/legal/policy" style={linkStyle}>Privacy Policy</a>
+                </li>
+                <li style={{ marginBottom: "0.5rem" }}>
+                  <a href="/legal/refund" style={linkStyle}>Refund Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Contact Info */}
+          <div className="col-lg-4 col-md-6 mb-4">
+            <div className="footer-links">
+              <h3 className="custom-font" style={headingStyle}>Contact Info</h3>
+              <div className="con-info custom-font">
+                <div style={{ marginBottom: "1rem" }}>
+                  <p style={{ margin: 0, fontSize: "0.95rem", lineHeight: "1.6" }}>
+                    <span style={{ fontWeight: "bold", color: "#fff" }}>Email: &nbsp;</span>
+                    <a href="mailto:praveen@thriftizer.com" style={{ color: "#ffffff", textDecoration: "none" }}>
+                      praveen@thriftizer.com
+                    </a>
+                  </p>
+                </div>
+                <div style={{ marginBottom: "1rem" }}>
+                  <p style={{ margin: 0, fontSize: "0.95rem", lineHeight: "1.6" }}>
+                    <span style={{ fontWeight: "bold", color: "#fff" }}>Phone: &nbsp;</span>
+                    <a href="tel:+918861324254" style={{ color: "#ffffff", textDecoration: "none" }}>
+                      +91 8861324254
+                    </a>
+                  </p>
+                </div>
+                <div style={{ marginBottom: "1rem" }}>
+                  <p style={{ margin: 0, fontSize: "0.95rem", lineHeight: "1.6" }}>
+                    <span style={{ fontWeight: "bold", color: "#fff" }}>Address: &nbsp;</span>
+                    24/D, 4th Floor, Friends colony, 560068 Bangalore KA, India
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-
-        <div className="copyrights text-center" style={{ fontSize: "1rem", marginTop: "2rem", letterSpacing: "normal" }}>
-          <div
-            className="policy-links d-flex justify-content-center flex-column flex-md-row align-items-center text-center"
-            style={{
-              gap: "1rem",
-              fontSize: "1rem",
-              color: "#fff",
-              // marginTop: "2rem",
-              marginBottom: "1rem",
-
-            }}
-          >
-            <a href="/legal/policy" style={{ color: "#fff", textDecoration: "none" }}>Privacy Policy</a>
-            <a href="/legal/tos" style={{ color: "#fff", textDecoration: "none" }}>Terms of Service</a>
-            <a href="/legal/contact_info" style={{ color: "#fff", textDecoration: "none" }}>Contact Information</a>
-            <a href="/legal/refund" style={{ color: "#fff", textDecoration: "none" }}>Refund Policy</a>
+        {/* Copyright */}
+        <div className="row">
+          <div className="col-12">
+            <div 
+              className="copyrights text-center" 
+              style={{ 
+                fontSize: "0.9rem", 
+                marginTop: "2rem", 
+                paddingTop: "2rem", 
+                borderTop: "1px solid #2a2f3a",
+                letterSpacing: "normal",
+                color: "#ffffff"
+              }}
+            >
+              <p style={{ margin: 0 }}>© 2025 Thriftizer Solutions LLP. All Rights Reserved.</p>
+            </div>
           </div>
-
-          <p>© 2025 Thriftizer Solutions LLP.</p>
         </div>
       </div>
 

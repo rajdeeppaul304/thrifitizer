@@ -39,7 +39,9 @@ const ProjectDetails5Dark = () => {
     '/himalaya/2.jpg',
     '/himalaya/3.jpg',
     '/himalaya/4.jpg',
-    '/himalaya/5.jpg',
+    // '/himalaya/5.jpg',
+            '/himalaya/video.mp4',
+
   ];
   return (
     <DarkTheme>

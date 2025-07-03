@@ -39,7 +39,9 @@ const ProjectDetails3Dark = () => {
     '/Saraffurniture/Screenshot_2025_0625_094209.png',
     '/Saraffurniture/Screenshot_2025_0625_094219.png',
     '/Saraffurniture/Screenshot_2025_0625_094230.png',
-    '/Saraffurniture/Screenshot_2025_0625_094244.png',
+    // '/Saraffurniture/Screenshot_2025_0625_094244.png',
+    '/Saraffurniture/video.mp4',
+
   ];
   return (
      <DarkTheme>

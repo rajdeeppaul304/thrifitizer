@@ -286,7 +286,7 @@ const ProjectDetailsDescription = () => {
                   <h5 className="card-title mb-2">{item.title}</h5>
                   <div className="badge-group mb-2">
                     {item.services.map(service => (
-                      <span key={service} className="custom-badge" style={{background: "rgb(117, 218, 180);"}}>
+                      <span key={service} className="custom-badge" style={{background: "#75dab4;"}}>
                         {service}
                       </span>
                     ))}

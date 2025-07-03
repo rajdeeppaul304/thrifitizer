@@ -29,7 +29,7 @@ const WhatsAppButton = () => {
 
   return (
     <a
-      href="https://api.whatsapp.com/send/?phone=918861324254&text=Hello&type=phone_number&app_absent=0"
+      href="https://www.shopify.com/partners/directory/partner/thriftizer-solutions"
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -39,7 +39,7 @@ const WhatsAppButton = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <i className="fab fa-whatsapp" />
+      <i className="fab fa-shopify" />
     </a>
   );
 };

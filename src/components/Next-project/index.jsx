@@ -20,8 +20,8 @@ const NextProject = () => {
                     style={{
                       marginLeft: "1rem",
                       padding: "0.75rem 2rem",
-                      background: "#217953",
-                      border: "2px solid #217953",
+                      background: "#75dab4",
+                      border: "2px solid #75dab4",
                       color: "white"
                     }}
                   >
@@ -34,8 +34,8 @@ const NextProject = () => {
                     style={{
                       marginLeft: "1rem",
                       padding: "0.75rem 2rem",
-                      border: "2px solid #217953",
-                      color: "#217953",
+                      border: "2px solid #75dab4",
+                      color: "#75dab4",
                       transition: "all 0.2s"
                     }}
                   >

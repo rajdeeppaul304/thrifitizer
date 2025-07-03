@@ -37,7 +37,7 @@ const PortfolioCustomColumn = ({
                 Our &nbsp;Works.
               </h3>
             </Split>
-            <span className="tbg text-right" style={{ letterSpacing: "normal", textTransform: "none" }}>
+            <span className="tbg text-left" style={{ letterSpacing: "normal", textTransform: "none" }}>
               Portfolio
             </span>
           </div>
@@ -66,9 +66,15 @@ const PortfolioCustomColumn = ({
             {/* added border radius */}
             <div className="item-img" style={{ borderRadius: "20px" }}>
               <Link href={item.link}>
-                <a className="imago wow">
+                <a className="imago wow" style={{ position: "relative", display: "block" }}>
                   <img src={item.image} alt="image" />
                   <div className="item-img-overlay"></div>
+                  <div className="hover-view-more">
+                    <a href={item.link} className="view-more-link">
+                      <span>View More</span>
+                      <i className="fa fa-arrow-right" aria-hidden="true" style={{ marginLeft: "8px" }}></i>
+                    </a>
+                  </div>
                 </a>
               </Link>
             </div>
