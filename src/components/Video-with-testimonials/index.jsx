@@ -130,7 +130,7 @@ Thriftizer fast and good work! Communication has been easy and the team has been
                       </div>
                     </div>
                   </div>
-                                    <div className="item" >
+                  <div className="item" >
                     <p>
                     Got our website done quickly and the thriftizer team is amazing in understanding our needs and delivering it!
 Very patient and provide the best support 
@@ -141,6 +141,80 @@ Very patient and provide the best support
                         <div className="author">
                           <h6 className="author-name custom-font">
                             Matapayals
+                          </h6>
+                          <div className="mb-2">
+                            <div className="stars">
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div className="item" >
+                    <p>
+                    The experience was really helpful also to understand how seo is measured, i recomend it.
+                    </p>
+                    <div className="info">
+
+                      <div className="cont">
+                        <div className="author">
+                          <h6 className="author-name custom-font">
+                            Sar Jewellery
+                          </h6>
+                          <div className="mb-2">
+                            <div className="stars">
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item" >
+                    <p>
+they are professional and honest. highly recommended.                    </p>
+                    <div className="info">
+
+                      <div className="cont">
+                        <div className="author">
+                          <h6 className="author-name custom-font">
+                            MAS VOGUE
+                          </h6>
+                          <div className="mb-2">
+                            <div className="stars">
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div className="item" >
+                    <p>
+They did a great job and keep working until everything was completed to my satisfaction.  I would definitely hire them again.                
+                               </p>
+                    <div className="info">
+
+                      <div className="cont">
+                        <div className="author">
+                          <h6 className="author-name custom-font">
+                            Intechra Health
                           </h6>
                           <div className="mb-2">
                             <div className="stars">

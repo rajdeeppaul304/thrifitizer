@@ -2,6 +2,7 @@
 import React from "react";
 import Clients1Data from "../../data/sections/clients1.json";
 import Split from "../Split";
+import Link from "next/link";
 
 const Clients1 = ({ theme, subBG }) => {
   var first = Clients1Data.slice(0, Clients1Data.length / 2);
@@ -12,10 +13,15 @@ const Clients1 = ({ theme, subBG }) => {
         <div className="row">
           <div className="col-lg-4 valign">
             <div className="sec-head custom-font mb-0">
-              <h6 style={{color:'rgb(117, 218, 180) '}}> Renowned brands that   </h6>
+              <h6 style={{color:'rgb(117, 218, 180) !important'}}> Renowned brands that   </h6>
               <h3>
                 Trust <br /> Us.
               </h3>
+              <Link href="/project-details">
+              <button className="btn-curve btn-lit mt-20">
+                <span>Check More</span>
+              </button>
+              </Link>
             </div>
           </div>
           <div className="col-lg-8">
