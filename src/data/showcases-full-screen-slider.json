@@ -118,5 +118,24 @@
     "image": "/jogler/outer_image.jpg",
     "sub": "Jogler",
     "url": "/jogler/"
+  },
+
+    {
+    "id": 21,
+    "image": "./Hobbyone/outer_image.jpg",
+    "sub": "Hobbyone",
+    "url": "/hobbyone/"
+  },
+  {
+    "id": 22,
+    "image": "./Tresmode/outer_image.jpg",
+    "sub": "Tresmode",
+    "url": "/tresmode/"
+  },
+  {
+    "id": 23,
+    "image": "/Crozzo/outer_image.jpg",
+    "sub": "Crozzo",
+    "url": "/crozzo/"
   }
 ]

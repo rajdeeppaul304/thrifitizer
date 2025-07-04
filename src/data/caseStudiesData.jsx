@@ -326,8 +326,43 @@ const caseStudies = {
       "Time on site doubled due to engaging visuals and improved browsing experience.",
       "Customer return rate dropped by 25% owing to enhanced sizing guidance and product details."
     ]
+  },
+    "Tresmode": {
+    "name": "Tresmode – Shopify Store Development",
+    "challenge": "Tresmode is a premium footwear brand catering to urban professionals and fashion-forward shoppers. The earlier website had a dated layout, inconsistent branding, and weak navigation. Product discovery was a major friction point. Lack of storytelling around craftsmanship and new arrivals also affected customer retention.",
+    "solution": [
+      "Developed a high-end aesthetic using full-bleed visuals, modern serif fonts, and a refined color palette to match the brand's premium identity.",
+      "Created intuitive navigation based on gender, occasion (Workwear, Evening, Casual), and style (Loafers, Heels, Sneakers).",
+      "Enhanced PDPs with integrated size guides, delivery estimates, and customer reviews.",
+      "Used metafields to display 'Italian design', 'handcrafted soles', and 'premium leather' highlights.",
+      "Revamped homepage to include seasonal lookbooks, celebrity style features, and Instagram shop integration.",
+      "Improved mobile UX with simplified CTA placement in thumb zones and sticky 'Buy Now' buttons for faster actions."
+    ],
+    "results": [
+      "Time on site increased by 66%, particularly among returning users.",
+      "Mobile conversions rose by 58% after UX and CTA optimization.",
+      "Bounce rate dropped by 32% due to improved layout and storytelling.",
+      "New arrivals and occasion-based browsing led to a 19% lift in Average Order Value (AOV)."
+    ]
+  },
+  "Crozzo": {
+    "name": "Crozzo – Shopify Store Development",
+    "challenge": "Crozzo is a homegrown streetwear and sneaker brand targeting Gen Z and millennial audiences. Their earlier online presence lacked a distinct streetwear identity, struggled with frequent product launches, and had poor mobile UX for sizing and variant selection.",
+    "solution": [
+      "Designed a bold, gritty UI with urban aesthetics using graffiti accents, bold fonts, and high-contrast colors.",
+      "Integrated a custom drop engine to support scheduled launches, countdown timers, and 'Coming Soon' features.",
+      "Simplified size selection with visual aids and integrated UGC-based lookbooks under 'Fit Check'.",
+      "Enabled filters by drop, trend (chunky, minimal), and use case (lifestyle, casual, tech).",
+      "Focused on lightweight performance to handle high-traffic product drops.",
+      "Optimized mobile layout with sticky CTAs and early-access modules to drive urgency."
+    ],
+    "results": [
+      "Sell-out speed improved by 43% on new drops with countdown-driven layouts.",
+      "Conversion rate jumped by 52%, especially on mobile.",
+      "Email signups tripled after integrating drop notifications sitewide.",
+      "Bounce rate reduced by 37%, supported by stronger layout hierarchy and trend-based discovery."
+    ]
   }
-
 }
 
 ;

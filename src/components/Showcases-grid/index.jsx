@@ -112,7 +112,7 @@ const ShowcasesGrid = () => {
   }}
   slidesPerView={5.5}
   spaceBetween={32}
-  speed={1000}
+  speed={2000}
   className="logo-swiper"
   breakpoints={{
     320: { slidesPerView: 2.5 },

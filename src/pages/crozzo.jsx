@@ -33,22 +33,22 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = ['/moborr/banner.jpg', '/moborr/banner.jpg'];
-
+  const images = ['/Crozzo/banner.png', '/Crozzo/mobile_banner.png'];
   const imagePaths = [
-    '/moborr/1.jpg',
-    '/moborr/2.jpg',
-    '/moborr/3.jpg',
-    '/moborr/4.jpg',
-    '/moborr/5.jpg',
+    '/Crozzo/1.jpg',
+    '/Crozzo/2.png',
+    '/Crozzo/3.jpg',
+    '/Crozzo/4.jpg',
+    // '/Epoke/5.png',
+        '/Crozzo/video.mp4',
 
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Moborr"  subText="https://moborr.com/" 
-      subTitle='Shopify development for a sustainable fashion brand rooted in craftsmanship and minimalism.'/>
-      <ProjectDetails2Introduction projectName="Moborr" />
+      <ProjectDetails2Header images={images} Text="Crozzo"  subText="https://www.crozzo.in/"
+      subTitle='Modern Shopify store created for an innovative footwear label with a youthful edge.'/>
+      <ProjectDetails2Introduction projectName="Crozzo" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       
       {/* <ProjectDetailsVideo

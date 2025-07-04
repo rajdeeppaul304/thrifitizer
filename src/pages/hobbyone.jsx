@@ -33,22 +33,22 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = ['/moborr/banner.jpg', '/moborr/banner.jpg'];
-
+  const images = ['/Hobbyone/banner.png', '/Hobbyone/mobile_banner.png'];
   const imagePaths = [
-    '/moborr/1.jpg',
-    '/moborr/2.jpg',
-    '/moborr/3.jpg',
-    '/moborr/4.jpg',
-    '/moborr/5.jpg',
+    '/Hobbyone/1.jpg',
+    '/Hobbyone/2.png',
+    '/Hobbyone/3.jpg',
+    '/Hobbyone/4.jpg',
+    // '/Epoke/5.png',
+        '/Hobbyone/video.mp4',
 
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Moborr"  subText="https://moborr.com/" 
-      subTitle='Shopify development for a sustainable fashion brand rooted in craftsmanship and minimalism.'/>
-      <ProjectDetails2Introduction projectName="Moborr" />
+      <ProjectDetails2Header images={images} Text="HobbyOne"  subText="https://www.hobbyone.in/"
+      subTitle='Website developed, maintained, and revamped with a complete digital ads ecosystem.'/>
+      <ProjectDetails2Introduction projectName="HobbyOne.in" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       
       {/* <ProjectDetailsVideo

@@ -33,22 +33,22 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = ['/moborr/banner.jpg', '/moborr/banner.jpg'];
-
+  const images = ['/Tresmode/banner.png', '/Tresmode/mobile_banner.png'];
   const imagePaths = [
-    '/moborr/1.jpg',
-    '/moborr/2.jpg',
-    '/moborr/3.jpg',
-    '/moborr/4.jpg',
-    '/moborr/5.jpg',
+    '/Tresmode/1.jpg',
+    '/Tresmode/2.png',
+    '/Tresmode/3.jpg',
+    '/Tresmode/4.jpg',
+    // '/Epoke/5.png',
+        '/Tresmode/video.mp4',
 
   ];
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <ProjectDetails2Header images={images} Text="Moborr"  subText="https://moborr.com/" 
-      subTitle='Shopify development for a sustainable fashion brand rooted in craftsmanship and minimalism.'/>
-      <ProjectDetails2Introduction projectName="Moborr" />
+      <ProjectDetails2Header images={images} Text="Tresmode"  subText="https://www.tresmode.com/"
+      subTitle='Shopify website developed for a premium footwear brand blending fashion with function.'/>
+      <ProjectDetails2Introduction projectName="Tresmode" />
       <ProjectDetails2Images imagePaths={imagePaths} />
       
       {/* <ProjectDetailsVideo

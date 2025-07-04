@@ -13,13 +13,11 @@ const AboutIntro = () => {
           </div>
           <div className="col-lg-8 offset-lg-1 col-md-8">
             <div className="text">
-              <Split>
-                <p className="wow txt words chars splitting" data-splitting>
+                <p className=" mb-20" data-splitting>
                   We’re a team of strategists, designers, and developers driven by a shared purpose — to help brands tell their story, connect with audiences, and grow with impact. Whether you're an emerging startup or an established name, we craft tailored solutions that merge creativity with performance.
 <br/><br/>From building powerful brand identities to delivering high-converting digital experiences, our work is rooted in insight, innovation, and execution. We don’t just follow trends — we set them, one project at a time.
 
                 </p>
-              </Split>
             </div>
           </div>
         </div>

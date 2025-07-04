@@ -203,6 +203,38 @@ const galleryItems = [
     type: "image",
     category: "sports_and_activewear",
   },
+
+
+    {
+    id: 21,
+    image: "/Hobbyone/outer_image.jpg",
+    title: "HobbyOne",
+    url: "/hobbyone/",
+    services: [],
+    industries: [],
+    type: "image",
+    category: "art_and_craft",
+  },
+  {
+    id: 22,
+    image: "/Tresmode/outer_image.jpg",
+    title: "Tresmode",
+    url: "/tresmode/",
+    services: [],
+    industries: [],
+    type: "image",
+    category: "apparel",
+  },
+    {
+    id: 23,
+    image: "/Crozzo/outer_image.jpg",
+    title: "Crozzo",
+    url: "/crozzo/",
+    services: [],
+    industries: [],
+    type: "image",
+    category: "foo_and_gourmet",
+  },
 ];
 
 
