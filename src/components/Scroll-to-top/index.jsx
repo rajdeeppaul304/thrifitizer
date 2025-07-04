@@ -2,9 +2,11 @@ import React from "react";
 import scrollToTop from "../../common/scrollToTo";
 
 const ScrollToTop = () => {
-  React.useEffect(() => {
-    scrollToTop()
-  }, [])  
+  // React.useEffect(() => {
+  //   scrollToTop()
+  // }, [])  
+
+
   return (
     <div className="progress-wrap cursor-pointer">
       <svg

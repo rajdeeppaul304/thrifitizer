@@ -5,6 +5,9 @@ import BlogsThreeColumn2 from "../components/Blogs-three-column2";
 import BlogsThreeColumn1 from "../components/Blogs-three-column1_2";
 // import CircularText from './CircularText';
 // import CircularText from '../components/CircularText';
+import CircularText from '../components/CircularText';
+  
+
 
 import ContactSection from "../components/Contact-section";
 import Footer from "../components/Footer";
@@ -82,7 +85,15 @@ const Homepage4 = () => {
         {/* <BlogsThreeColumn2 subBG /> */}
         <BlogsThreeColumn1 subBG />
 
-
+<CircularText 
+    text="SHOPIFY*EXPERTS*"
+  onHover="speedUp"
+  spinDuration={20}
+  className="custom-class"
+  logo={<img src="/img/logo/logo3.png" alt="Logo" style={{width: '50px', height: '50px'}} />}
+  logoSize={80}
+  logoLink="https://www.shopify.com/partners/directory/partner/thriftizer-solutions"
+/>
         <ContactSection />
         <Footer />
       </div>
