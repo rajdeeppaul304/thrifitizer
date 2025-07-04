@@ -1,4 +1,5 @@
 // import StylesServices from './styles.jsx';
+import Split from "../Split";
 
 const ThreeSixtyDegree = () => {
   return (
@@ -196,7 +197,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .cta-title {
             font-size: 2.5rem;
             font-weight: 600;
-            // color: #000000 !important ;
+            color: #ffffff !important ;
             margin-bottom: 1rem;
           }
 
@@ -297,7 +298,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
       className="hero-section"
       style={{
         position: "relative",
-        height: "100vh",
+        height: "85vh",
         overflow: "hidden",
         display: "flex",
         justifyContent: "center",
@@ -363,7 +364,15 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
       {/* Overview Section */}
       <section className="section-content">
         <div className="container">
-          <h2 className="section-title">Overview</h2>
+          <div className="sec-head custom-font text-center mt-40">
+            
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                Overview.
+              </h3>
+            </Split>
+            <span className="tbg">Overview</span>
+          </div>
           <div className="row">
             <div className="col-lg-12">
               <div className="service-card">
@@ -388,7 +397,15 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
       {/* What We Do Section */}
       <section className="section-content">
         <div className="container">
-          <h2 className="section-title">What We Do</h2>
+                    <div className="sec-head custom-font text-center mt-40">
+            
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                What We Do.
+              </h3>
+            </Split>
+            <span className="tbg">What We Do.</span>
+          </div>
           <div className="row">
             <div className="col-lg-6 mb-4">
               <div className="service-card">
@@ -532,7 +549,15 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
       {/* Who It's For Section */}
       <section className="section-content">
         <div className="container">
-          <h2 className="section-title">Who It's For</h2>
+      <div className="sec-head custom-font text-center mt-40">
+            
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                Who It's For.
+              </h3>
+            </Split>
+            <span className="tbg">Who It's For.</span>
+          </div>
           <div className="row d-flex align-items-stretch">
             <div className="col-lg-4 mb-4 d-flex">
               <div className="service-card w-100">

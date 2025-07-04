@@ -190,8 +190,10 @@ const AboutUs1 = () => {
         }
         .featured-title {
           font-weight: 600;
-          margin-bottom: 25px;
+          margin-top: 25px;
+          margin-bottom: 5px;
           letter-spacing: 1px;
+          font-size: 2.4rem;
         }
         .logos-slider {
           overflow: hidden;
@@ -201,6 +203,7 @@ const AboutUs1 = () => {
         }
         .logos-track2 {
         background-color:#0b0d0b;
+        margin-bottom:25px;
           display: flex;
           // width: calc(200% + 40px);
           // animation: scroll-logos 18s linear infinite;
