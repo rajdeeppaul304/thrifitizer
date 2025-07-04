@@ -212,9 +212,7 @@ const ContactUs = () => {
           font-weight: 700;
           line-height: 1.2;
           margin-bottom: 24px;
-          background: linear-gradient(135deg, #64ffda, #00bcd4);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+
           background-clip: text;
         }
         
@@ -543,14 +541,18 @@ const ContactUs = () => {
             padding: 24px 16px;
           }
         }
+          .center-button {
+  display: block;
+  margin: 30px auto 0; /* top margin = 30px (mt-30), auto sides for center */
+}
       `}</style>
       
       <section className="contact-section">
         <div className="contact-container">
           <div className="contact-content">
             <div className="contact-info">
-              <h2> CUSTOMIZE YOUR PACKAGE <br/>
- TO MATCH YOUR AMBITION.</h2>
+              <h2> Customize Your Package <br/>
+ <span style={{color:'rgb(117, 218, 180)'}}>To Match Your Ambition.</span> </h2>
               <p>
 Start from scratch or scale what’s working — your goals shape the services. We just make them click.              </p>
               
@@ -673,8 +675,8 @@ Start from scratch or scale what’s working — your goals shape the services. 
                 </div>
               )}
 
-              <button type="submit" className="submit-btn">
-                Get Your Quote
+              <button type="submit" className="btn-curve btn-lit mt-30 center-button " >
+               <span>Get Your Quote</span> 
               </button>
             </form>
           </div>
