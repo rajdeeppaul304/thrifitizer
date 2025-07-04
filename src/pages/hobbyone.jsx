@@ -33,10 +33,10 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = ['/Hobbyone/banner.png', '/Hobbyone/mobile_banner.png'];
+  const images = ['/Hobbyone/banner.jpg', '/Hobbyone/mobile_banner.jpg'];
   const imagePaths = [
     '/Hobbyone/1.jpg',
-    '/Hobbyone/2.png',
+    '/Hobbyone/2.jpg',
     '/Hobbyone/3.jpg',
     '/Hobbyone/4.jpg',
     // '/Epoke/5.png',

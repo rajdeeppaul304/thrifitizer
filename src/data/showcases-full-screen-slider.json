@@ -12,12 +12,6 @@
     "url": "/epoke/"
   },
   {
-    "id": 3,
-    "image": "./company/sleepcompany.jpg",
-    "sub": "Sleep Company",
-    "url": "/sleepcompany/"
-  },
-  {
     "id": 4,
     "image": "./company/glam.jpg",
     "sub": "Glam",

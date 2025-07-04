@@ -33,10 +33,10 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = ['/Tresmode/banner.png', '/Tresmode/mobile_banner.png'];
+  const images = ['/Tresmode/banner.jpg', '/Tresmode/mobile_banner.jpg'];
   const imagePaths = [
     '/Tresmode/1.jpg',
-    '/Tresmode/2.png',
+    '/Tresmode/2.jpg',
     '/Tresmode/3.jpg',
     '/Tresmode/4.jpg',
     // '/Epoke/5.png',

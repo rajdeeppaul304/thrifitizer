@@ -33,10 +33,10 @@ const ProjectDetails5Dark = () => {
   }, [navbarRef]);
 
   // Extract image paths from the data
-  const images = ['/Crozzo/banner.png', '/Crozzo/mobile_banner.png'];
+  const images = ['/Crozzo/banner.jpg', '/Crozzo/mobile_banner.jpg'];
   const imagePaths = [
     '/Crozzo/1.jpg',
-    '/Crozzo/2.png',
+    '/Crozzo/2.jpg',
     '/Crozzo/3.jpg',
     '/Crozzo/4.jpg',
     // '/Epoke/5.png',
