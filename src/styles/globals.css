@@ -138,7 +138,7 @@ section.team.section-padding {
 .trusted-partner-heading {
   text-align: center;
   color: #40F8AF;
-  font-size:4rem; 
+  /* font-size:4rem;  */
   font-weight: 700;
   margin-bottom: 3rem; 
 }

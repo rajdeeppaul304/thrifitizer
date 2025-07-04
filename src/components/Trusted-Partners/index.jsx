@@ -5,9 +5,9 @@ const TrustedPartners = ({ partners, headingText }) => {
   return (
     <section className="trusted-partner-main">
       <div className="trusted-partner-container">
-        <h2 className="trusted-partner-heading text-white responsive-heading">
+        <h1 className="trusted-partner-heading text-white responsive-heading">
           {headingText}
-        </h2>
+        </h1>
 
         <div className="trusted-partner-grid">
           {partners.map((partner) => (
@@ -28,7 +28,6 @@ const TrustedPartners = ({ partners, headingText }) => {
 
       <style jsx>{`
         .responsive-heading {
-          font-size: 3rem;
           font-weight: 600;
         }
 

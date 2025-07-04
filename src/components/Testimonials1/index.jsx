@@ -99,14 +99,14 @@ class Testimonials1 extends React.Component {
         data-overlay-dark={`${this.props.overlay ? "9" : "0"}`}
       >
         <div className="container position-re">
-          <div className="sec-head custom-font text-center">
+          <div className="sec-head2 custom-font text-center">
             <h6 className="wow fadeIn" data-wow-delay=".5s">
               What People Says?
             </h6>
             <Split>
-              <h3 className="wow words chars splitting testimonial-heading" data-splitting >
+              <h1 className="wow words chars splitting testimonial-heading" data-splitting style={{fontWeight:'500'}} >
                 Testimonials.
-              </h3>
+              </h1>
             </Split>
             {/* <span className="tbg">Testimonials</span> */}
           </div>
