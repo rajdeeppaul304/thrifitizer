@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Masonry from 'react-masonry-css';
+import Split from "../components/Split";
 
 const CareerHeader = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -44,18 +45,16 @@ const CareerHeader = () => {
   ];
 
   return (
-    <div style={{ background: '#1a1a1a', color: '#ffffff', overflow: 'hidden' }}>
+    <div style={{ background: '#1a1a1a', color: '#ffffff', overflow: 'hidden',paddingTop:'20px'}} >
       {/* Hero Section with Main Team Image */}
-      <section style={{ padding: '100px 0', position: 'relative' }}>
+      <section style={{ padding: '0px 0px 100px 0px', position: 'relative' }}>
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
           <div className="row align-items-center">
             <div className="col-lg-6" style={{ marginBottom: '40px' }}>
               <h1 style={{
                 fontSize: '3.5rem',
                 fontWeight: 'bold',
-                background: 'linear-gradient(135deg, #75dab4, #ffffff)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
+
                 marginBottom: '30px',
                 lineHeight: '1.2'
               }}>
@@ -127,14 +126,15 @@ const CareerHeader = () => {
       <section style={{ padding: '80px 0', background: 'rgba(117, 218, 180, 0.05)' }}>
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2 style={{
-              fontSize: '2.5rem',
-              fontWeight: 'bold',
-              color: '#75dab4',
-              marginBottom: '20px'
-            }}>
-              Life at Thriftizer Solutions
-            </h2>
+                      <div className="sec-head custom-font text-center">
+
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                Life At Thriftizer.
+              </h3>
+            </Split>
+            <span className="tbg">Thriftizer</span>
+          </div>
             <p style={{
               fontSize: '1.2rem',
               color: '#ffffff',
@@ -285,10 +285,8 @@ const CareerHeader = () => {
             <h2 style={{
               fontSize: '3rem',
               fontWeight: 'bold',
-              background: 'linear-gradient(135deg, #75dab4, #ffffff)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              marginBottom: '30px'
+              marginBottom: '30px',
+              color:'rgb(117, 218, 180)',
             }}>
               Become a Thriftizer Solutions
             </h2>
@@ -316,17 +314,18 @@ const CareerHeader = () => {
       </section>
 
       {/* Company Perks Section */}
-      <section style={{ padding: '100px 0', background: 'rgba(0, 0, 0, 0.3)' }}>
+      <section style={{ padding: '100px 0px 0px 0px', background: 'rgba(0, 0, 0, 0.3)' }}>
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
           <div style={{ textAlign: 'center', marginBottom: '70px' }}>
-            <h2 style={{
-              fontSize: '2.8rem',
-              fontWeight: 'bold',
-              color: '#75dab4',
-              marginBottom: '20px'
-            }}>
-              Company Perks
-            </h2>
+<div className="sec-head custom-font text-center">
+
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                Company Perks.
+              </h3>
+            </Split>
+            <span className="tbg">Perks.</span>
+          </div>
             <p style={{
               fontSize: '1.2rem',
               color: '#ffffff',

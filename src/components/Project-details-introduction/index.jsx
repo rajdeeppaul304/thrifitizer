@@ -9,9 +9,9 @@ const ProjectDetailsIntroduction = () => {
           {/* Heading */}
           <div className="col-lg-3 col-md-4">
             <div className="htit">
-              <h4>
-                 OUR PORTFOLIO
-              </h4>
+              <h2 style={{color:'rgb(117, 218, 180)'}}>
+                 Our Portfolio
+              </h2>
             </div>
           </div>
           {/* Description */}

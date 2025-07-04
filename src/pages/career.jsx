@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import DarkTheme from "../layouts/Dark";
 import CareerHeader from "../components/career_info"
 import AboutHeader from "../components/carrer_header";
+import Split from "../components/Split";
 
 const Career = () => {
   const fixedSlider = useRef(null);
@@ -146,22 +147,21 @@ const Career = () => {
 
       <div ref={mainContent} className="main-content">
         <div className="page-header">
-          <div className="" style={{marginTop:'100px'}}>
+          <div className="" >
             <CareerHeader/>
             <section className="career-section" style={{ padding: '80px 0', minHeight: '100vh' }}>
               <div className="container" style={{ maxWidth: '800px', margin: '0 auto', padding: '0 20px' }}>
                 {/* Header */}
                 <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                  <h1 style={{ 
-                    fontSize: '3.5rem', 
-                    fontWeight: 'bold', 
-                    background: 'linear-gradient(135deg, #75dab4, #ffffff)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    marginBottom: '20px'
-                  }}>
-                    Join Our Team
-                  </h1>
+<div className="sec-head custom-font text-center">
+
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                Join Our Team.
+              </h3>
+            </Split>
+            <span className="tbg">Team.</span>
+          </div>
                   <p style={{ 
                     fontSize: '1.2rem', 
                     color: '#ffffff', 
@@ -499,35 +499,11 @@ const Career = () => {
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          style={{
-                            background: isSubmitting ? 'rgba(117, 218, 180, 0.5)' : 'linear-gradient(135deg, #75dab4, #5bc49f)',
-                            color: '#ffffff',
-                            border: 'none',
-                            padding: '18px 50px',
-                            borderRadius: '50px',
-                            fontSize: '1.1rem',
-                            fontWeight: '600',
-                            cursor: isSubmitting ? 'not-allowed' : 'pointer',
-                            transition: 'all 0.3s ease',
-                            textTransform: 'uppercase',
-                            letterSpacing: '1px',
-                            boxShadow: '0 10px 30px rgba(117, 218, 180, 0.3)',
-                            transform: isSubmitting ? 'none' : 'translateY(0)',
-                          }}
-                          onMouseEnter={(e) => {
-                            if (!isSubmitting) {
-                              e.target.style.transform = 'translateY(-2px)';
-                              e.target.style.boxShadow = '0 15px 40px rgba(117, 218, 180, 0.4)';
-                            }
-                          }}
-                          onMouseLeave={(e) => {
-                            if (!isSubmitting) {
-                              e.target.style.transform = 'translateY(0)';
-                              e.target.style.boxShadow = '0 10px 30px rgba(117, 218, 180, 0.3)';
-                            }
-                          }}
+                          className="btn-curve btn-lit mt-30 center-button"
+
                         >
-                          {isSubmitting ? 'Submitting...' : 'Submit Application'}
+                          <span>{isSubmitting ? 'Submitting...' : 'Submit Application'}</span>
+                          
                         </button>
                       </div>
 
