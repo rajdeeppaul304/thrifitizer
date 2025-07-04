@@ -63,7 +63,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .section-title {
             font-size: 2.5rem;
             font-weight: 600;
-            color: #ffffff;
+            color: #ffffff !important;
             margin-bottom: 3rem;
             text-align: center;
             position: relative;
@@ -315,7 +315,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           zIndex: -2,
         }}
       >
-        <source src="/Video/services_video.mp4" type="video/mp4" />
+        <source src="/services/services_1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -411,6 +411,18 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           </div>
         </div>
       </div>
+      <div className="col-lg-6 mb-4">
+  <div className="service-card">
+    <div className="service-card-content">
+      <div className="service-icon">
+        <i className="fas fa-bullhorn"></i>
+      </div>
+      <h3>Campaign Creative</h3>
+      <p>Develop creative concepts and visuals for seasonal promotions, product launches, and brand campaigns.</p>
+    </div>
+  </div>
+</div>
+
     </div>
   </div>
 </section>

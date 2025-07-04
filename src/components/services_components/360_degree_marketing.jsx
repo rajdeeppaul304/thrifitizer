@@ -61,16 +61,14 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .section-content {
             padding: 20px 0;
           }
-
           .section-title {
             font-size: 2.5rem;
             font-weight: 600;
-            color: #ffffff;
+            color: #ffffff !important;
             margin-bottom: 3rem;
             text-align: center;
             position: relative;
           }
-
 
 
           .service-card {

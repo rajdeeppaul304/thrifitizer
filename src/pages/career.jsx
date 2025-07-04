@@ -5,6 +5,8 @@ import IntroWithSlider1 from "../components/Intro-with-slider1";
 import Navbar from "../components/Navbar";
 import DarkTheme from "../layouts/Dark";
 import CareerHeader from "../components/career_info"
+import AboutHeader from "../components/carrer_header";
+
 const Career = () => {
   const fixedSlider = useRef(null);
   const mainContent = useRef(null);
@@ -140,6 +142,8 @@ const Career = () => {
         <link rel="icon" href="/img/logo/logoh.png" />
       </Head>
       <Navbar nr={navbarRef} lr={logoRef} />
+      <AboutHeader />
+
       <div ref={mainContent} className="main-content">
         <div className="page-header">
           <div className="" style={{marginTop:'100px'}}>

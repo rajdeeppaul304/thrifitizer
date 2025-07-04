@@ -100,16 +100,16 @@ const AboutUs1 = () => {
                 <h6>{AboutUs1Date.smallTitle}</h6>
                 <span></span><span></span><span></span>
               </div>
-              <Split>
-                <h3 className="words chars splitting main-title wow" data-splitting>
+              {/* <Split> */}
+                <h3 className="words chars splitting main-title wow" >
                   {AboutUs1Date.title.first} <br /> {AboutUs1Date.title.second}
                 </h3>
-              </Split>
-              <Split>
-                <p className="words chars splitting wow txt" data-splitting>
+              {/* </Split> */}
+              {/* <Split> */}
+                <p className="words chars splitting wow txt" >
                   {AboutUs1Date.content}
                 </p>
-              </Split>
+              {/* </Split> */}
 
               <div className="ftbox mt-30">
                 <ul className="features-list">

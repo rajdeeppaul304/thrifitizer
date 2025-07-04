@@ -63,7 +63,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .section-title {
             font-size: 2.5rem;
             font-weight: 600;
-            color: #ffffff;
+            color: #ffffff !important;
             margin-bottom: 3rem;
             text-align: center;
             position: relative;
@@ -315,7 +315,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           zIndex: -2,
         }}
       >
-        <source src="/Video/services_video.mp4" type="video/mp4" />
+        <source src="/services/services_2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

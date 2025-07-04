@@ -104,7 +104,7 @@ class Testimonials1 extends React.Component {
               What People Says?
             </h6>
             <Split>
-              <h3 className="wow words chars splitting" data-splitting>
+              <h3 className="wow words chars splitting testimonial-heading" data-splitting >
                 Testimonials.
               </h3>
             </Split>

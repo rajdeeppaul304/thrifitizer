@@ -29,7 +29,7 @@ const TrustedPartners = ({ partners, headingText }) => {
       <style jsx>{`
         .responsive-heading {
           font-size: 3rem;
-          font-weight: bold;
+          font-weight: 600;
         }
 
         @media (max-width: 768px) {

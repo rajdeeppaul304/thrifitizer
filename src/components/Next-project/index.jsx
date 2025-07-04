@@ -50,9 +50,9 @@ const NextProject = () => {
       <style jsx>{`
         .start-project-btn:hover,
         .start-project-btn:focus {
-          background: #217953 !important;
+          background: rgb(117, 218, 180)!important;
           color: white !important;
-          border-color: #217953 !important;
+          border-color: rgb(117, 218, 180) !important;
         }
       `}</style>
     </section>

@@ -61,14 +61,14 @@ const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
                     style={logoImgStyle}
                   />
                 </a>
-                <a target="_blank" href="https://www.shopify.com/partners/directory/partner/thriftizer-solutions">
+                {/* <a target="_blank" href="https://www.shopify.com/partners/directory/partner/thriftizer-solutions">
                   <img
                     src={`${appData.lightLogo2}`}
                     alt="logo"
                     className="logo-img"
                     style={logoImgStyle}
                   />
-                </a>
+                </a> */}
               </div>
               
               <p style={{ fontSize: "0.95rem", lineHeight: "1.6", color: "#ffffff", marginBottom: "1.5rem" }}>
@@ -160,6 +160,20 @@ const Footer = ({ noSubBG, isBuildYourPackage = false }) => {
                   <p style={{ margin: 0, fontSize: "0.95rem", lineHeight: "1.6" }}>
                     <span style={{ fontWeight: "bold", color: "#fff" }}>Address: &nbsp;</span>
                     24/D, 4th Floor, Friends colony, 560068 Bangalore KA, India
+                  </p>
+                </div>
+                <div style={{ marginBottom: "1rem" }}>
+                  <p style={{ margin: 0, fontSize: "0.95rem", lineHeight: "1.6" }}>
+                    <span style={{ fontWeight: "bold", color: "#fff" }}>Address (USA): &nbsp;</span>
+                    2108 N ST STE N, Sacramento, CA - 95816
+                    
+                  </p>
+                </div>
+                <div style={{ marginBottom: "1rem" }}>
+                  <p style={{ margin: 0, fontSize: "0.95rem", lineHeight: "1.6" }}>
+                    <span style={{ fontWeight: "bold", color: "#fff" }}>Phone (USA): &nbsp;</span>
+                     +1 (628) 800-6680
+                    
                   </p>
                 </div>
               </div>
