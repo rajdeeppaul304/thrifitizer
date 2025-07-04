@@ -69,7 +69,7 @@ const ProjectDetailsDark = () => {
       <ProjectDetailsIntroduction />
       <Numbers1/>
       {/* <NumbersWithVideo/> */}
-            <TrustedPartners partners={partners1} headingText="We Are Partners With."/>
+            <TrustedPartners partners={partners1} headingText="We Are Partners With." bg_text="Partners."/>
 
       {/* <ProjectDetailsImages /> */}
       {/* <ProjectDetailsDescription /> */}
@@ -84,7 +84,7 @@ const ProjectDetailsDark = () => {
         videoType="vimeo"
         videoId={127203262}
       /> */}
-            <TrustedPartners partners={partners2} headingText="Our Achievements."/>
+            <TrustedPartners partners={partners2} headingText="Our Achievements." bg_text="Awards."/>
 
               <Testimonials1 subBgLftstl parallaxie withBG overlay/>
 

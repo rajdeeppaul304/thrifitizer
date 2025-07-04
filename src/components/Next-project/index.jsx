@@ -8,7 +8,7 @@ const NextProject = () => {
         <div className="row justify-content-center text-center">
           <div className="col-lg-8 col-md-10">
             <div className="box py-5">
-              <h1 className="mb-4">Let’s Build Your Success Story Next</h1>
+              <h1 className="mb-4">Let’s Build Your <span style={{color:'rgb(117, 218, 180)'}}>Success</span> Story Next.</h1>
               <p className="mb-5">
                 Whether you’re launching, scaling, or rebranding — we’d love to help.
               </p>

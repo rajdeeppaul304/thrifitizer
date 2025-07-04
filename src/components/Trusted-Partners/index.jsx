@@ -1,13 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
+import Split from "../Split";
 
-const TrustedPartners = ({ partners, headingText }) => {
+const TrustedPartners = ({ partners, headingText, bg_text="" }) => {
   return (
     <section className="trusted-partner-main">
       <div className="trusted-partner-container">
-        <h1 className="trusted-partner-heading text-white responsive-heading">
+        {/* <h1 className="trusted-partner-heading text-white responsive-heading">
           {headingText}
-        </h1>
+        </h1> */}
+      <div className="sec-head custom-font text-center">
+
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                {headingText}
+              </h3>
+            </Split>
+            <span className="tbg">{bg_text}</span>
+          </div>
 
         <div className="trusted-partner-grid">
           {partners.map((partner) => (

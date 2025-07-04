@@ -78,7 +78,7 @@ const Homepage4 = () => {
         <Testimonials1 subBgLftstl parallaxie withBG overlay/>
         {/* <TeamWithSkills /> */}
         {/* <TrustedPartners  /> */}
-        <TrustedPartners partners={partners} headingText="We are Partners with." />
+        <TrustedPartners partners={partners} headingText="We are Partners with." bg_text="Partners."/>
         {/* <BlogsThreeColumn2 subBG /> */}
         <BlogsThreeColumn1 subBG />
 
