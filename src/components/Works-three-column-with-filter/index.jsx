@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
 const galleryItems = [
@@ -238,76 +238,188 @@ const galleryItems = [
 ];
 
 
+const WorksThreeColumnWithFilter = ({ filterPosition = "center" }) => {
+  const iso = useRef(null);                      // ❷ keeps Isotope instance
+  const [loaded, setLoaded] = useState(false);
 
-const WorksThreeColumnWithFilter = ({ filterPosition }) => {
-  const [pageLoaded, setPageLoaded] = useState(false);
-
+  // ---------- 1. Initialise Isotope once ----------
   useEffect(() => {
-    setPageLoaded(true);
-    if (pageLoaded) {
-      setTimeout(() => {
-        initIsotope();
-      }, 1000);
+    setLoaded(true);
+    if (!iso.current) {
+      iso.current = new Isotope(".gallery", {
+        itemSelector: ".items",
+        layoutMode: "fitRows",                   // or 'masonry'—whatever you prefer
+        percentPosition: true,
+        transitionDuration: "0.4s",
+      });
     }
-  }, [pageLoaded]);
+    return () => iso.current && iso.current.destroy();
+  }, []);
 
+  // ---------- 2. Build category list ----------
   const categories = [
-    ...new Set(galleryItems.flatMap((item) => item.category || [])),
+    ...new Set(galleryItems.map((item) => item.category ?? "uncategorized")),
   ];
+
+  // ---------- 3. Handle dropdown change ----------
+  const handleFilterChange = (e) => {
+    const val = e.target.value;                  // "*", "tech_and_accessories", etc.
+    if (iso.current) {
+      iso.current.arrange({
+        filter: val === "*" ? "*" : `.${val}`,
+      });
+    }
+  };
 
   return (
     <section className="portfolio section-padding pb-70">
       <div className="container">
-        <h1 className="mb-20 mt-10 responsive-heading text-center">Explore Our Work.</h1>
-        <div className="row">
-          <div
-            className={`filtering ${
-              filterPosition === "center"
-                ? "text-center"
-                : filterPosition === "left"
-                ? "text-left"
-                : "text-right"
-            } smplx col-12`}
-          >
-            <div className="filter">
-              <span data-filter="*" className="active">All</span>
-              {categories.map((cat) => (
-                <span key={cat} data-filter={`.${cat.toLowerCase()}`}>
-                  {cat.replace(/_/g, ' ')} {/* <-- Replaces underscores with spaces */}
-                </span>
-              ))}
-            </div>
-          </div>
+        <h1 className="mb-20 mt-10 responsive-heading text-center">
+          Explore Our Work.
+        </h1>
 
-          <div className="gallery full-width">
-            {galleryItems.map((item) => (
-              <div
-                key={item.id}
-                className={`col-lg-4 col-md-6 items ${
-                  (Array.isArray(item.category)
-                    ? item.category
-                    : [item.category || "uncategorized"]
-                  )
-                  .map((cat) => cat.toLowerCase())
-                  .join(" ")
-                }`}
-              >
-                <div className="item-img wow fadeInUp" data-wow-delay=".4s">
-                  <Link href={item.url || "#"}>
-                    <a>
-                      <img src={item.image} alt="gallery image" />
-                    </a>
-                  </Link>
-                </div>
-                {/* 👇 Title below the image */}
-                {item.title && (
-                  <div className="cont text-center mt-2">
-                    <h6>{item.title}</h6>
-                  </div>
-                )}
+
+{/* ─── Dropdown ─── */}
+<div className="row mb-4">
+  <div className="col-12 text-center text-md-start">
+    <div className="dropdown-container">
+      <select
+        id="categoryFilter"
+        className="custom-select"
+        onChange={handleFilterChange}
+      >
+        <option value="*">All Categories</option>
+        {categories.map((cat) => (
+          <option key={cat} value={cat.toLowerCase()}>
+            {cat.replace(/_/g, " ")}
+          </option>
+        ))}
+      </select>
+      <div className="select-arrow">
+        <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+          <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style jsx>{`
+  .dropdown-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+  
+  }
+
+  .custom-select {
+    width: 100%;
+    padding: 12px 45px 12px 20px;
+    border: 2px solid rgba(117, 218, 180, 0.3);
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(117, 218, 180, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(117, 218, 180, 0.1);
+    height:50px;
+    width:300px;
+    }
+
+  .custom-select:hover {
+    border-color: rgb(117, 218, 180);
+    background: linear-gradient(135deg, rgba(117, 218, 180, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    box-shadow: 0 8px 30px rgba(117, 218, 180, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .custom-select:focus {
+    outline: none;
+    border-color: rgb(117, 218, 180);
+    background: linear-gradient(135deg, rgba(117, 218, 180, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+    box-shadow: 0 0 0 3px rgba(117, 218, 180, 0.2), 0 8px 30px rgba(117, 218, 180, 0.2);
+  }
+
+  .custom-select option {
+    background: #0c0f16;
+    color: white;
+    padding: 12px;
+    border: none;
+  }
+
+  .custom-select option:hover {
+    background: rgba(117, 218, 180, 0.1);
+  }
+
+  .select-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgb(117, 218, 180);
+    transition: transform 0.3s ease;
+  }
+
+  .custom-select:hover + .select-arrow {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .custom-select:focus + .select-arrow {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 767.98px) {
+    .dropdown-container {
+      max-width: 100%;
+    }
+      .dropdown-container {
+      max-width: 250px;
+    }
+    
+    .custom-select {
+      font-size: 14px;
+      padding: 14px 45px 14px 20px;
+      width:250px;
+    }
+  }
+
+  /* Desktop positioning */
+  @media (min-width: 768px) {
+    .dropdown-container {
+      max-width: 300px;
+    }
+  }
+`}</style>
+
+
+        {/* ─── Gallery ─── */}
+        <div className="row gallery full-width">
+          {galleryItems.map((item) => (
+            <div
+              key={item.id}
+              className={`col-lg-4 col-md-6 items ${item.category.toLowerCase()}`}
+            >
+              <div className="item-img wow fadeInUp" data-wow-delay=".4s">
+                <Link href={item.url || "#"} passHref legacyBehavior>
+                  <a>
+                    <img src={item.image} alt={item.title} />
+                  </a>
+                </Link>
               </div>
-            ))}
-          </div>
+              {item.title && (
+                <div className="cont text-center mt-2">
+                  <h6>{item.title}</h6>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>

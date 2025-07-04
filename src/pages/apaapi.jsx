@@ -39,7 +39,7 @@ const ProjectDetails5Dark = () => {
     '/apaapi/2.jpg',
     '/apaapi/3.jpg',
     '/apaapi/4.jpg',
-    '/apaapi/5.jpg',
+    '/apaapi/video.mp4',
   ];
   return (
     <DarkTheme>
