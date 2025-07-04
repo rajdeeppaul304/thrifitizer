@@ -2660,7 +2660,8 @@ header.simpl {
   .works-header .capt h2 {
     font-size: 60px;
     letter-spacing: 2px;
-    text-transform: uppercase; }
+    /* text-transform: uppercase; */
+   }
     .works-header .capt h2 span {
       display: block;
       font-size: 20px;

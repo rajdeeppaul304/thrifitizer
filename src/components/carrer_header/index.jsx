@@ -4,7 +4,7 @@ const AboutHeader = () => {
   return (
     <header
       className="pages-header bg-img valign parallaxie"
-      style={{ position: "relative", overflow: "hidden", height: "100vh" }}
+      style={{ position: "relative", overflow: "hidden", height: "85vh" }}
     >
       {/* ✅ Background video */}
       <video

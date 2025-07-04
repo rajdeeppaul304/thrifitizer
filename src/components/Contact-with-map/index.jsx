@@ -55,7 +55,7 @@ const ContactWithMap = ({ theme = "dark" }) => {
             {/* Contact Form */}
             <div className="col-lg-6">
               <div className="form md-mb50">
-                <h4 className="extra-title mb-50">Get In Touch.</h4>
+                <h1 className="extra-title mb-50" style={{color:'#75dab4'}}>Get In Touch.</h1>
                 <Formik
                   initialValues={{ name: "", email: "", message: "" }}
                   onSubmit={async (values, { resetForm }) => {
@@ -132,7 +132,7 @@ const ContactWithMap = ({ theme = "dark" }) => {
             {/* Contact Info */}
             <div className="col-lg-5 offset-lg-1">
               <div className="cont-info">
-                <h4 className="extra-title mb-50">Contact Info.</h4>
+                <h1 className="extra-title mb-50">Contact Info.</h1>
                 <Split>
                   <h3 className="custom-font wow" data-splitting>
                     Let&apos;s Talk.
@@ -162,21 +162,21 @@ const ContactWithMap = ({ theme = "dark" }) => {
                     Follow Us.
                   </h3>
                 </Split>
-                <div className="social-icon mb-40">
+                <div className="social-icon mb-40" >
                   <a href="https://www.facebook.com/thriftizer/" target="_blank">
-                    <i className="fab fa-facebook-f"></i>
+                    <i className="fab fa-facebook-f" style={{color:'#75dab4 '}}></i>
                   </a>
                   <a
                     href="https://www.linkedin.com/company/thriftizer/"
                     target="_blank"
                   >
-                    <i className="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin" style={{color:'#75dab4 '}}></i>
                   </a>
                   <a
                     href="https://www.instagram.com/thriftizersolutionsllp"
                     target="_blank"
                   >
-                    <i className="fab fa-instagram"></i>
+                    <i className="fab fa-instagram" style={{color:'#75dab4 '}}></i>
                   </a>
                 </div>
 

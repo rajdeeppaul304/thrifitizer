@@ -46,7 +46,7 @@ const MoodboardIntro = () => (
           <div className="htit">
             <h5>
               
-               <span>        Visualize your Brands <Essence></Essence>. </span>
+               <p>        Visualize your Brands Essence. </p> <br/>
                ONE  MOODBOARD AT A TIME.
          
   </h5>
@@ -187,8 +187,8 @@ const Moodboard = ({ theme = "dark" }) => {
       {/* <MoodboardIntro /> */}
       <ContactHeader 
       sliderRef={fixedHeader}
-  title="Let's VISUALIZE YOUR BRAND'S ESSENCE.
- ONE MOODBOARD AT A TIME."
+  title="Let's Visualize Your Brand.
+ One Moodboard At A Time."
   subtitle="From aesthetic discovery to aligned execution — we help you find the look that feels just right."
   backgroundText="Moodboard"
 />
