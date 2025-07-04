@@ -46,7 +46,7 @@ const MoodboardIntro = () => (
           <div className="htit">
             <h5>
               
-               <span>        VISUALIZE YOUR BRAND'S ESSENCE. </span>
+               <span>        Visualize your Brands <Essence></Essence>. </span>
                ONE  MOODBOARD AT A TIME.
          
   </h5>
