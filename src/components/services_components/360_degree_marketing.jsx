@@ -291,6 +291,23 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
         .fas{
           color:white !important;
         }
+          .masonry-grid {
+  column-count: 2;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+
         `}</style>
 
       {/* Hero Section */}
@@ -406,92 +423,96 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
             </Split>
             <span className="tbg">What We Do.</span>
           </div>
-          <div className="row">
-            <div className="col-lg-6 mb-4">
-              <div className="service-card">
-                <div className="service-card-content">
-                  <div className="service-icon">
-                    <i className="fas fa-bullseye"></i>
-                  </div>
-                  <h3>Cohesive Ad Strategies</h3>
-                  <p>Craft cohesive ad strategies across Google Ads, Meta, YouTube, Pinterest, and Instagram.</p>
-                  <div className="platform-grid">
-                    <div className="platform-item ">
-                      <i className="fab fa-google"></i>
-                      <h4>Google Ads</h4>
-                    </div>
-                    <div className="platform-item">
-                      <i className="fab fa-facebook"></i>
-                      <h4>Meta</h4>
-                    </div>
-                    <div className="platform-item">
-                      <i className="fab fa-youtube"></i>
-                      <h4>YouTube</h4>
-                    </div>
-                    <div className="platform-item">
-                      <i className="fab fa-pinterest"></i>
-                      <h4>Pinterest</h4>
-                    </div>
-                    <div className="platform-item">
-                      <i className="fab fa-instagram"></i>
-                      <h4>Instagram</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="service-card">
-                <div className="service-card-content">
-                  <div className="service-icon">
-                    <i className="fas fa-desktop"></i>
-                  </div>
-                  <h3>Conversion-Focused Pages</h3>
-                  <p>Build conversion-focused landing pages and checkout flows optimized for Shopify UX.</p>
-                  <ul className="service-list">
-                    <li>High-converting landing pages</li>
-                    <li>Optimized checkout flows</li>
-                    <li>Mobile-first design approach</li>
-                    <li>A/B tested elements</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="service-card">
-                <div className="service-card-content">
-                  <div className="service-icon">
-                    <i className="fas fa-flask"></i>
-                  </div>
-                  <h3>Data-Driven Testing</h3>
-                  <p>Implement data-driven A/B testing and funnel audits using tools like Hotjar, GA4, and Klaviyo.</p>
-                  <ul className="service-list">
-                    <li>Advanced A/B testing protocols</li>
-                    <li>Comprehensive funnel analysis</li>
-                    <li>User behavior tracking</li>
-                    <li>Email marketing optimization</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="service-card">
-                <div className="service-card-content">
-                  <div className="service-icon">
-                    <i className="fas fa-tachometer-alt"></i>
-                  </div>
-                  <h3>Real-Time Optimization</h3>
-                  <p>Provide real-time performance dashboards and weekly optimization sprints.</p>
-                  <ul className="service-list">
-                    <li>Live performance dashboards</li>
-                    <li>Weekly optimization sprints</li>
-                    <li>Real-time alerts and monitoring</li>
-                    <li>Continuous improvement cycles</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <div className="masonry-grid">
+  <div className="masonry-item">
+    <div className="service-card">
+      <div className="service-card-content">
+        <div className="service-icon">
+          <i className="fas fa-bullseye"></i>
+        </div>
+        <h3>Cohesive Ad Strategies</h3>
+        <p>Craft cohesive ad strategies across Google Ads, Meta, YouTube, Pinterest, and Instagram.</p>
+        <div className="platform-grid">
+          <div className="platform-item">
+            <i className="fab fa-google"></i>
+            <h4>Google Ads</h4>
           </div>
+          <div className="platform-item">
+            <i className="fab fa-facebook"></i>
+            <h4>Meta</h4>
+          </div>
+          <div className="platform-item">
+            <i className="fab fa-youtube"></i>
+            <h4>YouTube</h4>
+          </div>
+          <div className="platform-item">
+            <i className="fab fa-pinterest"></i>
+            <h4>Pinterest</h4>
+          </div>
+          <div className="platform-item">
+            <i className="fab fa-instagram"></i>
+            <h4>Instagram</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="masonry-item">
+    <div className="service-card">
+      <div className="service-card-content">
+        <div className="service-icon">
+          <i className="fas fa-desktop"></i>
+        </div>
+        <h3>Conversion-Focused Pages</h3>
+        <p>Build conversion-focused landing pages and checkout flows optimized for Shopify UX.</p>
+        <ul className="service-list">
+          <li>High-converting landing pages</li>
+          <li>Optimized checkout flows</li>
+          <li>Mobile-first design approach</li>
+          <li>A/B tested elements</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div className="masonry-item">
+    <div className="service-card">
+      <div className="service-card-content">
+        <div className="service-icon">
+          <i className="fas fa-flask"></i>
+        </div>
+        <h3>Data-Driven Testing</h3>
+        <p>Implement data-driven A/B testing and funnel audits using tools like Hotjar, GA4, and Klaviyo.</p>
+        <ul className="service-list">
+          <li>Advanced A/B testing protocols</li>
+          <li>Comprehensive funnel analysis</li>
+          <li>User behavior tracking</li>
+          <li>Email marketing optimization</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div className="masonry-item">
+    <div className="service-card">
+      <div className="service-card-content">
+        <div className="service-icon">
+          <i className="fas fa-tachometer-alt"></i>
+        </div>
+        <h3>Real-Time Optimization</h3>
+        <p>Provide real-time performance dashboards and weekly optimization sprints.</p>
+        <ul className="service-list">
+          <li>Live performance dashboards</li>
+          <li>Weekly optimization sprints</li>
+          <li>Real-time alerts and monitoring</li>
+          <li>Continuous improvement cycles</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </section>
 

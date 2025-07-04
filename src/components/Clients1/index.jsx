@@ -12,7 +12,7 @@ const Clients1 = ({ theme, subBG }) => {
         <div className="row">
           <div className="col-lg-4 valign">
             <div className="sec-head custom-font mb-0">
-              <h6> Renowned brands that   </h6>
+              <h6 style={{color:'rgb(117, 218, 180) '}}> Renowned brands that   </h6>
               <h3>
                 Trust <br /> Us.
               </h3>

@@ -1,12 +1,15 @@
 // import StylesServices from './styles.jsx';
+import Split from "../Split";
 
 const ThreeSixtyDegree = () => {
   return (
 
     <div className="performance-marketing-page">
       <style jsx>{`
+
+
           .performance-marketing-page {
-            min-height: 100vh;
+            min-height: 85vh;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           }
@@ -59,7 +62,6 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .section-content {
             padding: 20px 0;
           }
-
           .section-title {
             font-size: 2.5rem;
             font-weight: 600;
@@ -68,7 +70,6 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
             text-align: center;
             position: relative;
           }
-
 
 
           .service-card {
@@ -81,6 +82,8 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+                        border-color: rgba(117, 218, 180, 0.3);
+            box-shadow: 0 20px 40px rgba(117, 218, 180, 0.2);
           }
 
           .service-card::before {
@@ -101,8 +104,6 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
 
           .service-card:hover {
             transform: translateY(-10px);
-            border-color: rgba(117, 218, 180, 0.3);
-            box-shadow: 0 20px 40px rgba(117, 218, 180, 0.2);
           }
 
           .service-card-content {
@@ -196,7 +197,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
           .cta-title {
             font-size: 2.5rem;
             font-weight: 600;
-            // color: #000 !important;
+            color: #ffffff !important ;
             margin-bottom: 1rem;
           }
 
@@ -284,6 +285,29 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
 
           }
           }
+      .fab{
+        color:white !important;
+      }
+        .fas{
+          color:white !important;
+        }
+          .masonry-grid {
+  column-count: 2;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+
         `}</style>
 
       {/* Hero Section */}
@@ -291,7 +315,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
       className="hero-section"
       style={{
         position: "relative",
-        height: "100vh",
+        height: "85vh",
         overflow: "hidden",
         display: "flex",
         justifyContent: "center",
@@ -356,8 +380,17 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
 {/* Overview Section */}
 <section className="section-content">
   <div className="container">
-    <h2 className="section-title">Overview</h2>
-    <div className="row">
+          <div className="sec-head custom-font text-center mt-40">
+            
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                Overview.
+              </h3>
+            </Split>
+            <span className="tbg">Overview.</span>
+          </div>  
+          
+            <div className="row">
       <div className="col-lg-12">
         <div className="service-card">
           <div className="service-card-content">
@@ -381,8 +414,15 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
 {/* What We Do Section */}
 <section className="section-content">
   <div className="container">
-    <h2 className="section-title">What We Do</h2>
-    <div className="row">
+          <div className="sec-head custom-font text-center mt-40">
+            
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                What We Do.
+              </h3>
+            </Split>
+            <span className="tbg">What We Do.</span>
+          </div>    <div className="row">
       <div className="col-lg-6 mb-4">
         <div className="service-card">
           <div className="service-card-content">
@@ -395,6 +435,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
               <li>Behavioral segmentation</li>
               <li>Product-specific targeting</li>
               <li>Lifecycle-based email flows</li>
+              <br/>
             </ul>
           </div>
         </div>
@@ -429,6 +470,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
               <li>Personalized content</li>
               <li>Effective call-to-action</li>
               <li>Omnisend SMS integration</li>
+              
             </ul>
           </div>
         </div>
@@ -445,6 +487,7 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
               <li>Subject line testing</li>
               <li>Offer and timing optimization</li>
               <li>Flow refinement for better engagement</li>
+              <br/>
             </ul>
           </div>
         </div>
@@ -456,8 +499,15 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
 {/* Why It Works Section */}
 <section className="section-content">
   <div className="container">
-    <h2 className="section-title">Why It Works</h2>
-    <div className="row justify-content-center">
+          <div className="sec-head custom-font text-center mt-40">
+            
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                Why It Works.
+              </h3>
+            </Split>
+            <span className="tbg">Why It Works.</span>
+          </div>    <div className="row justify-content-center">
       <div className="col-lg-10">
         <div className="service-card">
           <div className="service-card-content">
@@ -481,8 +531,15 @@ background: radial-gradient(circle at 20% 20%, rgba(117, 218, 180, 0.12) 0%, tra
 {/* Who It's For Section */}
 <section className="section-content">
   <div className="container">
-    <h2 className="section-title">Who It's For</h2>
-    <div className="row d-flex align-items-stretch">
+          <div className="sec-head custom-font text-center mt-40">
+            
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                Who It's For.
+              </h3>
+            </Split>
+            <span className="tbg">Who It's For.</span>
+          </div>    <div className="row d-flex align-items-stretch">
       <div className="col-lg-4 mb-4 d-flex">
         <div className="service-card w-100">
           <div className="service-card-content">
