@@ -235,7 +235,7 @@ const galleryItems = [
     services: [],
     industries: [],
     type: "image",
-    category: "foo_and_gourmet",
+    category: "food_and_gourmet",
   },
 ];
 
@@ -301,8 +301,14 @@ const WorksThreeColumnWithFilter = ({ filterPosition = "center" }) => {
         <option value="*">All Categories</option>
         {categories.map((cat) => (
           <option key={cat} value={cat.toLowerCase()}>
-            {cat.replace(/_/g, " ")}
-          </option>
+  {cat
+    .toLowerCase()
+    .replace(/_/g, " ")
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ")}
+</option>
+
         ))}
       </select>
       <div className="select-arrow">
