@@ -94,12 +94,7 @@ const CircularText = ({
       className={`circular-text-container ${className}`}
       href={logoLink} 
       target="_blank"
-      style={{ 
-        position: 'fixed',
-        bottom: '20px',
-        right: '20px',
-        zIndex: 1000,
-      }}
+
     >
       <motion.div
         className="circular-text"
