@@ -18,6 +18,37 @@ const BlogDetails = () => {
 
   return (
 <section className="blog-pg single section-padding pt-0">
+                <style jsx>
+    {
+      `
+      /* blog.css */
+
+.blog-pg .content p {
+  margin-bottom: 20px;
+}
+
+.blog-pg .content h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.blog-pg .content ul,
+.blog-pg .content ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.blog-pg .img {
+  margin-bottom: 40px;
+}
+
+.blog-pg .post .cont {
+  padding-top: 20px;
+}
+
+      `
+    }
+  </style>
   <section className="page-header blg">
     <div className="container">
       <div className="row justify-content-center">
@@ -34,9 +65,10 @@ const BlogDetails = () => {
     <div className="row justify-content-center">
       <div className="col-lg-11">
         <div className="post">
-                              <div className="img">
+          <div className="img">
             <img src="/img/blog/blog_4.jpg" alt="Search Generative Experience" />
           </div>
+
           <div className="content pt-20">
             <div className="row justify-content-center">
               <div className="col-lg-10">
@@ -161,7 +193,7 @@ const BlogDetails = () => {
                     <li>Is it blocked by robots.txt?</li>
                     <li>Is it marked as noindex?</li>
                     <li>Is it orphaned (not linked from anywhere)?</li>
-                    <li>Does it have duplicate or thin content?</li>
+                                        <li>Does it have duplicate or thin content?</li>
                   </ul>
                   <p>Use Search Console’s URL inspection to dig deeper.</p>
 
@@ -190,7 +222,6 @@ const BlogDetails = () => {
                   <p>
                     Focus on creating great content, keeping your website healthy and crawlable, and giving Google clear signals that your pages matter. When you do that, indexing happens faster—and so does the traffic.
                   </p>
-
                 </div>
               </div>
             </div>
@@ -200,6 +231,8 @@ const BlogDetails = () => {
     </div>
   </div>
 </section>
+
+
 
   );
 };

@@ -18,6 +18,104 @@ const BlogDetails = () => {
 
   return (
 <section className="blog-pg single section-padding pt-0">
+                 <style jsx>
+    {
+      `
+      /* blog.css */
+
+.blog-pg .content p {
+  margin-bottom: 20px;
+}
+
+.blog-pg .content h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.blog-pg .content ul,
+.blog-pg .content ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.blog-pg .img {
+  margin-bottom: 40px;
+}
+
+.blog-pg .post .cont {
+  padding-top: 20px;
+}
+  .responsive-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Desktop Header */
+.table-header {
+  display: table-header-group;
+  background-color: #75dab4 ;
+  color: white;
+  font-weight: bold;
+}
+
+.header-cell {
+  display: table-cell;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Rows and cells */
+.table-row {
+  display: table-row;
+  border-bottom: 1px solid #ddd;
+}
+
+.cell {
+  display: table-cell;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+/* Mobile - stacked cards */
+@media (max-width: 768px) {
+  .responsive-table {
+    display: block;
+  }
+  .table-header {
+    display: none;
+  }
+  .table-row {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px 15px;
+    // background-color: #f9f9f9;
+  }
+  .cell {
+    display: flex;
+    padding: 6px 0;
+    border: none;
+    justify-content: space-between;
+    font-size: 14px;
+    color:white;
+  }
+  .cell::before {
+    content: attr(data-label);
+    font-weight: 600;
+    // color: #333;
+  }
+}
+
+
+      `
+    }
+  </style>
   <section className="page-header blg">
     <div className="container">
       <div className="row justify-content-center">
@@ -49,7 +147,7 @@ const BlogDetails = () => {
                     So, the big question is: how do you optimize your content to appear in these AI-generated responses? If you’ve mastered featured snippets and SEO best practices, you're halfway there—but SGE brings a new set of expectations. Let’s break it down.
                   </p>
 
-                  <h4>What is Google’s Search Generative Experience (SGE)?</h4>
+                  <h3>What is Google’s Search Generative Experience (SGE)?</h3>
                   <p>
                     SGE is Google’s AI-enhanced search interface that uses generative AI (like Gemini) to create instant, summarized answers for user queries—often even before users click on a webpage. These summaries are pulled from multiple high-authority sources and displayed as conversational overviews with citations.
                   </p>
@@ -57,16 +155,16 @@ const BlogDetails = () => {
                     Think of it like a smart assistant giving you a preview of the web—faster, richer, and more contextual than a featured snippet.
                   </p>
 
-                  <h4>Why SGE Matters for SEO in 2025</h4>
+                  <h3>Why SGE Matters for SEO in 2025</h3>
                   <ul>
                     <li>Users may get their answers without clicking.</li>
                     <li>It’s reshaping click-through behavior—from keyword-based to context-based.</li>
                     <li>Your brand’s visibility depends on whether you’re included in those summaries.</li>
                   </ul>
 
-                  <h4>How to Optimize for Search Generative Experience (SGE)</h4>
+                  <h3>How to Optimize for Search Generative Experience (SGE)</h3>
                   <h6>1. Understand Search Intent Deeply—Not Just Keywords</h6>
-                  <p>
+                  <p className="mt-0">
                     SGE is not about matching search terms. It’s about understanding why someone is searching. Ask yourself:
                   </p>
                   <ul>
@@ -77,21 +175,21 @@ const BlogDetails = () => {
                   <p><strong>Tip:</strong> Use tools like AlsoAsked or Google’s “People Also Ask” to uncover real user intent clusters.</p>
 
                   <h6>2. Answer Questions Clearly and Structurally</h6>
-                  <p>SGE favors content that answers questions directly and concisely—especially in the first few lines.</p>
-                  <p>✅ Use:</p>
+                  <p className="mt-0">SGE favors content that answers questions directly and concisely—especially in the first few lines.</p>
+                  <p className="mt-0">✅ Use:</p>
                   <ul>
                     <li>Short, scannable answers (2–4 lines)</li>
                     <li>Clear H2/H3 subheadings with natural questions</li>
                     <li>Bullet points, tables, and definition lists</li>
                   </ul>
-                  <p>❌ Avoid:</p>
+                  <p className="mt-0" >❌ Avoid:</p>
                   <ul>
                     <li>Long, meandering introductions</li>
                     <li>Overuse of fluff or filler words</li>
                   </ul>
 
-                  <h6>3. Strengthen E-E-A-T (Experience, Expertise, Authoritativeness, Trust)</h6>
-                  <p>
+                  <h6 >3. Strengthen E-E-A-T (Experience, Expertise, Authoritativeness, Trust)</h6>
+                  <p className="mt-0" >
                     SGE pulls from sources that demonstrate:
                   </p>
                   <ul>
@@ -99,15 +197,15 @@ const BlogDetails = () => {
                     <li>Subject matter expertise</li>
                     <li>Citations, testimonials, or case studies</li>
                   </ul>
-                  <p>
+                  <p className="mt-0" >
                     Add author bios, link to trustworthy sources, and include original insights (not generic advice copied from others).
                   </p>
 
                   <h6>4. Use Structured Data Markup</h6>
-                  <p>
+                  <p className="mt-0" >
                     Schema markup helps Google understand your content’s structure, which is critical for passage-based indexing and SGE.
                   </p>
-                  <p>Add schema for:</p>
+                  <p className="mt-0" >Add schema for:</p>
                   <ul>
                     <li>Articles</li>
                     <li>FAQs</li>
@@ -120,10 +218,10 @@ const BlogDetails = () => {
                   </p>
 
                   <h6>5. Create Helpful Content with Semantic Relevance</h6>
-                  <p>
+                  <p className="mt-0" >
                     SGE doesn’t just look at individual keywords—it looks at topic depth and coverage.
                   </p>
-                  <p>✅ Build content hubs:</p>
+                  <p className="mt-0" >✅ Build content hubs:</p>
                   <ul>
                     <li>Create pillar pages around broad topics</li>
                     <li>Support them with interlinked blog posts or FAQs</li>
@@ -131,7 +229,7 @@ const BlogDetails = () => {
                   </ul>
 
                   <h6>6. Refresh and Update Existing Content</h6>
-                  <p>
+                  <p className="mt-0" >
                     Outdated content doesn’t cut it anymore. SGE tends to reference fresh, recently updated content.
                   </p>
                   <ul>
@@ -140,50 +238,52 @@ const BlogDetails = () => {
                     <li>Improve clarity and add media if needed</li>
                   </ul>
 
-                  <h4>SGE vs. Featured Snippets: What’s Changing?</h4>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Feature</th>
-                        <th>Featured Snippet</th>
-                        <th>Search Generative Experience (SGE)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Display</td>
-                        <td>One highlighted box</td>
-                        <td>Multi-source, AI-generated summary</td>
-                      </tr>
-                      <tr>
-                        <td>Source</td>
-                        <td>Typically from one page</td>
-                        <td>Pulled from multiple authoritative sources</td>
-                      </tr>
-                      <tr>
-                        <td>Format</td>
-                        <td>Paragraph, list, or table</td>
-                        <td>Conversational, flexible, more detailed</td>
-                      </tr>
-                      <tr>
-                        <td>Interaction</td>
-                        <td>Static</td>
-                        <td>Interactive (expand, ask follow-ups)</td>
-                      </tr>
-                      <tr>
-                        <td>SEO Impact</td>
-                        <td>High CTR (historically)</td>
-                        <td>Lower CTR, but higher visibility</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <h3>SGE vs. Featured Snippets: What’s Changing?</h3>
+<section className="responsive-table">
+  <div className="table-header">
+    <div className="header-cell">Feature</div>
+    <div className="header-cell">Featured Snippet</div>
+    <div className="header-cell">Search Generative Experience (SGE)</div>
+  </div>
+
+  <div className="table-row">
+    <div className="cell" data-label="Feature">Display</div>
+    <div className="cell" data-label="Featured Snippet">One highlighted box</div>
+    <div className="cell" data-label="Search Generative Experience (SGE)">Multi-source, AI-generated summary</div>
+  </div>
+
+  <div className="table-row">
+    <div className="cell" data-label="Feature">Source</div>
+    <div className="cell" data-label="Featured Snippet">Typically from one page</div>
+    <div className="cell" data-label="Search Generative Experience (SGE)">Pulled from multiple authoritative sources</div>
+  </div>
+
+  <div className="table-row">
+    <div className="cell" data-label="Feature">Format</div>
+    <div className="cell" data-label="Featured Snippet">Paragraph, list, or table</div>
+    <div className="cell" data-label="Search Generative Experience (SGE)">Conversational, flexible, more detailed</div>
+  </div>
+
+  <div className="table-row">
+    <div className="cell" data-label="Feature">Interaction</div>
+    <div className="cell" data-label="Featured Snippet">Static</div>
+    <div className="cell" data-label="Search Generative Experience (SGE)">Interactive (expand, ask follow-ups)</div>
+  </div>
+
+  <div className="table-row">
+    <div className="cell" data-label="Feature">SEO Impact</div>
+    <div className="cell" data-label="Featured Snippet">High CTR (historically)</div>
+    <div className="cell" data-label="Search Generative Experience (SGE)">Lower CTR, but higher visibility</div>
+  </div>
+</section>
+
 
                   <p><strong>Takeaway:</strong> You’re now competing to be included in a summary, not just to own the spotlight.</p>
 
-                  <h4>FAQs: Search Generative Experience (SGE)</h4>
+                  <h3>FAQs: Search Generative Experience (SGE)</h3>
 
                   <h6>Q1: How do I know if my content is appearing in SGE?</h6>
-                  <p>
+                  <p className="mt-0" >
                     Currently, SGE is still experimental in some regions. You can:
                   </p>
                   <ul>
@@ -193,17 +293,17 @@ const BlogDetails = () => {
                   </ul>
 
                   <h6>Q2: Can I force Google to include my site in SGE?</h6>
-                  <p>
+                  <p className="mt-0" >
                     No. Just like featured snippets, inclusion is algorithmic, not manual. You can only improve your chances by focusing on helpful, structured, experience-rich content.
                   </p>
 
                   <h6>Q3: Will SGE reduce my organic traffic?</h6>
-                  <p>
+                  <p className="mt-0" >
                     It depends. If users find their answers within the summary, they might not click—but if your brand is cited as a source, it builds credibility and visibility, which can still lead to downstream conversions.
                   </p>
 
                   <h6>Q4: Is optimizing for SGE the same as optimizing for voice search?</h6>
-                  <p>
+                  <p className="mt-0" >
                     They’re closely related. Both require:
                   </p>
                   <ul>
@@ -215,8 +315,8 @@ const BlogDetails = () => {
                     However, SGE demands depth and supporting context beyond short answers.
                   </p>
 
-                  <h4>Final Thoughts</h4>
-                  <p>
+                  <h3>Final Thoughts</h3>
+                  <p className="mt-0" >
                     SGE represents a new chapter in SEO. While the fundamentals—quality content, authority, helpfulness—remain, the way content is surfaced and presented is evolving fast. Brands that adapt early will be the ones users (and AI) trust.
                   </p>
                   <p>
@@ -245,7 +345,8 @@ const BlogDetails = () => {
       </div>
     </div>
   </div>
-  </section>
+</section>
+
 
   );
 };
