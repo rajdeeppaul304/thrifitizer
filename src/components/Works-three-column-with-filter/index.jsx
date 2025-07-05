@@ -2,6 +2,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import initIsotope from "../../common/initIsotope";
+import Split from "../Split";
+
 const galleryItems = [
   {
     id: 1,
@@ -274,9 +276,17 @@ const WorksThreeColumnWithFilter = ({ filterPosition = "center" }) => {
   return (
     <section className="portfolio section-padding pb-70">
       <div className="container">
-        <h1 className="mb-20 mt-10 responsive-heading text-center">
-          Explore Our Work.
-        </h1>
+
+
+        <div className="sec-head custom-font text-center mt-40">
+            
+            <Split>
+              <h3 className="wow words chars splitting" data-splitting>
+                Explore Our Work.
+              </h3>
+            </Split>
+            <span className="tbg">Work.</span>
+          </div> 
 
 
 {/* ─── Dropdown ─── */}
@@ -305,6 +315,11 @@ const WorksThreeColumnWithFilter = ({ filterPosition = "center" }) => {
 </div>
 
 <style jsx>{`
+@media screen and (max-width: 480px) {
+    .sec-head h3 {
+        font-size: 30px;
+    }
+}
   .dropdown-container {
     position: relative;
     display: inline-block;
@@ -400,7 +415,7 @@ const WorksThreeColumnWithFilter = ({ filterPosition = "center" }) => {
 
 
         {/* ─── Gallery ─── */}
-        <div className="row gallery full-width">
+        <div className="row gallery">
           {galleryItems.map((item) => (
             <div
               key={item.id}

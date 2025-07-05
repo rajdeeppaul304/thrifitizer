@@ -42,7 +42,7 @@ const BlogsThreeColumn1 = ({ subBG, newHome, isBlogPage=false }) => {
   ];
 
   return (
-    <section className={`blog-grid section-padding ${subBG ? "sub-bg" : ""}`}>
+    <section className={`blog-grid section-padding ${subBG ? "sub-bg" : ""}`} style={{marginBottom:'0px', paddingBottom:'0px'}}>
       <style jsx>{`
         .blog-slider-container {
           position: relative;

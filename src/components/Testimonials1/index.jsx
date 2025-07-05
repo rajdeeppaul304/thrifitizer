@@ -26,7 +26,7 @@ const testimonialData = [
     id: 3,
     content:
       "We had wonderful experience working with Thriftizer. They are excellent at their work and are very collaborative  and supportive. They helped bring our website vision to life and were truly interested finding solutions to our requirements. We’d love to work with them again and recommend them to others!",
-    author: "Mangharam Chocolate Solutions",
+    author: "Mangharam",
     stars: 5,
   },
 
@@ -124,6 +124,24 @@ class Testimonials1 extends React.Component {
 
 
 `}</style>
+<style jsx>{`
+  .slic-item,
+  :global(.slick-slide) {
+    overflow: hidden;
+  }
+
+  .stars i {
+    font-size: 1.5rem; /* default size */
+    margin-right: 4px;
+  }
+
+  @media (max-width: 768px) {
+    .stars i {
+      font-size: 1rem; /* smaller size for mobile */
+    }
+  }
+`}</style>
+
 <Slider
   className="slic-item"
   {...{
@@ -167,6 +185,7 @@ class Testimonials1 extends React.Component {
                     ))}
                   </div>
                 </div>
+                <br/>
                 <h6 className="author-name custom-font">{item.author}</h6>
               </>
             )}
